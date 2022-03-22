@@ -1,1 +1,5 @@
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FPb7fN4Dq947g5rK2mIacRM%2F0322-%25EC%259D%25B4%25EC%2588%2598%25EC%25A7%2580%3Fnode-id%3D0%253A1" allowfullscreen></iframe>
+# 자료 수집
+
+https://www.figma.com/file/Pb7fN4Dq947g5rK2mIacRM/0322-%EC%9D%B4%EC%88%98%EC%A7%80?node-id=0%3A1
+
+<img width="1082" height="1012" src="자료수집.png">
