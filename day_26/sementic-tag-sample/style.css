@@ -1,0 +1,31 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+#wrap {
+  width: 100%;
+  height: 4000px;
+  background-color: #000;
+}
+header {
+  width: 100%;
+  height: 150px;
+  background-color: burlywood;
+}
+nav {
+  width: 1400px;
+  height: 40px;
+  background-color: brown;
+}
+main {
+  width: 1400px;
+  height: 6000px;
+  background-color: orange;
+}
+footer {
+  width: 1400px;
+  height: 200px;
+  background-color: green;
+}

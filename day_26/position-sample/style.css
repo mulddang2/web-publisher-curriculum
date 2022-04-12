@@ -1,0 +1,29 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+    background-color: #421114;
+}
+img {
+    position: absolute;
+}
+.carry {
+    left: 290px;
+    top: 50px;
+}
+img.c1 {
+    left: 500px;
+    top: 350px;
+}
+img.c2 {
+    left: 670px;
+    top: 100px;
+}
+img.c3 {
+    left: 1170px;
+    top: 279px;
+}
+

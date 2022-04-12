@@ -1,0 +1,25 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+#wrap {
+  width: 100%;
+  height: 800px;
+  background-color: #efefef;
+}
+.box {
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  background-color: blue;
+}
+.baby {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    margin: 0 auto;
+}
+/* 블락요소의 가운데정렬법 
+margin: 0 auto*/
