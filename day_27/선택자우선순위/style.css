@@ -1,0 +1,23 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+.li {
+    background-color: tomato;
+}
+.food {
+    background-color: aqua;
+}
+.list {
+    background-color: red;
+}
+#first {
+    background-color: dimgray;
+}
+.list.food {
+    /*list 도 가지고, food 도 가진 애 나와라*/
+    background-color: maroon;
+}
+/*선택자는, 구체적일수록 순위가 높다(더 쎄다)*/
