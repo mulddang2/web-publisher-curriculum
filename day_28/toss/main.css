@@ -1,0 +1,85 @@
+/* splash */
+.logo {
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FAFAFA;
+;
+}
+
+/* sub1 */
+p.sub1text {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 43px;
+    letter-spacing: -0.03em;
+    padding: 127px 114px 476px 34px;
+}
+a.bigbtn {
+    display: block;
+    width: 380px;
+    height: 63px;
+    line-height: 63px; /*hight랑 같은 값을 줄 때, 세로 가운데됨*/
+    background-color: #3077FB;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 4px;
+    margin: 0 auto;
+    font-weight: 700;
+}
+
+/* sub2*/
+.sub2layout {
+    padding: 87px 0 0 0;
+}
+.sub2layout p:first-child {
+    font-size: 25px;
+    font-weight: 700;
+    padding-left: 34px;
+    padding-bottom: 120px;
+}
+.sub2layout p:nth-child(2) {
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 72px;
+}
+.keypad {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.keypad li {
+    font-size: 30px;
+    width: 33.3%;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* sub3 */
+div.complete {
+    text-align: center;
+    letter-spacing: -0.03em;
+    font-weight: 500;
+    margin: 105px auto 285px;
+    /* background-color: red; */
+}
+.profileimg {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background: url(images/mongja.jpg) no-repeat;
+    background-size: cover; /* w에 따른 유동값 */
+    background-position: center center;
+    margin: 0 auto 24px; /*위 양옆 아래*/
+}
+.complete p {
+    font-size: 24px;
+    line-height: 30px;
+}
+.complete span {
+    font-size: 14px;
+    color: #B0B0B0;
+}

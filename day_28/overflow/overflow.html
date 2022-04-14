@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>overflow practice</title>
+    <style>
+        #wrap {
+            width: 300px;
+            height: 400px;
+            border: 2px solid red;
+            overflow-y: scroll; /* 세로 스크롤 */
+            overflow-x: auto; /* 가로 스크롤은 무조건 생기지마!! 하는 말  */
+            overflow: scroll; /* 둘다 스크롤 하려면 한번에 적기 */
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <img src="cheetos.png">
+    </div>
+</body>
+</html>

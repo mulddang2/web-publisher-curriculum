@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Poppins:wght@100;300;400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    /* font-family: 'Noto Sans KR', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+.kr {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+#wrap {
+    width: 100%;
+}
+header {
+    width: 92%;
+    position: fixed;
+    /* height: 70px; */
+    /* background-color: purple; */
+    margin: 0 4%;
+    margin-top: 30px;
+}
+header > span {
+    font-size: 28px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-right: 70px;
+}
+.burger span {
+    width: 30px;
+    height: 5px;
+    margin-bottom: 7px;
+    display: block;
+    background-color: #fff;
+}
+.space {
+    letter-spacing: 6px;
+}
+/*section은 블럭요소, 너비 높이 가능*/
+section {
+    width: 100%;
+}
+
+/* 섹션 1 화사 */
+section.sec1 {
+    height: 1000px;
+    background-color: blue;
+    background: linear-gradient(-140deg, rgba(253,23,255,1) 6%, rgba(0,106,226,1) 70%);
+}
+.hwasa {
+    width: 1700px;
+    height: 1000px;
+    /* background-color: red; */
+    margin: 0 auto;
+    background-image: url('img/hwasabg.png');
+    background-position: right center;
+}
+.burger {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+p.ment {
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 50px;
+}
+.hwasawrap {
+    width: 1400px;
+    /* background-color: red; */
+    margin: 0 auto;
+    padding-top: 170px;
+}
+.hwasawrap img:last-child {
+    margin-top: 80px;
+}
+
+/* 섹션 2 - 런닝하는 사람들 */
+section.sec2 {
+    height: 1125px;
+    background: url('img/section2bg.png') no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.sec2imgwrap {
+    width: 1051px;
+    margin: 0 auto;
+}
+.sec2imgwrap img:first-child {
+    margin-bottom: 50px;
+}
+
+/* 섹션 공통 스타일 */
+section.sec2, section.sec3, section.sec4, section.sec5 {
+    text-align: center;
+}
+p.title, p.text {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+p.title {
+    font-size: 98px;
+    letter-spacing: 15px;
+    padding-top: 100px;
+}
+p.text {
+    font-size: 48px;
+    padding-bottom: 100px;
+}
+
+/* 섹션 3 - how to join */
+section.sec3 {
+    background-color: #006ae2;
+}
+
+/* 섹션 4 - join special event */
+section.sec4 {
+    background: url('img/section4bg.png') no-repeat;
+}
+p.text span {
+    font-weight: 100;
+}
+
+/* 섹션 5 - benefit */
+section.sec5 {
+    background: url('img/section5bg.png') no-repeat;
+    /*overflow: hidden 자식이 더 클때, 부모가 잘라줌*/
+    overflow: hidden;
+    height: 1010px;
+}
+.benefit {
+    font-size: 22px;
+    padding-bottom: 6px;
+}
