@@ -1,0 +1,236 @@
+/* splash */
+.logo {
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* sub1 */
+p.sub1text {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 43px;
+    letter-spacing: -0.03em;
+    padding: 127px 114px 476px 34px;
+}
+a.bigbtn {
+    display: block;
+    width: 380px;
+    height: 63px;
+    line-height: 63px; /*hight랑 같은 값을 줄 때, 세로 가운데됨*/
+    background-color: #3077FB;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 4px;
+    margin: 0 auto;
+    font-weight: 700;
+}
+
+/* sub2*/
+.sub2layout {
+    padding: 87px 0 0 0;
+}
+.sub2layout p:first-child {
+    font-size: 25px;
+    font-weight: 700;
+    padding-left: 34px;
+    padding-bottom: 120px;
+}
+.sub2layout p:nth-child(2) {
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 72px;
+}
+.keypad {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.keypad li {
+    font-size: 30px;
+    width: 33.3%;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* sub3 */
+div.complete {
+    text-align: center;
+    letter-spacing: -0.03em;
+    font-weight: 500;
+    margin: 105px auto 285px;
+    /* background-color: red; */
+}
+.profileimg {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background: url(images/mongja.jpg) no-repeat;
+    background-size: cover; /* w에 따른 유동값 */
+    background-position: center center;
+    margin: 0 auto 24px; /*위 양옆 아래*/
+}
+.complete p {
+    font-size: 24px;
+    line-height: 30px;
+}
+.complete span {
+    font-size: 14px;
+    color: #B0B0B0;
+}
+.sendinfo {
+    width: 335px;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: red; */
+    border-top: 1px solid #e0e0e0;
+    margin: 0 auto;
+    padding: 25px 28px 45px 28px;
+}
+ul.right {
+    text-align: right;
+}
+.sendinfo li {
+    padding-bottom: 8px;
+}
+.btns {
+    /* 버튼이들 */
+    width: 354px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.btns a {
+    display: block;
+    width: 168px;
+    height: 57px;
+    line-height: 57px;
+    text-align: center;
+    border-radius: 4px;
+}
+a.btn_share {
+    background-color: #E9F3FF;
+    color: #3182F7;
+
+}
+a.btn_submit {
+    background-color: #3182F5;
+    color: #fff;
+}
+
+/* sub4 QR체크인 */
+.top a, .qrbox a, .cer_btn a{
+    color: #000;
+}
+.top {
+    width: 386px;
+    /* background-color: red; */
+    margin: 16px auto 44px;
+    display: flex;
+    justify-content: space-between;
+}
+.fa-solid.fa-angle-left {
+    font-size: 22px;
+}
+.top a {
+    font-size: 18px;
+    font-weight: 500;
+}
+/* qrbox */
+.qrbox {
+    width: 354px;
+    height: 509px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+    margin: 0 auto;
+    background-color: #fff;
+}
+.qrcheckinfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 305px;
+    margin-bottom: 52px;
+    /* background-color: red; */
+    margin: 0 auto;
+    padding: 32px 0 52px;
+}
+.qrcheckinfo p {
+    font-size: 22px;
+}
+.qrcheckinfo a {
+    width: 116px;
+    height: 40px;
+    display: block;
+    background-color: #F4F4F6;
+    border-radius: 20px;
+    font-size: 15px;
+    text-align: center; /* text-align은 블락요소에 사용가능*/
+    line-height: 40px;
+ }
+.qrimg {
+    width: 297px;
+    height: 297px;
+    margin: 0 auto 30px;
+}
+.qrimg img {
+    width: 100%;
+}
+
+/* 가상클래스 before, after */
+p.sec {
+    font-size: 15px;
+    text-align: center;
+}
+p.sec::before {
+    content: url(images/time.png);
+    padding-right: 6px;
+}
+.cer_btn a {
+    display: block;
+    width: 161px;
+    height: 56px;
+    background-color: #fff;
+    border-radius: 5px;
+    font-size: 15px;
+    line-height: 56px;
+    margin: 71px auto;
+    text-align: center;
+}
+
+/* sub5 */
+.menu a {
+    color: #000;
+    font-size: 19px;
+}
+.sub5wrap > p {
+    height: 66px;
+    /* background-color: red; */
+    text-align: center;
+    line-height: 66px;
+    border-bottom: 1px solid #DBDBDB;
+    margin-bottom: 34px;
+    font-size: 20px;
+}
+.menu {
+    padding-left: 30px;
+    margin-bottom: 50px;
+}
+.menu > p {
+    font-size: 22px;
+    margin-bottom: 14px;
+}
+.menu ul li {
+    display: flex;
+    align-items: center;
+    height: 64px;
+    /* border: 1px solid red; */
+}
+.menu ul li a {
+    padding-left: 10px;
+}

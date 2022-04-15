@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    font-family: 'Zen Old Mincho', serif;
+}
+#wrap {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+header {
+    width: 200px;
+    height: 90vh;
+    background-color: #fff;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /*메인진행방향*/
+    align-items: center; /*서브진행방향*/
+    padding: 45px 0;
+} 
+header h1 {
+    width: 100px;
+    height: 100px;
+    background: url('images/ga_logo.png') no-repeat;
+    background-size: 100px;
+    text-indent: -999px; /*로고 처리 할 때만 씀, 텍스트 안뜨게함*/
+}
+.burger {
+    width: 30px;
+    height: 30px;
+    /* background-color: red; */
+}
+.burger span {
+    width: 30px;
+    height: 5px;
+    margin-bottom: 5px;
+    background: #000;
+    display: block;
+}
+header a img {
+    width: 17px;
+}
+.fixedmenu {
+    width: 800px;
+    height: 100px;
+    position: fixed;
+    top: 100px;
+    right: 100px;
+    /* background-color: red; */
+}
+.fixedmenu ul {
+    display: flex;
+    justify-content: space-between;
+}
+.fixedmenu ul li a {
+    font-size: 24px;
+    color: #000;
+}
