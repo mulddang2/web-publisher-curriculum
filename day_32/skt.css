@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Poppins:wght@500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #f6f8fa;
+    letter-spacing: -0.5px;
+}
+#wrap {
+    width: 780px;
+    background-color: #f6f8fa;
+    border: 1px solid #aaa;
+}
+h1 {
+    font-size: 32px;
+    color: #fff;
+}
+h2 {
+    font-size: 28px;
+    color: #222222;
+    font-weight: 500;
+    padding: 80px 0 10px;
+}
+h3 {
+    font-size: 16px;
+    color: #767778;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+h1, h2, h3 {
+    text-align: center;
+}
+.fff {
+    color: #fff;
+}
+.visual {
+    width: 780px;
+    height: 520px;
+    overflow: hidden; /*자식요소가 넘치면 자르기*/
+}
+
+/* 우주패스 혜택 설정 */
+.noticewrap {
+    width: 780px;
+    position: relative;
+    text-align: center;
+}
+section.section1 {
+    width: 780px;
+    background-color: #0b0b44;
+    padding-top: 38px;
+    padding-bottom: 48px;
+}
+.noticewrap ul {
+    display: flex; /*li 이미지를 가로배치*/
+    justify-content: center;
+    margin: 30px 0 40px;
+}
+.noticewrap img {
+    width: 60px;
+    height: 60px;
+    margin: 0 16px;
+}
+section.section2 {
+    height: 266px;
+    border-radius: 0px 0px 20px 20px; /*우하, 좌하 둥글게*/
+    background: #DDDFE7;
+}
+.noticewrap p {
+    font-size: 22px;
+    line-height: 28px;
+}
+.section1 p {
+    color: rgba(255, 255, 255, 0.75);
+}
+.section2 p {
+    color: #0B0B44;
+    padding-top: 70px;
+}
+
+
+
+/* 베네핏 */
+.benefitwrap {
+    width: 780px;
+    background-color: #fff;
+    padding: 90px 0;
+    border-radius: 20px;
+    margin-bottom: 70px;
+}
+.b_box {
+    width: 680px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid red; */
+    margin-bottom: 45px;
+}
+.benefitwrap > div:last-child {
+    margin-bottom: 0; /*막내만 아래마진 없게*/
+}
+.b_img1, .b_img2, .b_img3 {
+    width: 236px;
+    height: 172px;
+    /* border: 1px solid blue; */
+}
+.b_img1 {
+    background: url('images/b_1.png') no-repeat;
+    background-position: right center;
+}
+.b_img2 {
+    background: url('images/b_2.png') no-repeat;
+    background-position: right center;
+}
+.b_img3 {
+    background: url('images/b_3.png') no-repeat;
+    background-position: right center;
+}
+.b_info span {
+    font-size: 13px;
+    font-weight: 500;
+    color: #3617CE;
+}
+.b_info p:nth-child(2) {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    color: #222;
+    margin: 20px 0;
+}
+.b_info p:last-child {
+    font-size: 14px;
+    color: #767778;
+}
+
+
+/* 구독 */
+.subwrap {
+    width: 780px;
+    background-color: #0B0B44;
+    border-radius: 20px;
+}
+.subwrap ul {
+    width: 636px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.subwrap ul li {
+    width: 80px; /* span, img가 인라인요소여서 부모에 너비값으로 제한함 */
+    text-align: center;
+}
+.subwrap ul li img {
+    width: 80px;
+    height: 80px;
+}
+.subwrap ul li span {
+    color: #fff;
+    font-size: 13px;
+}
+.subcontents {
+    width: 666px;
+    margin: 0 auto 30px; /* 상 좌우 하 */
+    padding: 26px 0 16px 18px;
+    border-radius: 20px;
+    background-color: #E3E8FF;
+}
+.subcontents > p:first-child {
+    font-size: 18px;
+    font-weight: 500;
+    color: #0B0B44;
+    margin-bottom: 30px;
+}
+.boxstyle span{
+    background-color: #0B0B44;
+    color: #fff;
+    padding: 6px 10px;
+    display: inline-block;
+    border-radius: 18px; /*hight의 50%*/
+}
+.subbody {
+    font-size: 12px;
+    color: rgba(11, 11, 68, 0.7);
+    font-weight: 500;
+    margin: 15px 0 20px; /* 상 좌우 하 */
+}
+.lastwrap {
+    width: 780px;
+    height: 252px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+.lasttxt {
+    width: 672px; /*lastwrap W780 직접 빼기?*/
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid #000; */
+    border-bottom: 1px solid #aaa;
+    padding: 44px 0;
+}
+.shinhan p strong {
+    font-size: 21px;
+    color: #222;
+}
+.shinhan p:last-child  {
+    font-size: 18px;
+    color: #3617CE;
+    font-weight: 500, Medium;
+    margin-top: 6px; /*10px 아니라 6px 이유?*/
+}
+.price {
+    font-size: 24px;
+    font-weight: 700;
+    color:#3617CE;
+}
+.lastwrap > a{
+    display: block;
+    margin: 20px auto;
+    width: 316px;
+    height: 56px;
+    border-radius: 28px;
+    color: #767778;
+    text-align: center;
+    line-height: 56px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+    align-items: center;
+}
+.lastwrap > a > span,
+.lastwrap > a > img {
+    vertical-align: middle;
+}
+
+
+/* .lastwrap > a::after {
+    font-family: "FontAwesome"; 
+    font-weight: 100;
+    font-size: 16px;
+    content: '\f054';
+    margin-left: 6px;
+} */
