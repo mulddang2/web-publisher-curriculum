@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Open+Sans:wght@500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+#wrap {
+    width: 100%;
+}
+header {
+    width: 100%;
+}
+.linebanner {
+    width: 100%;
+    height: 70px;
+    overflow: hidden;
+}
+.gnbwrap {
+    width: calc(100% - 40px);
+    height: 78px;
+    background-color: #000;
+    display: flex;
+    padding: 0 20px;
+    justify-content: space-between;
+}
+.gnbwrap a {
+    color: #fff;
+    font-size: 18px;
+}
+a.gnbcolor1 {
+    color: #9B66FF;
+    font-weight: 700;
+}
+a.gnbcolor2 {
+    color: #ED00EC;
+    font-weight: 700;
+}
+a.gnbcolor3 {
+    color: #0091FA;
+    font-weight: 700;
+}
+.logowrap {
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    height: 78px;
+}
+nav ul {
+    display: flex;
+    width: 653px;
+    height: 78px; /*높이는 검정띠높이 만큼*/
+    justify-content: space-between;
+    align-items: center;
+}
+.logowrap > input {
+    width: 218px;
+    height: 30px;
+}
+.logowrap h1 a {
+    display: block;
+    width: 255px;
+    height: 19px;
+    background: url(./images/logo.svg) no-repeat;
+    text-indent: -999px;
+    padding-right: 17px;
+}
+
+/* 메인 비주얼 */
+.mainvisual {
+    width: 100%;
+    min-width: 1400px; /*1400px 미만으로 줄지마*/
+    margin-bottom: 20px;
+}
+.mainvisual img {
+    width: 100%;
+}
+.contentsmenu {
+    width: 1130px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.contentsmenu ul {
+    border: 1px solid red;
+    display: flex;
+    width: 150px;
+    justify-content: space-between;
+    
+}
+.contentsmenu > a {
+    border: 1px solid blue;
+}

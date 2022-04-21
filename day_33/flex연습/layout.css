@@ -1,0 +1,30 @@
+/* 레이아웃 */
+.layout {
+    width: 100%;
+    max-width: 1900px;
+    box-sizing: border-box;
+    position: relative;
+}
+.layout > div {
+    position: absolute;
+}
+.leftmenu {
+    min-width: 250px;
+    height: 1000px;
+    border: 2px solid orange;
+    box-sizing: border-box;
+}
+.centermenu {
+    min-width: 1130px;
+    height: 1000px;
+    left: 270px;
+    border: 2px solid yellow;
+    box-sizing: border-box;
+}
+.rightmenu {
+    min-width: 460px;
+    height: 1000px;
+    left: 1420px;
+    border: 2px solid green;
+    box-sizing: border-box;
+}

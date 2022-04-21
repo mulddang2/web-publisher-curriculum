@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Poppins:wght@500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #efefef;
+    /* position: relative; */ /* 굳이 바디에 relative를 주지 않아도 되지 않을까?*/
+    width: 100%;
+    height: 100vh;
+}
+.en {
+    font-family: 'Poppins', sans-serif;
+}
+#wrap {
+    width: 950px;
+    height: 310px;
+    background-color: #fff;
+    border: 1px solid #aaa;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.imagebox {
+    background: url(./images/hello.jpg);
+    width: 350px;
+    height: 250px;
+    border-radius: 10px;
+    margin: 30px;
+}
+.infobox {
+    width: 508px;
+    /* border: 1px solid red; */
+    padding: 38px 0;
+    position: relative;
+}
+span.badge {
+    color: #fff;
+    font-weight: 700;
+    background-color: #9F1792;
+    padding: 4px 7px;
+    border-radius: 5px;
+    margin-right: 16px;
+}
+.infobox > a, .star span {
+    color: #858585;
+    font-size: 18px;
+}
+.star {
+    position: absolute;
+    top: 38px;
+    right: 0;
+}
+.fa-star {
+    color: #9F1792;
+}
+.cardcontents, .card_desc {
+    margin-top: 20px;
+}
+.cardcontents > a {
+    font-size: 20px;
+    color: #646464;
+    letter-spacing: -0.01em;
+}
+.card_desc a, .card_desc span {
+    font-size: 17px;
+    color: #858585;
+}
+.card_desc a::after, .card_desc span::after {
+    content: '·';
+    margin: 0 5px;
+}
+.card_desc > span::after,
+.maker span:last-child::after {
+    content: '';
+}
+.maker span {
+    cursor: pointer;
+} /* 손가락 커서 나오게 하기 */
