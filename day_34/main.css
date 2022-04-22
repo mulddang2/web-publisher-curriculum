@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Open+Sans:wght@500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+#wrap {
+    width: 100%;
+}
+header {
+    width: 100%;
+}
+.linebanner {
+    width: 100%;
+    height: 70px;
+    overflow: hidden;
+}
+.gnbwrap {
+    width: calc(100% - 40px);
+    height: 78px;
+    background-color: #000;
+    display: flex;
+    padding: 0 20px;
+    justify-content: space-between;
+}
+.gnbwrap a {
+    color: #fff;
+    font-size: 18px;
+}
+a.gnbcolor1 {
+    color: #9B66FF;
+    font-weight: 700;
+}
+a.gnbcolor2 {
+    color: #ED00EC;
+    font-weight: 700;
+}
+a.gnbcolor3 {
+    color: #0091FA;
+    font-weight: 700;
+}
+nav ul {
+    display: flex;
+    width: 653px;
+    height: 78px; /*높이는 검정띠높이 만큼*/
+    justify-content: space-between;
+    align-items: center;
+}
+.logowrap {
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    height: 78px;
+}
+.logowrap > input {
+    width: 218px;
+    height: 30px;
+}
+.logowrap h1 a {
+    display: block;
+    width: 255px;
+    height: 19px;
+    background: url(./images/logo.svg) no-repeat;
+    text-indent: -999px;
+    padding-right: 17px;
+}
+
+/* 메인 비주얼 */
+.mainvisual {
+    width: 100%;
+    min-width: 1400px; /*1400px 미만으로 줄지마*/
+    margin-bottom: 20px;
+}
+.mainvisual img {
+    width: 100%;
+}
+.contentsmenu {
+    width: 1130px;            
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.contentsmenu ul {
+    width: 160px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    
+}
+.contentsmenu a {
+    /* border: 1px solid blue; */
+    color: #d2d2d2;
+}
+li a.focus {
+    color: #000;
+    font-weight: bold;
+}
+.magazinewrap ul {
+    width: 1130px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.magazinewrap ul li {
+    width: 206px;
+    margin-bottom: 47px;
+    /* border: 1px solid #000; */
+}
+.magazinewrap ul li a img {
+    width: 206px;
+}
+.magazinewrap ul li a:first-child {
+    width: 206px;
+    height: 137px;
+    display: block;
+    overflow: hidden;
+}
+a.m_title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+    margin-top: 10px;
+    display: block; /*a 태그에 마진을 주기 위해서 블럭으로 변경*/
+}
+.m_info span, .m_intro p {
+    font-size: 12px;
+    font-weight: 500;
+    color: #B2B2BB;
+}
+a.m_title, .m_info, .m_intro p {
+    margin-bottom: 8px;
+} 
+.m_info span {
+    /* background-color: red; */
+}
+.m_info span::after {
+    content: '';
+    display: inline-block; /* 가로 세로를 주면서도 옆으로 붙게 */
+    width: 2px;
+    height: 12px;
+    background-color: #ddd;
+    margin: 0 8px;
+    margin-bottom: -1px; /* 세로선을 밑으로 살짝 내리기위해 */
+}
+.m_info span:last-child::after {
+    content: none;
+}
+
+
+/* 왼쪽 레이아웃 */
+/* 이름 다른 것 tabon -> tab-on */
+.tabwrap  {
+    /* background-color: #9B66FF; */
+    width: 240px;
+    height: 379px;
+    margin-left: 10px;
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+.tabwrap a {
+    color: #B2B2B2;
+}
+.tab ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+.tab ul li a {
+    display: block; /* a는 인라인요소 */
+    width: 60px;
+    height: 37px;
+    text-align: center; /* 가로 가운데 정렬 */
+    line-height: 37px; /* 세로 가운데 정렬 */
+    color: #B2B2B2;
+    background-color: #F2F2F2;
+    border: 1px solid #DDDDDD;
+    border-left: none;
+    box-sizing: border-box; /* box-size에 border 포함시킴 */
+} 
+.tab ul li:first-child a{
+    border-left: 1px solid #DDDDDD;
+}
+.tab ul a.tab-on {
+    background-color: #fff;
+    color: #000;
+    font-weight: 600;
+    border-bottom: none;
+}
+.thumbnail {
+    width: 240px;
+    /* border: 1px solid #ddd; */
+    /* box-sizing: border-box; */
+}
+.tabmenu {
+    padding: 0 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 44px;
+}
+.tabmenu ul {
+    display: flex;
+    width: 176px;
+    justify-content: space-between;
+    /* border: 1px solid orange; */
+}
+.tabmenu ul li a {
+    text-decoration: underline;
+}
+.prev, .next {
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+    border: 1px solid #B2B2B2;
+    position: relative;
+    display: inline-block;
+}
+.prev div {
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-right: 5px solid #000;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid transparent;
+    position: absolute;
+    top: 3px;
+}
+.next {
+    margin-left: -4px;
+}
+.next div {
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid #000;
+    position: absolute;
+    top: 3px;
+    left: 6px;
+}
+
+/* 단독 */
+.eventwrap ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 240px;
+    height: 300px;
+    justify-content: space-evenly;
+    /* border: 1px solid #DDDDDD; */
+    /* background-color: #0091FA; */
+}
+.eventwrap ul li a img {
+    width: 70px;
+}
+.eventwrap ul li {
+    width: 70px;
+    /* border: 1px solid #000; */
+}
+a.blackcolor {
+    color:#000;
+    display: block;
+    font-weight: 500;
+}
+.eventbox {
+    border: 1px solid #ddd;
+    border-top: none;
+    box-sizing: border-box;
+}
+
+/* 투표 */
+.pollwrap {
+    border: 1px solid #000;
+    margin-left: 10px;
+}
+

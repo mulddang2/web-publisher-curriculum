@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="sec.2.css">
+    <title>목요일 연습</title>
+</head>
+<body>
+    <div id="wrap">
+        <section class="section1">
+            <div class="memo s1">
+                <p>
+                    height 가 없으면 박스 크기가 잡히지 않는다.<br>
+                    a태그: 인라인요소, 마진과 패딩 못함<br>
+                    a의 기본 글자색(파란색) 변경하려고 하면, li나 ul이 아닌!!! <b>"a"</b>를 선택해서 바꿔야함
+                </p>
+            </div>
+            <div class="memo s2">
+                <p>
+                    display: flex 는 배치되어야할 대상의 <span>부모에게</span><br>
+                    li를 가로로 배치하려면, <b>ul</b>한테 display:flex를 준다.
+                </p>
+            </div>
+            <!--탑메뉴 스타일 1. padding, margin-->
+            <header>
+                <div class="container inner">
+                    <h1 class="logo">패딩, 마진</h1>
+                    <nav>
+                        <ul>
+                            <li><a href="#">소개</a></li>
+                            <li><a href="#">게임</a></li>
+                            <li><a href="#">미디어</a></li>
+                            <li><a href="#">문화</a></li>
+                            <li><a href="#">채용</a></li>
+                            <li><a href=" #">투자정보</a></li>
+                        </ul>
+                    </nav>
+                    <ul class="lang">
+                        <li><a href="#">KOR</a></li>
+                        <li><a href="#">ENG</a></li>
+                        <li><a href="#">JPN</a></li>
+                    </ul>
+                </div> <!--//container-->
+            </header>
+            <!--탑메뉴 스타일 2. flex-->
+            <!--탑메뉴 스타일 3. position-->
+        </section> <!--sec1-->
+        <section class="section2">
+            <div class="container inner">
+                <header>
+                    <h1>플렉스 실습</h1>
+                    <nav>
+                        <ul>
+                            <li><a href="#">소개</a></li>
+                            <li><a href="#">게임</a></li>
+                            <li><a href="#">미디어</a></li>
+                            <li><a href="#">문화</a></li>
+                            <li><a href="#">채용</a></li>
+                            <li><a href="#">투자정보</a></li>
+                        </ul>
+                    </nav>
+                    <ul class="lang">
+                        <li><a href="#">KOR</a></li>
+                        <li><a href="#">ENG</a></li>
+                        <li><a href="#">JPN</a></li>
+                    </ul>
+                </header>
+            </div>
+        </section>
+        <section class="section3"></section>
+        <section class="section4"></section>
+        <section class="section5"></section>
+    </div>
+</body>
+</html>
