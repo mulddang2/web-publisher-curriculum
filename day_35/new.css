@@ -1,0 +1,566 @@
+		@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Open+Sans:wght@500;600&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+#wrap {
+    width: 100%;
+}
+header {
+    width: 100%;
+}
+
+div, li {
+    box-sizing: border-box;
+}
+
+.linebanner {
+    width: 100%;
+    height: 70px;
+    overflow: hidden;
+}
+
+.gnbwrap {
+    width: 100%;
+    height: 78px;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+.gnbwrap a {
+    color: #fff;
+    font-size: 18px;
+}
+
+.logowrap {
+    /* border: 1px solid red; */
+    height: 78px;
+    display: flex;
+    align-items: center;
+}
+nav ul {
+    width: 653px;
+    height: 78px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logowrap > input {
+    width: 218px;
+    height: 30px;
+}
+.logowrap h1 a {
+    width: 255px;
+    height: 19px;
+    background: url('images/logo.svg');
+    text-indent: -999px;
+    display: block;
+    margin-right: 17px;
+}
+a.gnbcolor1 {
+    color: #9B66FF;
+}
+a.gnbcolor2 {
+    color: #ED00EC;
+}
+a.gnbcolor3 {
+    color: #0091FA;
+}
+
+/* 메인 비쥬얼*/
+.mainvisual {
+    width: 100%;
+    min-width: 1400px;
+    margin-bottom: 20px;
+}
+.mainvisual img {
+    width: 100%;
+}
+.contentsmenu {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.contentsmenu ul {
+    width: 160px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+}
+.contentsmenu a {
+    /* border: 1px solid blue; */
+    color: #d2d2d2;
+}
+li a.focus {
+    color: #000;
+    font-weight: bold;
+}
+.magazinewrap ul li {
+    width: 206px;
+    /* border: 1px solid #000; */
+    margin-bottom: 47px;
+}
+.magazinewrap ul li a:first-child {
+    width: 206px;
+    height: 137px;
+    display: block;
+    overflow: hidden;
+}
+.magazinewrap ul li a img {
+    width: 206px;
+}
+a.m_title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+    margin-top: 10px;
+    display: block;
+}
+.m_info span, .m_intro p {
+    font-size: 12px;
+    color: #B2B2BB;
+}
+a.m_title, .m_info, .m_intro p {
+    margin-bottom: 8px;
+}
+.magazinewrap ul {
+    width: 1130px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.m_info span::after {
+    content: '';
+    width: 2px;
+    height: 12px;
+    display: inline-block;
+    background-color: #ddd;
+    margin: 0 8px;
+    margin-bottom: -1px;
+}
+.m_info span:last-child::after {
+    display: none;
+}
+
+/* 왼쪽 레이아웃 */
+.tabwrap {
+    width: 240px;
+    /* border: 1px solid red; */
+    margin-left: 10px;
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+.tabwrap a {
+    color: #b2b2b2;
+}
+
+.tab ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tab ul li a {
+    width: 60px;
+    height: 37px;
+    display: block;
+    color: #B2B2B2;
+    background: #F2F2F2;
+    border: 1px solid #ddd;
+    border-left: none;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 37px;
+}
+.tab ul li:first-child a {
+    border-left: 1px solid #ddd;
+}
+.tab ul a.tabon {
+    font-weight: 600;
+    color: #000;
+    background-color: #fff;
+    border-bottom: none;
+}
+.thumbnail {
+    width: 240px;
+}
+.prev, .next {
+    width:20px;
+    height: 20px;
+    border: 1px solid #B2B2B2;
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+}
+.next {
+    margin-left: -4px;
+}
+.prev div {
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent; 
+    border-right: 5px solid #000; 
+    border-bottom: 5px solid transparent; 
+    border-left: 5px solid transparent; 
+    position: absolute;
+    top: 3px;
+}
+.next div {
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent; 
+    border-right: 5px solid transparent; 
+    border-bottom: 5px solid transparent; 
+    border-left: 5px solid #000; 
+    position: absolute;
+    top: 3px;
+    left: 6px;
+}
+.tabmenu ul {
+    width: 176px;
+    display: flex;
+    justify-content: space-between;
+}
+.tabmenu {
+    padding: 0 7px;
+    height: 44px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+a.viewall {
+    text-decoration: underline;
+    font-size: 12px;
+}
+
+/* 단독 */
+.eventwrap ul {
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.eventwrap ul li {
+    width: 70px;
+}
+a.blackcolor {
+    color: #000;
+    display: block;
+}
+.eventbox {
+    border: 1px solid #ddd;
+    border-top: none;
+    box-sizing: border-box;
+}
+
+/* 투표 */
+.pollwrap {
+    margin-left: 10px;
+}
+.pollnotice {
+}
+.pollnotice ul li {
+    padding: 13px 10px;
+    font-size: 12px;
+    border-right: 1px solid #E8E8E8;
+    border-bottom: 1px solid #E8E8E8;
+    border-left: 1px solid #E8E8E8;
+}
+.pollnotice ul li:first-child {
+    font-weight: 700;
+    background-color: #f3f3f3;
+    border-top: 1px solid #E8E8E8;
+    margin-top: 11px;
+}
+.pollnotice ul li span {
+    color: #999;
+}
+.pollnotice ul li span strong {
+    color: #ff0000;
+}
+.pollnotice ul li:nth-child(2) {
+    position: relative;
+}
+.pollnotice ul li span.dday {
+    position: absolute;
+    right: 10px;
+    text-align: right;
+}
+.pollprdwrap ul li {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px 0 6px;
+    margin: 13px 0;
+}
+.pollprdwrap ul li img {
+    width: 45px;
+    height: 45px;
+    margin-bottom: -4px;
+    margin-right: 5px;
+}
+.prd_icon {
+    width: 8px;
+    height: 8px;
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+    transform: rotate(45deg);
+}
+.pollprdwrap ul li a {
+    font-size: 12px;
+    color: #000;
+}
+.prdinfo {
+    width: 192px;
+    display: flex;
+    align-items: center;
+}
+.pollmore {
+    width: 240px;
+    text-align: center;
+    border: 1px solid #e8e8e8;
+    vertical-align: center;
+    padding: 8px 0;
+}
+.pollmore a {
+	display: inline-block;
+	width: 68px;
+	height: 32px;
+	text-align: center;
+	line-height: 32px;
+	border: 1px solid #e8e8e8;
+	font-size: 12px;
+	color: #000;
+}
+
+/* 오른쪽 레이아웃 */
+.snapwrap {
+    border: 1px solid red;
+    width: 430px;
+}
+.snapmenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 19px;
+}
+.snapmenu ul {
+    /* border: 1px solid #000; */
+    display: flex;
+    width: 150px;
+    justify-content: space-between;
+}
+.snapmenu a, .snaplist span {
+    color: #B2B2B2;
+}
+.snapmenu ul li a {
+    font-size: 14px;
+}
+.snapmenu a.focus {
+    margin-right: 10px;
+}
+.snaplist a, .snaplist span {
+    font-size: 12px;
+}
+.snaplist ul {
+    display: flex;
+    /* border: 1px solid #000; */
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.snaplist ul li a img {
+    width: 98px;
+    height: 148px;
+}
+
+/* flex-box가 가로로 쭉 배치되면 
+flex-wrap: wrap; 속성으로 밑으로 내려준다*/
+
+.snaplist ul li {
+    width: 98px;
+    /* border: 1px solid purple; */
+    margin-bottom: 10px;
+}
+.snapinfo span::after {
+    border-right: 1px solid #DDDDDD;
+}
+a.readmore {
+    display: block;
+    font-size: 12px;
+    background-color: #f3f3f3;
+    color: #000;
+    text-align: center;
+    padding: 9px 0;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+}
+
+/* 브랜드 홍보*/
+.promotionwrap {
+    border: 1px solid green;
+    width: 430px;
+    margin-top: 40px;
+}
+ul.promotionboard {
+    /* border: 1px solid maroon; */
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+ul.promotionboard li {
+    height: 44px;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    border-bottom: 1px solid #ddd;
+}
+.promotionboard a {
+    width: 370px;
+    color: #000;
+}
+.promotionboard span {
+    width: 56px;
+    text-align: right;
+}
+
+/* 포지션으로 잡기 
+.promotionboard li {
+    position: relative;
+    height: 40px;
+    border-bottom: 1px solid pink;
+} 
+.promotionboard a {
+    position: absolute;
+}
+.promotionboard span {
+    text-align: right;
+    position: absolute;
+    right: 0;
+} 
+
+포지션으로 잡게 되면 붕 떠버려서 a랑 span이 겹쳐져 버리는 현상이 있다
+*/
+
+
+/*커뮤니티*/
+.commwrap {
+    border: 1px solid blue;
+    margin-top: 40px;
+    width: 430px;
+}
+.commlist {
+    border: 1px solid maroon;
+    font-size: 12px;
+}
+.commlist ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 394px;
+}
+.commlist ul li a:first-child {
+    display: block;
+    width: 78px;
+    height: 78px;
+    margin: 7px 0;
+    /* background-color: red; */
+}
+.commimg1 {
+    background: url(images/community/1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+    /* background-size: cover 는 이미지 사이즈를 잘림없이 맞춰줌 
+                        contain은 이미지를 자르면서 박스에 넣어줌(비율이 유지됨)
+        backgroung-postion: 가로방향 세로방향
+     */
+}
+.commimg2 {
+    background: url(images/community/2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+    /* background-size: cover 는 이미지 사이즈를 잘림없이 맞춰줌 
+        backgroung-postion: 가로방향 세로방향
+     */
+}
+.commimg3 {
+    background: url(images/community/3.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+    /* background-size: cover 는 이미지 사이즈를 잘림없이 맞춰줌 
+        backgroung-postion: 가로방향 세로방향
+     */
+}
+.commimg4 {
+    background: url(images/community/4.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+    /* background-size: cover 는 이미지 사이즈를 잘림없이 맞춰줌 
+        backgroung-postion: 가로방향 세로방향
+     */
+}
+.commimg5 {
+    background: url(images/community/5.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+    /* background-size: cover 는 이미지 사이즈를 잘림없이 맞춰줌 
+        backgroung-postion: 가로방향 세로방향
+     */
+}
+.commimg6 {
+    background: url(images/community/6.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+    /* background-size: cover 는 이미지 사이즈를 잘림없이 맞춰줌 
+        backgroung-postion: 가로방향 세로방향
+     */
+}
+.commimg7 {
+    background: url(images/community/7.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+    /* background-size: cover 는 이미지 사이즈를 잘림없이 맞춰줌 
+        backgroung-postion: 가로방향 세로방향
+     */
+}
+.commimg8 {
+    background: url(images/community/8.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+    /* background-size: cover 는 이미지 사이즈를 잘림없이 맞춰줌 
+        backgroung-postion: 가로방향 세로방향
+     */
+}
+.commimg9 {
+    background: url(images/community/9.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+    /* background-size: cover 는 이미지 사이즈를 잘림없이 맞춰줌 
+        backgroung-postion: 가로방향 세로방향
+     */
+}
+.commimg10 {
+    background: url(images/community/10.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+    /* background-size: cover 는 이미지 사이즈를 잘림없이 맞춰줌 
+        backgroung-postion: 가로방향 세로방향
+     */
+}
+
