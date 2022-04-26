@@ -1,0 +1,17 @@
+/* 모바일 
+브라우저 width가 600px 이하일때의 디자인
+*/
+@media screen and (max-width: 600px) {  
+    section {
+        width: 100%;
+    }
+}
+
+/* 타블렛
+601~1024 까지는 타블렛 구간.
+*/
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    section {
+        width: 50%;
+    }
+}

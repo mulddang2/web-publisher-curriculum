@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Open+Sans:wght@600;700&family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.os {
+    font-family: 'Open Sans', sans-serif;
+}
+.robo {
+    font-family: 'Roboto', sans-serif;
+}
+h1 {
+    text-align: center;
+    font-size: 48px;
+    color: #222222;
+}
+#wrap {
+    width: 100%;
+}
+header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    padding: 0 25px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    z-index: 5;
+}
+header h1 {
+    width: 105px;
+}
+header h1 a {
+    width: 105px;
+    height: 18px;
+    background: url(./images/logo.svg) no-repeat;
+    display: block; /*인라인 요소 가로 세로 못줘서 블락으로 바꿈*/
+    text-indent: -999px;
+    background-size: contain; /*이미지 잘릴 때 박스 사이즈에 맞춰줌*/
+    
+}
+nav ul{
+    display: flex;
+    width: 917px;
+    justify-content: space-between;
+}
+
+ul.gnb {
+    
+    height: 80px;
+    display: flex;
+    align-items: center;
+    /* background-color: #000; */
+}
+nav li a {
+    color: #fff;
+    font-size: 20px;
+}
+.iconwrap {
+    width: 154px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+section.mainVisual {
+    height: 100vh;
+    overflow: hidden;
+}
+.visualcontent {
+    color: #fff;
+    position: absolute;
+    top: 250px;
+    left: 10%;
+    /* border: 1px solid #000; */
+    /* absolute 박스에서 a태그에 링크가 안생기면 z-index를 주면 된다. 
+    */
+}
+p.maincopy {
+    font-size: 130px;
+    font-weight: 700;
+    line-height: 142px;
+    margin-bottom: 40px;
+}
+.readmore {
+    margin-top: 150px;
+}
+.readmore a { 
+    color: #fff;
+    font-size: 20px;
+}
+
+
+/* 프로모션 */
+section.promowrap {
+    width: 100%;
+    height: 940px;
+    display: flex;
+}
+.promoimg, .sliderwrap {
+    width: 50%;
+}
+.promoimg {
+    background: url('./images/mainv.jpg') no-repeat;
+    /* background-size: cover; */
+}
+.sliderwrap {
+    padding: 45px 0 40px 80px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    position: relative;
+    /* 가로 스크롤 없애기 
+        overflow: hidden;
+    가로스크롤 생성
+        overflow-x: scroll;    
+    */
+
+}
+.sliderwrap ul {
+    display: flex;
+}
+.sliderwrap ul li {
+    /* border: 1px solid #000; */
+    margin: 23px 130px 100px 0;
+}
+.sliderwrap > p {
+    color: #222222;
+    font-size: 47px;
+    line-height: 57px;
+    font-weight: 700;
+}
+.sliderwrap ul li a img {
+    width: 526px;
+    height: 526px;
+    background-color: #aaa;
+}
+p.productname {
+    font-weight: 700;
+    line-height: 41px;
+    letter-spacing: -1px;
+    font-size: 30px;
+    margin-top: 20px;
+}
+p.hashtag {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    color: #717171;
+}
+.progressbar {
+    width: 790px;
+    height: 2px;
+    background-color: #E5E5E5;
+    position: absolute;
+}
+.progressbar span {
+    position: absolute;
+    display: block;
+    width: 132px;
+    height: 2px;
+    background-color: #3F3F3F;
+    left: 132px;
+}
+
+/* 이벤트 */
+section.eventwrap {
+    width: 96%;
+    padding: 0 2%;
+}
+.eventwrap > h1 {
+    margin: 96px auto 43px;
+}
+.eventmainbanner {
+    width: 100%;
+    height: 600px;
+    background: url(./images/evengbg.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 28px;
+}
+.eventmainbanner div {
+    /* border: 1px solid red; */
+    height: 450px;
+}
+.maintext {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.mainproductimg {
+    width: 400px;
+    text-align: center;
+}
+.mainproductimg img {
+    width: 400px;
+    height: 400px;
+    margin-bottom: 23px;
+    background-color: #ffff;
+}
+p.title {
+    font-weight: 700;
+    font-size: 39px;
+    line-height: 56px;
+    color: #222222;
+}
+p.desc {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: #717171;
+    margin-top: 10px;
+}
+.mainproductimg span:first-child {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    color: #717171;
+}
+.mainproductimg span:last-child {
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 27px;
+    color: #222222;
+    padding-left: 5px;
+}
+.eventbanner {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* background-color: aqua; */
+}
+.eventbanner a {
+    width: 28.5%;
+    /* border: 1px solid red; */
+    padding: 20% 2% 2% 2%;
+}
+.eventbanner a:first-child {
+    background: url('./images/event_bg1.jpg');
+    background-size: cover;
+}
+.eventbanner a:nth-child(2) {
+    background: url('./images/event_bg2.jpg');
+    background-size: cover;
+}
+.eventbanner a:last-child {
+    background: url('./images/event_bg3.jpg');
+    background-size: cover;
+}
+.eventbanner {
+    margin: 28px 0 27px 0;
+}
+section.eventwrap > a {
+    font-weight: 700;
+    font-size: 20px;
+    color: #222222;
+    display: block;
+    text-align: center;
+}
