@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition 연습</title>
+    <style>
+        @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+        * {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            text-decoration: none;
+        }
+        body {
+            font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+        }
+        a {
+            color: #222;
+            font-size: 32px;
+            background-color: beige;
+        }
+        li:hover a {
+            /* li에 마우스를 올리면 a의 색깔이 */
+            color: rebeccapurple;
+            font-weight: bold;
+            /* font-size: 72px; */
+        }
+        li {
+            /* border: 1px solid red; */
+            width: 500px;
+            padding: 30px;
+            box-sizing: border-box;
+            bottom: 5px dashed transparent;
+        }
+        li:hover {
+            border-bottom: 5px dashed gray;
+            background-color: rgb(235, 235, 14);
+        }
+        .active {
+            transition: all 1s ease;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <ul>
+                <li><a href="#" class="active">베스트셀러</a></li>
+                <li><a href="#">새로나온책</a></li>
+                <li><a href="#">이벤트</a></li>
+                <li><a href="#">추천도서</a></li>
+                <li><a href="#">그림책</a></li>
+            </ul>
+        </header>
+    </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {padding: 0; margin: 0;}
+        #wrap {
+            width: 100%;
+            height: 100vh;
+            background-color: #efefef;
+            position: relative;
+        }
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: plum;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .box:hover {
+            background-color: aqua;
+            width: 400px;
+            border-radius: 50px;
+            transition: all 1s cubic-bezier(0,1.63,.98,-0.58);
+
+            /*
+            transition 은 변화되는 모습을 보고싶을 때, 
+            transition: 속성 지속시간 속도모델;
+            속성: 모든 속성에 트랜지션을 적용하려면 all 
+            지속시간: s과 ms이 있다.(1000ms=1초)
+            속도모델: 기본은 ease.
+            속도모델을 제어할수 있는 사이트: 
+            cubic-bezier.com
+            */
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="box"></div>
+    </div>
+</body>
+</html>
