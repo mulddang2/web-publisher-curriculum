@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Roboto&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/* 폰트 스타일 셋팅 */
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+header {
+    background-color: #F6F5EF;
+    width: 100%;
+    height: 97px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* position: fixed; */
+}
+header h1 {
+    background: url('./images/logo.png') no-repeat;
+    width: 75px;
+    height: 75px;
+    text-indent: -999px;
+}
+header ul {
+    width: 690px;
+    height: 97px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+header ul li a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #000;
+}
+
+/* 메인 비쥬얼 */
+section.mainvisual {
+    width: 100%;
+    height: 754px;
+    background-color: #421114;
+}
+.visualwrap {
+    width: 1100px; /* position 속성 사용시, 이동에 용이함 */
+    height: 754px;
+    /* border: 1px solid aqua; */
+    margin: 0 auto;
+    position: relative;
+}
+.visualwrap img {
+    position: absolute;
+}
+
+/* 슬로건 */
+.visualwrap img:first-child {
+    top: 63px;
+    left: 0px;
+}
+/* 1.토피넛 라떼 */
+.visualwrap img:nth-child(2) {
+    width: 284px;
+    top: 323px;
+    left: 11.71vw;
+}
+/* 2.드링크 3잔 */
+.visualwrap img:nth-child(3) {
+    width: 568px;
+    top: 63px;
+    left: 19.63vw;
+}
+/* 3. 토피넛 프라푸치노 */
+.visualwrap img:last-child  {
+    width: 227px;
+    top: 249px;
+    left: 45.41vw;
+}
+
+/* 카드1, 카드2 */
+.cardfixed {
+    width: 140px;
+    top: 130px;
+    left: 78.16vw;
+    position: fixed;
+    /* fixed 는 뷰포트가 기준이다. */
+}
+.cardfixed img {
+    width: 140px;
+}
+
+/* 리워드 박스 */
+/* 로고 이름(reward_logo), 리워드 컨텐트(reward_join) 바꿈 -> */ 
+section.rewardsection {
+    width: 100%;
+    height: 247px;
+    background-color: #1E3932;
+    color: #fff;
+}
+.rewardwrap {
+    width: 1100px;
+    /* border: 2px solid yellow; */
+    margin: 0 auto;
+    padding-top: 38px;
+    display: flex;
+    justify-content: space-between;
+}
+.reward_logo {
+    width: 176px;
+    height: 153px;
+}
+.reward_logo img {
+    width: 100%;
+}
+.reward_conts {
+    width: 848px;
+    /* border: 1px solid ghostwhite; */
+}
+.reward_conts a{ 
+    color: #fff;
+    font-size: 15px;
+    /* font-weight: 500; */
+    display: inline-block;
+    border-radius: 5px;
+    text-align: center;
+}
+.reward_join {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 1px solid #405953;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+.join_p p:first-child {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+.join_p p:last-child {
+    font-size: 17px;
+    line-height: 23px;
+}
+.join_a a{
+    width: 95px;
+    height: 40px;
+    padding-left: 19px;
+    padding-right: 19px;
+    vertical-align: baseline;
+}
+.fillbtn {
+    background-color: #00704A;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 9px;
+}
+.linebtn {
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    height: 42px;
+    line-height: 38px;
+}
+.e-gift {
+    display: flex;
+    justify-content: space-between;
+    /* padding-top: 15px; */
+}
+.e-gift p {
+    font-size: 14px;
+}
+.e-gift a {
+    box-sizing: border-box;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+}
+
+/* 패럴랙스 스크롤 실습 */
+section.pra_top, 
+section.pra_bottom {
+    width: 100%;
+    height: 1000px;
+    background-color: #fff;
+}
+section.parallaxwrap {
+    width: 100%;
+    height: 500px;
+    background: url(./images/bg.avif) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    /* 배경 고정하기 */
+    background-attachment: fixed;
+}
+section.parallaxwrap h1 {
+    color: #fff;
+    text-align: center;
+    height: 500px;
+    line-height: 500px;
+    font-size: 72px;
+}
+
+
+
