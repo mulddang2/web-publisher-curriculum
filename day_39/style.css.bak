@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Noto+Sans+KR:wght@300;400;500;700&family=Raleway:wght@700&display=swap');
+/*
+리셋
+모든 마진, 패딩, a밑줄, li동그라미 빼기
+
+글꼴 지정 속성
+font-family: 'Montserrat', sans-serif;
+font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Raleway', sans-serif;
+
+
+*/

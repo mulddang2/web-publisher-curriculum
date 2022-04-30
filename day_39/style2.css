@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Noto+Sans+KR:wght@300;400;500;700&family=Raleway:wght@700&display=swap');
+
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Raleway', sans-serif;
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #efefef;
+}
+.mont {
+    font-family: 'Montserrat', sans-serif;
+}
+.rale {
+    font-family: 'Raleway', sans-serif;
+}
+#wrap {
+    width: 1024px;
+    background-color: #fff;
+    /* height가 없으면 자식들의 크기로 height가 정해진다. */
+}
+section {
+    width: 100%; /* 부모크기에 꼭 맞게. */
+}
+section.sec1 {
+    height: 1319px; /* sec1 의 높이 */
+    background: url('./images/mainv.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    /* border: 1px solid #000; */
+}
+.titlewrap {
+    /* border: 1px solid yellow; */
+    position: absolute;
+    top: 594px;
+    left: 56px;
+}
+.titlewrap p {
+    color: #FFFFFF;
+    font-weight: 300;
+    font-size: 47px;
+    line-height: 68px;
+    letter-spacing: -1.2px;
+    margin-bottom: 119px;
+}
+.titlewrap ul {
+    display: flex;
+    /* border: 1px solid red; */
+    justify-content: space-between;
+    width: 323px;
+}
+.titlewrap ul li a {
+    color: #FFFFFF;
+    font-size: 700px;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+section.sec2 {
+    /* height: 1027px; */
+    /* height 안잡고 자식들의 크기 & 마진패딩으로 처리*/
+    /* background-color: pink; */
+    box-sizing: border-box;
+    /* width: calc(100% - 60px); */
+    padding: 200px 0 200px 60px;
+}
+.sec2 > p:first-child {
+    font-weight: 700px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #ff581e;
+    margin-bottom: 20px;
+}
+.sec2 p:nth-child(2) {
+    font-weight: 700px;
+    font-size: 41px;
+    line-height: 50px;
+    color: #222222;
+    margin-bottom: 48px;
+}
+.sec2 p:nth-child(3) {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 28px;
+    color: #222222;
+    margin-bottom: 100px;
+}
+section.sec2 ul.mont {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #222222;
+    /* border: 1px solid blue; */
+    display: flex;
+    margin-bottom: 50px;
+}
+section.sec2 ul li {
+    width: 184px;
+    height: 184px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    margin-right: 14px;
+    position: relative;
+}
+section.sec2 ul li p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+section.sec2 > a {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FF581E;
+}
+.introwrap {
+    /* background-color: pink; */
+    margin-bottom: 200px;
+}
+.introwrap ul {
+    /* border: 3px dashed blue; */
+    display: flex;
+    /* 가로 레이아웃하기 */
+    /* 1. width를 690으로 하고 space-between
+            width: 690px;
+            justify-content: space-between;
+            margin: 0 auto;
+     */
+    
+    /* 2. justify-content: center 로 하고 첫번째 li에 margin */
+    justify-content: center;
+}
+.introwrap ul li:first-child {
+    margin-right: 89px;
+}
+.introwrap ul li {
+    width: 300px;
+    /* border: 1px solid red; */
+}
+.introwrap ul img {
+    width: 300px;
+}
+p.newstitle {
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 33px;
+    color: #222222;
+    margin: 33px 0 24px;
+}
+p.newsbody {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 23px;
+    color: #222222;
+}
+.introwrap a {
+    display: block;
+    width: 106px;
+    height: 49px;
+    border-radius: 25px;
+    text-align: center;
+    line-height: 49px;
+    font-weight: 500;
+    font-size: 12px;
+    margin-top: 40px;
+}
+a.wbtn {
+    border: 1px solid #222;
+    color: #222;
+}
+a.bbtn {
+    background-color: #222;
+    color: #fff;
+}
+
+/* sec4 이미지들 */
+section .brandimgwrap {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+section .brandimgwrap img {
+    width: 50%;
+}
+section.sec5 {
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+section.sec5 img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
