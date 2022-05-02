@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+#header a {
+    color: #1C1C1C;
+    margin-bottom: -4px;
+}
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+header {
+    width: 100%;
+    font-weight: 500;
+    background-color: #fff;
+    position: relative;
+}
+.header {
+    position: relative;
+}
+
+/* 레이아웃 */
+#header {
+    border: 1px solid blue;
+    width: 1114px;
+    margin: 0 auto;
+} 
+
+/* 상단 로고 */
+.header_inner > h1 > a {
+    display: block;
+    background: url('./images/greeting/logo.png') no-repeat;
+    width: 220px;
+    height: 39px;
+    margin: 11px auto 0;
+    text-indent: -9999px;
+}
+nav.user-area {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 42px;
+}
+ul.user-area_menu {
+    border: 1px solid red;
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+    position: absolute;
+    top: 11px;
+    right: 0;
+}
+ul.user-area_menu li {
+    font-size: 14px;
+    text-align: center;
+}
+ul.user-area_menu li:last-child::after {
+    content: '';
+    border-top: 5px solid #000;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid transparent;
+    display: inline-block;
+    margin-left: 2px;
+}
+.header_inner h1 {
+    border: 1px solid #000;
+    padding-top: 42px;
+    padding-bottom: 35px;
+}
+.all > a {
+    border: 1px solid red;
+}
+.all-menu_inner {
+    /* background-color: slateblue; */
+    display: flex;
+    height: 36px;
+    align-items: center;
+    justify-content: space-between;
+}
+.all-menu_inner ul {
+    margin: 0 329px 0 16px;
+}
+.all-menu_inner > a > span {
+    display: block;
+    background-color: #928C00;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 14px;
+    height: 17px;
+    line-height: 17px;
+    border-radius: 50%;
+    padding: 3px 7px;
+}
+.burger_icon span {
+    display: block;
+    width: 26px;
+    height: 3px;
+    background-color: #212121;
+    margin-bottom: 6px;
+}
+.all-menu_inner ul {
+    background-color: antiquewhite;
+    width: 670px;
+    display: flex;
+    font-size: 18px;
+    justify-content: space-between;
+}
+.all-menu_inner a.cart {
+    position: relative;
+}
+.all-menu_inner a.cart span {
+    position: absolute;
+    bottom: 20px;
+    left: 17px;
+}
+
+/* mainvisual */
+.mainvisual > a {
+    display: block;
+    width: 1920px;
+    height: 500px;
+    overflow: hidden;
+}   
+.mainvisual a img {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
