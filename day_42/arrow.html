@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        /* .arrow {
+            width: 32px;
+            height: 32px;
+            margin-bottom: 30px;
+        } */
+        .arrow {
+            width: 32px;
+            height: 32px;
+            position: relative;
+            background-color: aqua;
+            /* margin-bottom: 30px; */
+        }
+        .arrow::before, 
+        .arrow::after {
+            content: '';
+            position: absolute;
+        } 
+        .arrow::before {
+            width: 100%;
+            height: 100%;
+            border: 1px solid yellow;
+            border-right: 0;
+            border-bottom: 0;
+        }
+        .arrow::after {
+            width: 48px;
+            height: 1px;
+            background-color: red;
+            transform-origin: 0 100%;
+            transform: rotate(45deg);
+        }
+    </style>
+    <title>화살표만들기</title>
+</head>
+<body>
+    <h2>화살표 만들기</h2>
+    <div class="arrow"></div>
+</body>
+</html>
