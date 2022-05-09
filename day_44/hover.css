@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#wrap {
+    width: 978px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.test {
+    width: 235px;
+    height: 165px;
+    border: 1px solid #000;
+    background: url(./images/whatsnew/1.jpg);
+}
+.out {
+    width: 235px;
+    height: 165px;
+    overflow: hidden;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 1px dotted #aaa;
+}
+.out:nth-child(4), .out:last-child {
+    margin-right: 0;
+}
+.in:hover img {
+    /* width: 300px; */
+    transform: scale(1.2);
+    transition: transform 500ms ease;
+}
+/*
+.test:hover img {
+    width: 250px; 
+}
+test div 에 마우스를 올리면, img가 
+ */
+
+/* .test:hover {
+    background-size: 250px; 
+    background-position: center;
+    transition: all 1s ease;
+} */

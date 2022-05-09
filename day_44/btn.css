@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+a {
+    width: 260px;
+    height: 64px;
+    text-align: center;
+    line-height: 64px;
+    color: #ffffff;
+    font-size: 22px;
+    font-family: 'Noto Sans KR', sans-serif;
+    /* border: 1px solid #000; */
+    display: block;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#wrap {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+#wrap > div {
+    width: 50%;
+    height: 300px;
+}
+
+/*박스들의 백그라운드 컬러 */
+.box1 {
+    background-color: #1ABC9C;
+}
+.box2 {
+    background-color: #2ECC71;
+}
+.box3 {
+    background-color: #3498DB;
+}
+.box4 {
+    background-color: #9B59B6;
+}
+.box5 {
+    background-color: #34495E;
+}
+.box6 {
+    background-color: #16A085;
+}
+
+/* before, after 공통 속성 */
+/* before 에는 bgc, after 에는 border */
+
+.box1 a::before, .box1 a::after,
+.box2 a::before, .box2 a::after,
+.box3 a::before, .box3 a::after, 
+.box4 a::before, .box4 a::after, 
+.box5 a::before, .box5 a::after, 
+.box6 a::before, .box6 a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: all 200ms cubic-bezier(.32,.93,.73,1.56);
+}
+
+/* 박스 1 우체국 */
+.box1 a::before {
+    background-color: rgba(255, 255, 255, 0);
+    transform: scale(0.1, 1);
+}
+.box1 a:hover::before {
+    background-color: rgba(255, 255, 255, .5);
+    transform: scale(1, 1);
+}
+.box1 a::after {
+    border: 1px solid rgba(255, 255, 255, 1);
+    transform: scale(1);
+}
+.box1 a:hover::after {
+    border: 1px solid rgba(255, 255, 255, 0);
+    transform: scale(0);
+}
+
+/* 박스 2 하나은행 */
+.box2 a::before {
+    background-color: rgba(255, 255, 255, 0);
+    transform: scale(0);
+}
+.box2 a:hover::before {
+    background-color: rgba(255, 255, 255, .5);
+    transform: scale(1);
+}
+.box2 a::after {
+    border: 1px solid rgba(255, 255, 255, 1);
+    transform: scale(1);
+}
+.box2 a:hover::after {
+    border: 1px solid rgba(255, 255, 255, 0);
+    transform: scale(0);
+}
+
+/* 박스 3 우리은행 */
+.box3 a::before {
+    background-color: rgba(255, 255, 255, 0);
+    transform: scale(1, 0);
+}
+.box3 a:hover::before {
+    background-color: rgba(255, 255, 255, .5);
+    transform: scale(1);
+}
+.box3 a::after {
+    border: 1px solid rgba(255, 255, 255, 1);
+    transform: scale(1);
+}
+.box3 a:hover::after {
+    border: 1px solid rgba(255, 255, 255, 0);
+    transform: scale(1, 0);
+}
+
+/* 박스 4 신한은행 */
+.box4 a::before {
+    background-color: rgba(255, 255, 255, 0);
+    transform: scale(0);
+    border-radius: 50%;
+}
+.box4 a:hover::before {
+    background-color: rgba(255, 255, 255, .5);
+    transform: scale(1);
+    border-radius: 0;
+}
+.box4 a::after {
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+.box4 a:hover::after {
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+
+/* 박스 6 농협 */
+.box6 a::before {
+    border: 1px dotted #FFF;
+    transform: translate(-5px, -5px);
+}
+.box6 a:hover::before {
+    transform: translate(5px, 5px);
+}
+.box6 a::after {
+    border: 1px dotted #FFF;
+    transform: translate(5px, 5px);
+}
+.box6 a:hover::after {
+    transform: translate(-5px, -5px);
+}

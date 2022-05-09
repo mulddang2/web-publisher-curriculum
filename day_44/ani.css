@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+p {
+    font-size: 32px;
+    color: navy;
+
+    /* 애니메이션 관련 속성 */
+    animation-duration: 10s;
+    animation-name: gogo;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes gogo {
+    /* from~to, 0%~100% */
+    0% {
+        color: darkviolet;
+        /* margin-left: 100%; */
+    }
+    25% {
+        color: fuchsia;
+    }
+    50% {
+        color: aqua;
+    }
+    75% {
+        color: yellow;
+    }
+    100% {
+        /* margin-left: 0%; */
+    }
+}
+.ballwrap {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    background-color: #efefef;
+    border: 1px solid #000;
+}
+
+.ball {
+    width: 50px;
+    height: 50px;
+    background-color: brown;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    animation-name: ball;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.b1 {
+    background-color: black;
+    left: 50px;
+    animation-delay: 0.3s;
+}
+.b2 {
+    background-color: pink;
+    left: 30px;
+    animation-delay: 0.1s;
+}
+.b3 {
+    background-color: green;
+    left: 35px;
+}
+.b4 {
+    background-color: chocolate;
+    left: 50px;
+    animation-delay: 0.2s;
+    animation-duration: 3s;
+}
+@keyframes ball {
+    0% {
+        top: 50px;
+        animation-timing-function: ease-out;
+    }
+    33% {
+        top: 550px;
+        height: 37px;
+    }
+    66% {
+        top: 150px;
+        height: 55px;
+        animation-timing-function: ease-in;
+    }
+    100% {
+        top: 550px;
+        height: 37px;
+    }
+}
