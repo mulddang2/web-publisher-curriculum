@@ -1,0 +1,67 @@
+/* 호버 효과 */
+/* 미디어 쿼리 */
+/* 작은 모니터 구간 1024~ 1590 */
+@media screen and (min-width:1024px) and (max-width: 1590px) {
+    ul.gnb {
+        margin: 0;
+        position: absolute;
+        right: 3vw;
+        bottom: 30px;
+    }
+    ul.lang {
+        position: absolute;
+        right: 3vw;
+        top: 30px;
+        width: fit-content;
+        justify-content: flex-end;
+    }
+    ul.lang li {
+        margin-left: 3vw;
+    }
+    .latest-notice {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+}
+
+/* 타블렛 구간 600~ 1024 */
+@media screen and (min-width: 600px) and (max-width: 1024px){
+    video {
+        height: 100%;
+        width: fit-content;
+    }
+    .videowrap {
+        height: 100vh;
+    }
+    .videowrap .dim {
+        height: 100vh;
+    }
+    .main-content {
+        display: none;
+    }
+    .latest-notice img {
+        display: none;
+    }
+    .latest-wrap {  
+        flex-direction: column;
+    }
+    .latest-notice h1 {
+        font-size: 4vw;
+        line-height: 4.5vw;
+    }
+    section.latest-section {
+        padding-top: 0;
+    }
+    header ul.lang, header ul.gnb {
+        display: none;
+    }
+    .main-bannerwrap ul {
+        flex-direction: column;
+    }
+    .main-bannerwrap ul li {
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-right: 0;
+    }
+}
