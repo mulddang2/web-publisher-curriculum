@@ -32,7 +32,7 @@ body, a{
 .headerwrap {
     display: flex;
     position: absolute;
-    top: 0;
+    /* top: 0; */
     left: 50%;
     transform: translate(-50%, 0);
 }
@@ -55,7 +55,7 @@ ul.sitemenu {
 }
 ul.sitemenu li {
     width: 120px;
-    height: 40px;
+    height: 39px;
     border-left: 1px solid #D0D0D0;
     text-align: center;
     line-height: 40px;
@@ -79,6 +79,7 @@ ul.sitemenu li:last-child img {
 .bgc_btn_wrap {
     display: flex;
     position: absolute;
+    top: -1px;
     /* border: 1px solid red */
 }
 .reserve a {
@@ -157,9 +158,17 @@ h2.ev_logo img {
 header {
     /* border: 1px solid red; */
 }
-.mainbg img {
+
+.mainbg {
     width: 100%;
     height: 570px;
-    position: relative;
+    background: url(./images/bg.jpg) no-repeat;
+    background-size: contain;
+    border: 1px solid red;
+}
+.mainbg img {
+    /* border: 1px solid #000; */
+    margin: 0 auto;
+    display: block;
 }
 
