@@ -1,0 +1,363 @@
+/* section class="menuA" */
+.menuwrap_A {
+    width: 100%;
+    height: 80px;
+    /* border: 1px solid #000; */
+    background-color: #fff;
+}
+.menuwrap_A > .menubar {
+    width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menubar a img {
+    width: 100px;
+    height: 26px;
+}
+nav ul {
+    display: flex;
+    width: 646px;
+    justify-content: space-between;
+}
+.menuwrap_A nav ul li a {
+    color: #333333;
+}
+nav ul li a.point {
+    color: #EE5728;
+}
+.menubar .btn {
+    /* border: 1px solid red; */
+    width: 100px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn img:first-child{
+    width: 22px;
+    height: 22px;
+}
+.btn img:nth-of-type(2){
+    width: 24px;
+    height: 24px;
+}
+div[class*=line] {
+    width: 19px;
+    height: 1px;
+    border-top: 2px solid #333333;
+}
+div[class*=line]:not(.line3) {
+    margin-bottom: 5px;
+}
+.menubar > .btn > .burger {
+    /* border: 1px solid blue; */
+    width: 19px;
+    height: 12px;
+}
+
+
+/* section class="menuB" */
+.menuwrap_B {
+    width: 100%;
+    height: 141px;
+    display: flex;
+    background-color: #fff;
+}
+.menuwrap_B .menubar {
+    width: 1330px;
+    height: 141px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    border-bottom: 1px solid #777777;
+}
+.menuwrap_B .menubar ul {
+    height: 141px;
+    width: 689px;
+    justify-content: space-between;
+    align-items: center;
+}
+.menuwrap_B a img {
+    width: 157px;
+    height: 94px;
+}
+.menuwrap_B nav ul li a {
+    font-size: 18px;
+    color: #1C1C1C;
+}
+
+/* section class="menuC" */
+.menuwrap_C {
+    width: 100%;
+    height: 140px;
+    background-color: #fff;
+    color: #7E7E7E;
+    font-size: 15px;
+    overflow: hidden;
+    position: relative;
+}
+.menuwrap_C .menubar {
+    width: 1920px;
+    height: 140px;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.menuwrap_C p {
+    font-size: 15px;
+    display: inline-block;
+    margin-left: 10px;
+    color: #7E7E7E;
+}
+.menuwrap_C ul.left {
+    display: flex;
+    align-items: center;
+    height: 140px;
+}
+.menuwrap_C ul li:nth-child(2) {
+    padding: 0 37px;
+}
+.menuwrap_C ul li a {
+    display: block;
+    color: #7E7E7E;
+}
+.menuwrap_C ul li img {
+    float: left;
+    margin-right: 10px;
+}
+.menuwrap_C ul li.store img {
+    width: 18px;
+    height: 24px;
+}
+.menuwrap_C ul li.news-letter img {
+    width: 18px;
+    height: 14px;
+    margin-top: 4px;
+}
+.menuwrap_C ul li.search img {
+    width: 18px;
+    height: 20px;
+    position: relative;
+    top: 1px;
+}
+.menuwrap_C h1 {
+    width: 156px;
+    height: 46px;
+    background: url('./images/menuc/logo.svg') no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: absolute;
+    top: 47px;
+    text-indent: -9999px;
+}
+.menuwrap_C ul.right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 338px;
+}
+.menuwrap_C ul.right a.point {
+    color: #A0EBDD;
+}
+
+/* section class="menuD" */
+section.menuD {
+    color: #fff;
+    letter-spacing: -1px;
+}
+section.menuD header {
+    width: 100%;
+    height: 67px;
+    background-color: #040714;
+}
+section.menuD .menubar {
+    width: 1440px;
+    height: 67px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+section.menuD .menubar h1 { 
+    width: 80px;
+    height: 44px;
+    text-indent: -999px;
+    background: url('./images/menud/logo.svg') no-repeat;
+    background-size: cover;
+}
+section.menuD button {
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+    padding: 9px 10px;
+}
+section.menuD button a { 
+    color: #fff;
+}
+section.menuD button.now-join {
+    background-color: #0063E5;
+    border: none;
+    margin-right: 20px;
+}
+section.menuD button.login {
+    border: 1px solid #fff;
+    background-color: transparent;
+}
+section.menuD .main-content {
+    background-color: #040714;
+    width: 1440px;
+    margin: 0 auto;
+    text-align: center;
+}
+section.menuD .mainbox {
+    width: 100%;
+    height: 410px;
+    padding-top: 20px;
+    /* border: 1px solid white; */
+    background-color: #040714;
+}
+section.menuD .main-content ul {
+    display: flex;
+    justify-content: center;
+}
+section.menuD .main-content ul li {
+    margin-right: 19px;
+}
+section.menuD .main-content p {
+    margin: 15px 0 40px;
+}
+.main-content li img {
+    width: 374px;
+    height: 224px;
+}
+
+/* section class="menuE" */
+.menuwrap_E {
+    background-color: #fff;
+    width: 100%;
+    height: 140px;
+}
+.menuwrap_E header {
+    border-bottom: 1px solid #d6d6d6;
+}
+section.menuE .topsec {
+    display: flex;
+    width: 1200px;
+    height: 90px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+section.menuE .topsec a h1 {
+    width: 155px;
+    height: 44px;
+    background: url('./images/menue/logo.png');
+    text-indent: -999px;
+}
+section.menuE nav {
+    width: 1200px;
+    height: 50px;
+    margin: 0 auto;
+}
+section.menuE nav ul {
+    width: 1200px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+section.menuE nav a {
+    font-weight: 500;
+    color: #000;
+    text-transform: uppercase;
+}
+
+/* section class="menuF" */
+.menuwrap_F {
+    border-bottom: 1px solid #b5b5b5;
+    background-color: #fff;
+    width: 100%;
+    height: 168px;
+}
+.menuF a {
+    color: #858585;
+    letter-spacing: -1px;
+}
+.menuwrap_F .util {
+    width: 100%;
+}
+.menuwrap_F .util ul {
+    margin-left: 50px;
+    display: flex;
+}
+.menuwrap_F .util ul li {
+    margin-right: 38px;
+}
+.menuwrap_F .logosec {
+    width: 1400px;
+    height: 64px;
+    margin: 0 auto;
+    border: 1px solid yellow;
+    padding: 17px 0 15px;
+    position: relative;
+}
+.menuwrap_F .logosec h1 {
+    width: 267px;
+    height: 32px;
+    border: 1px solid red;
+    background: url('./images/menuf/logo.png') no-repeat;
+    background-position: center center;
+    background-size: contain;
+    text-indent: -9999px;
+    margin: 0 auto;
+    
+}
+.menuwrap_F .logosec a img {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 5px;
+    top: 23px;
+
+}
+.menuwrap_F .logosec > a.cart span {
+    display: block;
+    background-color: #FFBA00;
+    position: absolute;
+    top: 21px;
+    right: 3px;
+    padding: 0px 2px 0px 2px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    font-size: 2px;
+    color: #fff;
+    text-align: center;
+    line-height: 10px;
+    z-index: 1;
+}
+.menuwrap_F .gnb {
+    width: 1400px;
+    height: 64px;
+    display: flex;
+    justify-content: space-between;  
+    border: 1px solid #000;
+}
+
+
+
+
+
+
+/* section class="menuG" */
+/* section class="menuH" */
+
+
+
+
+
+
+
