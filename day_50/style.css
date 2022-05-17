@@ -1,0 +1,242 @@
+#wrap {
+    width: 100%;
+}
+header .mainmenu{
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid #ededed;
+    position: fixed;
+    top: 0; /* 맨위에 딱 붙어 고정 */
+    background-color: #fff;
+    z-index: 99; /* 항상 위에 있어라 */
+}
+.mainmenu .inner {
+    width: 1136px;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logowrap, .loginwrap, .mainmenu ul {
+    display: flex;
+}
+.logowrap a.logo h1 {
+    width: 74px;
+    height: 30px;
+    /* border: 1px solid red; */
+    background: url('./images/header/logo.svg') no-repeat;
+    text-indent: -999px;
+    background-size: contain;
+    margin-right: 50px;
+}
+.mainmenu ul.title li {
+    font-size: 18px;
+    font-weight: 700;
+}
+.mainmenu ul.title li:not(:last-child) {
+    margin-right: 32px;
+}
+
+/* 로그인랩 */
+.loginwrap .search {
+    width: 264px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid #dbdbdb;
+    display: flex;
+    align-items: center;
+}
+.loginwrap .search input {
+    border: none;
+}
+.loginwrap .search input:focus {
+    outline: none;
+}
+.loginwrap input::placeholder {
+    font-family: 'Noto Sans KR', sans-serif;
+    /* color: #dbdbdb; */
+    color: #4242428c;
+    font-weight: 500;
+    font-size: 15px;
+}
+.loginwrap .search img {
+    display: block;
+    width: 18px;
+    height: 18px;
+    margin: 0 10px; 
+}
+.loginwrap ul.loglists {
+    align-items: center;
+}
+.loginwrap ul.loglists li a {
+    font-weight: 700;
+    color: #757575;
+}
+ul.loglists li:nth-child(3)::before {
+    content: '';
+    width: 1px;
+    height: 15px;
+    background-color: #757575;
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;
+    top: 2px; 
+
+}
+ul.loglists li:nth-child(3)::after {
+    content: '';
+    width: 1px;
+    height: 15px;
+    background-color: #757575;
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;
+    top: 2px; 
+}
+ul.loglists li.cart img {
+    width: 24px;
+    margin-bottom: -4px;
+    margin-right: 10px;
+    margin-left: 18px;
+}
+button.go_write img {
+    width: 11px;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(85deg) brightness(106%) contrast(101%);
+    margin-left: 9px;
+
+}
+button.go_write {
+    width: 100px;
+    margin-left: 20px;
+    padding: 8px 0 10px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+/* navmenu */
+header .navmenu {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #ededed;
+    position: relative;
+    top: 81px;
+}
+.navmenu .inner {
+    width: 1136px;
+    height: 50px;
+    /* border: 1px solid #000; */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+}
+ul.gnb {
+    display: flex;
+    position: relative;
+    left: -14px;
+}
+ul.gnb li a {
+    display: block;
+    padding: 13px 12px;
+}
+ul.gnb li a.on {
+    border-bottom: 2px solid var(--sky);
+}
+.link3d {
+    display: flex; /*세로정렬 때문에 flex 줌 */
+    height: 50px;
+    align-items: center;
+}
+.link3d a {
+    color: #757575;
+}
+.link3d img {
+    vertical-align: middle;
+}
+
+/* 메인 */
+main {
+    width: 100%;
+}
+main .container {
+    width: 1136px;
+    height: 50px;
+    margin: 110px auto;
+}
+section.mainvisual {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.bestuser {
+    width: 846px;
+    height: 566px;
+    position: relative;
+    overflow: hidden;
+}
+.promotion {
+    width: 270px;
+    height: 566px;
+    border: 1px solid red;
+}
+.bestuser_img {
+    width: 846px;
+    height: 566px;
+    background: url('./images/main/mainv.jpg');
+    background-size: 105%;
+    background-position: center;
+    transform: scale(1);
+    transition: transform 100ms ease-in;
+}
+.bestuser:hover .bestuser_img {
+    transform: scale(1.05);
+} 
+.bestuser:hover button.go_more {
+    background-color: var(--sky);
+    transition: all 100ms ease;
+    border: none;
+}
+.bestuser_content {
+    width: 768px;
+    position: absolute;
+    left: 39px;
+    bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid #000; */
+}
+.bestuser_title h1 {
+    color: #ffffff;
+    font-size: 32px;
+    letter-spacing: -0.4px;
+}
+.bestuser_title p {
+    color: #ffffff;
+    font-size: 13px;
+}
+.bestuser_w {
+    display: flex;
+    margin-top: 15px;
+}
+.bestuser_w .cir {
+    width: 22px;
+    height: 22px;
+    margin-right: 3px;
+    background: url('./images/main/user.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.bestuser_content button.go_more {
+    background-color: transparent;
+    border: 1px solid #fff;
+    width: 140px;
+    height: 50px;
+    font-size: 15px;
+    border-radius: 4px;
+    font-weight: 700;
+    text-align: center;
+}

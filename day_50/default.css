@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+    --sky: #35C5F0;
+    --pink: #FF7777;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+.en {
+    font-family: 'Montserrat', sans-serif;
+}
+button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: inherit;
+    display: block;
+    cursor: pointer;
+}
+.gnb .on,
+.title .on,
+span .rate,
+h2 {
+    color: var(--sky);
+}
+button[class^=go],
+span.badge,
+span.count,
+span.alert {
+    color: #fff;
+}
+button[class^=go] {
+    background-color: var(--sky);
+}
+span.badge,
+span.alert {
+    background-color: var(--pink);
+}
+
+
+/* 썸네일 사이즈 */
+.th_big {
+    width: 365px;
+    height: 255px;
+    border-radius: 10px;
+}
+.th_mid {
+    width: 270px;
+    height: 270px;
+    border-radius: 3px;
+}
+.th_small {
+    width: 172px;
+    height: 172px;
+    border-radius: 3px;
+}
+h1 {
+    font-size: 20px;
+    color: #000;
+}
+h2 {
+    font-size: 15px;
+}
+h3 {
+    font-size: 15px;
+}
+p, a {
+    color: #424242;
+}
+.desc {
+    font-size: 11px;
+    color: #757575;
+}
+.pink {
+    color: var(--pink)
+}
+.cir {
+    border-radius: 50%;
+}
