@@ -12,7 +12,6 @@ header div.headcontainer {
     top: 0;
     width: 100%;
     background-color: #fff;
-    border: 1px solid #000;
     padding: 30px 0 40px;
     z-index: 99;
 }
