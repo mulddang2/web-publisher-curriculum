@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1부터 100까지의 합
+        // var num = 0;
+        // for(var i =1; i <=100; i++) {
+        //     num += i; 
+        //     //num + i = num;
+        //     //0 + 1 = num; 1
+        //     //1 + 2 = num; 3
+        //     //3 + 3 = num; 6
+        //     //6 + 4 = num; 10
+        //     //num + 100 = 5050;
+        // }
+        // console.log(num);
+
+        // function gugudan( ) {
+        //     for (var i= 1; i <= 9;i++) {
+        //         console.log(`3 곱하기 ${i}는 ${3 * i} 입니다.`);
+        //         //3 x 1 = 3
+        //         //3 x 2 = 6
+        //         //3 x 3 = 9
+        //         //3 x 4 = 12
+        //     }
+        // }
+        //     gugudan();
+
+
+        //함수 선언문
+        // function myClass() {
+        //     document.write("수지");
+        //     document.write("수연");
+        //     document.write("소민");
+        //     document.write("민선");
+        //     document.write("민경");
+        //     document.write("민정");
+        // }
+        // // myClass();
+
+        // //함수 표현식 : 함수를 변수에다 담는다.
+        // let ourClass = function funcName() {
+        //     console.log("우리반");
+        // }
+        // ourClass(); /``/변수명으로 호출해야한다. 함수명 아니라, 변수명
+
+        // function gugudan(dan) {
+        //     for(let i = 1; i <= 9; i++) {
+        //         console.log(dan * i);
+        //     }
+        // }
+        // gugudan("zz"); //아규먼트
+
+
+        // function sum(num1, num2) {
+        //     var result = num1 + num2;
+        //     return result; //함수 바깥에 실행
+        // }
+        // var result = sum(10, 20);
+        // console.log(result);
+        
+        
+        // //calc 함수 생성(선언)
+        // //파라미터는 함수 내부에서만 사용 가능한 변수다.
+        // function calc(num1, num2) {
+        //     var result = num1 + num2;
+        //     console.log(result);
+        // }
+        // //calc 함수 호출
+        // //어규먼트는 calc함수에서 활용할 데이터를 보낼수 있다.
+        // calc(1, 2);
+
+
+        // function drama(cha1, cha2, cha3) {
+        //     var character = cha1+ "," + cha2 + "그리고" + cha3;
+        //     return character;
+        // }
+        // var character = drama("선자", "한수", "솔로몬")
+        // console.log(character);
+
+        
+        //fruit 함수 선언, 호출
+        //파라미터 3, 아규먼트 3(스트링타입) 생성/매칭.
+        //fruit 함수가 할일은 과일이름 출력
+        // function fruitName(f1, f2, f3) {
+        //     var fruit = f1 + f2 + f3;
+        //     return fruit;
+        // }
+        // var fruit = fruitName("델라웨어", "블루베리", "바나나")
+        // console.log(fruit);
+
+
+
+        //Q "배고파" 를 변수명 feel에 할당
+        //myFeel 함수가 하는일: 출력문(console.log)
+        //feel이 "배고파"면 myFeel() 호출
+        // let feel = "배고파"; 
+        
+        // function myFeel() {
+        //         console.log(feel);
+        // }
+        // if (feel=== "배고파") {
+        //     myFeel();
+        // }
+        
+        // var koreanHello = ["반가워", "잘가", "또봐", "왔어?"];
+        // function hello(index) {
+        //     console.log(koreanHello[index]);
+        // }
+        // hello(3);
+        // hello(2);
+        // hello(1);
+        // hello(0);
+
+        var hisProfile = {
+            name: "강동원",
+            age: 41,
+            hometown: "부산",
+            job: "배우"
+        };
+        function kdw() {
+            console.log(hisProfile['name']);
+            console.log(hisProfile.age);
+            console.log(hisProfile.hometown);
+            console.log(hisProfile.job);
+        }
+        kdw();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
