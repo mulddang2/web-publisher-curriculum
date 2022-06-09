@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title">title</h1>
+    <p class="text">text-1</p>
+    <p class="text">text-2</p>
+    <script>
+        // id 속성값이 title인 요소 노드 선택하기
+        var title = document.querySelector("#title");
+        // class 속성값이 text인 요소 노드 모두 선택하기
+        var text = document.querySelectorAll(".text")
+        // p 태그에 해당하는 요소 노드 모두 선택하기
+        var textPtag = document.querySelectorAll("p")
+
+        console.log(title)
+        console.log(text[0])
+        console.log(textPtag[1])
+    </script>
+</body>
+</html>

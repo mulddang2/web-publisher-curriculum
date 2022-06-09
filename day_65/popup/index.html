@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>popup</title>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+            }
+            .box1 {
+                width: 200px;
+                height: 200px;
+                padding: 50px;
+                border: 20px solid #aaa;
+                background-color: #eee;
+                /* box-sizing: border-box; */
+                overflow: scroll;
+            }
+            .child {
+                width: 100%;
+                height: 1000px;
+            }
+        </style>
+    </head>
+    <body>
+        <button onclick="popup()">팝업</button>
+        <script>
+            function popup() {
+                window.open("popup.html", "팝업", "width=200, height=100, left=100, top=100"); //경로, 이름, 속성
+            }
+        </script>
+    </body>
+</html>

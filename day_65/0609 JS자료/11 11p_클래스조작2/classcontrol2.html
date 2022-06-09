@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            font-size: 72px;
+        }
+        .active {
+            width: 50vw;
+            color: palegoldenrod;
+            font-weight: bold;
+            font-style: italic;
+        }
+        .on {
+            background-color: tomato;
+        }
+    </style>
+</head>
+<body>
+    <p id="text" class="active">melixir</p>
+    <script>
+        const pEl = document.querySelector("p");
+        // 클래스명 active과 클래스명 on 추가 // 1초에 한번 토글실행
+        //setInterval(함수할일, 시간ms);
+        setInterval(function(){
+            pEl.classList.toggle("on")
+        }, 1000);
+
+    </script>
+</html>

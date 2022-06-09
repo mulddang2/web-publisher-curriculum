@@ -1,0 +1,65 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+body {
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+}
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    transition: all 1s ease;
+}
+.inner {
+    width: 1400px;
+    margin: 0 auto;
+}
+.headerwrap {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+ul.gnb {
+    display: flex;
+    align-items: center;
+}
+li:not(:first-child) {
+    margin-left: 50px;
+}
+main {
+    width: 100%;
+    height: 9999px;
+}
+.mainvisual {
+    width: 100%;
+    height: 800px;
+    background: url(images/bg.jpg) no-repeat center / cover;
+}
+.logo {
+    width: 143px;
+    height: 60px;
+    background-size: contain;
+    background-position: center;
+    text-indent: -9999px;
+    background-image: url(./images/logo_w.png);
+}
+header a {
+    color: #fff;
+}
+header.on ul li a {
+    color: #00b7b4;
+}
+header.on {
+    height: 120px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+header.on .logo {
+    background-image: url('./images/logo_m.png');
+}
+ul li a, header, .logo {
+    transition: all 1s ease;
+}

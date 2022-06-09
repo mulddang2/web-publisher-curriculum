@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="images/lu1.png" alt="황당루피" data-loopy="angry">
+    <img src="images/lu2.png" alt="웃는루피" data-loopy="smile">
+    <script>
+        var character = document.querySelectorAll("img");
+        console.log(character[0].dataset);
+        console.log(character[1].dataset);
+        var secimg = character[1].dataset.loopy = "루피";
+    </script>
+</body>
+</html>

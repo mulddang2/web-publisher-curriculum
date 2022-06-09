@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .active {
+            width: 50vw;
+            color: palegoldenrod;
+            font-size: 72px;
+            font-weight: bold;
+            font-style: italic;
+        }
+        .on {
+            background-color: tomato;
+        }
+    </style>
+</head>
+<body>
+    <p id="text">melixir</p>
+    <script>
+        const pEl = document.querySelector("p");
+        // 클래스명 active 추가
+        pEl.classList.remove("active"); //클래스명 active 삭제
+        pEl.classList.add("active");
+        pEl.classList.add("on");
+
+    </script>
+</html>
