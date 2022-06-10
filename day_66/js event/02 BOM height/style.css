@@ -1,0 +1,17 @@
+* { padding: 0; margin: 0;}
+
+.box1 div {
+    height: 1000px;
+}
+p {
+    font-weight: bold;
+    font-size: 18px;
+}
+u {
+    font-size: 14px;
+    color: red;
+}
+i {
+    font-size: 14px;
+    color: blue;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .box1 {
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            background-color: paleturquoise;
+            padding: 50px;
+            border: 10px solid #ddd;
+            overflow: scroll;
+            /* box-sizing: border-box; */
+        }
+    </style>
+</head>
+<body>
+    <div class="info">
+        height: 400<br>
+        padding: 50<br>
+        border: 10<br>
+        기본스크롤: -17
+    </div>
+    <div class="wrap">
+        <div class="box1">
+            <div class="layer">
+                1번박스<br>
+                <p class="box1_client"></p>
+                <u>clientHeight는 height + padding - 17</u>
+                <i>border-box로 처리시 보더값 빠짐(400-20-17)</i>
+                <p class="box1_offset"></p>
+                <u>offsetHeight는 height + padding + border</u>
+                <i>border-box로 처리시 패딩,보더값 빠진 원래 height</i>
+                <p class="box1_scroll"></p>
+                <u>scrollHeight는 자식height + padding</u>
+                <i>border-box시 변함없음</i>
+            </div>
+                
+            <div></div><!--자식-->
+        </div>
+        <div class="box2">
+            2번박스<br>
+            <p class="box2_client"></p>
+            <p class="box2_offset"></p>
+            <p class="box2_scroll"></p>
+
+        </div>
+        <div class="box3">
+            3번박스<br>
+            <p class="box3_client"></p>
+            <p class="box3_offset"></p>
+            <p class="box3_scroll"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
