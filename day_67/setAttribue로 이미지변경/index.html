@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <button class="btn">버튼</button>
+        <img src="./images/a.jpg" alt="">
+        <script>
+            //버튼을 클릭했을 때, 이미지가 a에서 b로 바뀐다.
+            //addEventListener, setAttribute
+            var btn = document.querySelector(".btn");
+            var img = document.querySelector("img");
+
+            btn.addEventListener("click", function () {
+                img.setAttribute("src", "./images/b.jpg");
+            });
+        </script>
+    </body>
+</html>

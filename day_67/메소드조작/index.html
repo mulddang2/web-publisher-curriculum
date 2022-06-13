@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <a href="http://www.naver.com" class="naverLink">네이버</a>
+        <script>
+            const aEl = document.querySelector("a");
+            const href = aEl.getAttribute("class"); //getAttribute(속성명)
+
+            aEl.setAttribute("href", "http://www.google.com"); //주소를 다시 셋팅
+            aEl.innerText = "구글";
+            aEl.setAttribute("target", "_blank");
+
+            //원래 있었던 attribute는 수정되며 
+            //없었던 attribute는 추가된다.
+        </script>
+    </body>
+</html>
