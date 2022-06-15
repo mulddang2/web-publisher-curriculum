@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>new Image()</title>
+    <style>
+        #wrap { width: 100%; height: 100vh; background-color: #aaa;}
+    </style>
+</head>
+<body>
+    <script>
+        var newImg = new Image();
+        console.log(newImg)
+        newImg.src = "images/cat1.jpg";//생성만 되어있는 상태
+        document.body.appendChild(newImg)
+
+        /*
+        new 키워드를 사용하여 Image()생성자 함수 사용가능 
+        생성자 함수는 앞자리를 대문자로 한다.
+        생성한 오브젝트에 { src: ""; }상태 // 변수명.src로 연결한다.(16번 라인)
+        */
+    </script>
+</body>
+</html>
