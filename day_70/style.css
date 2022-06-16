@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+#wrap {
+    width: 100%;
+}
+main {
+    width: 100%;
+}
+
+.visualimg {
+    height: 550px;
+    background: url('images/mainv_cafe.jpg') no-repeat center / cover;
+    color: #fff;
+    position: relative;
+}
+.visualimg h1 {
+    font-size: 48px;
+}
+.visualimg h2 {
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.visualimg > div {
+    position: absolute;
+    z-index: 3;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.visualimg::after {
+    content: '';
+    width: 100%;
+    height: 550px;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+ul.gnb li a {
+    text-transform: uppercase;
+}
+
+
+
+/**********header************/
+header {
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99;
+}
+.inner {
+    width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+ul.gnb {
+    display: flex;
+}
+/* li에 width를 주면, 딱 그만큼만 선택할 수 있어서 
+li a 에 padding을 주면 넓은 영역 선택 가능함 */
+ul.gnb li > a {
+    display: block;
+    padding: 20px 30px;
+    letter-spacing: -0.07em;
+}
+ul.gnb li:last-child a {
+    padding-right: 0;
+}
+
+header a {
+    color: #fff;
+}
+a.logo h1 {
+    width: 111px;
+    height: 50px;
+    background: url('images/logo_cage.png') no-repeat center / contain;
+    text-indent: -999px;
+}
+li.hovermenu {
+    position: relative;
+}
+ul.gnb li a.drop {
+    /* display: none; */
+    width: 100%;
+    padding: 10px 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.322);
+}
+ul.dropmenu {
+    /* display: none; */
+    position: absolute;
+    transition: opacity 1s ease;
+    opacity: 0;
+}
+li.hovermenu:hover .dropmenu {
+    /* display: block; */
+    opacity: 1;
+
+}
