@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테스트</title>
+    <style>
+        .mainmenu {
+            width: 100%;
+            height: 50px;
+            background-color: red;
+        }
+        .submenu {
+            width: 100%;
+            height: 150px;
+            background-color: orange;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="mainmenu"></div>
+    <div class="submenu"></div>
+    <script>
+        
+        var main = document.querySelector(".mainmenu"),
+        sub = document.querySelector(".submenu")
+
+        main.addEventListener("mouseenter", function(){
+            sub.style.display = "block";
+        })
+        main.addEventListener("mouseout", function(){
+            sub.style.display = "none";
+        })
+    
+    
+    
+    </script>
+</body>
+</html>
