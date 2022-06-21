@@ -1,0 +1,66 @@
+#wrap {
+    width: 800px;
+    position: relative;
+}
+.itemwrap {
+    width: 800px;
+    height: 440px;
+    position: relative;
+}
+.item {
+    width: 800px;
+    height: 440px;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 300ms ease;
+}
+.thwrap {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+}
+.item:nth-of-type(1), .th:nth-of-type(1) {
+    background-color: papayawhip;
+}
+.item:nth-of-type(2), .th:nth-of-type(2) {
+    background-color: palegoldenrod;
+}
+.item:nth-of-type(3), .th:nth-of-type(3) {
+    background-color: paleturquoise;
+}
+.item:nth-of-type(4), .th:nth-of-type(4) {
+    background-color: palegreen;
+}
+.item:nth-of-type(5), .th:nth-of-type(5) {
+    background-color: palevioletred;
+}
+.item:nth-of-type(6), .th:nth-of-type(6) {
+    background-color: peachpuff;
+}
+.th {
+    width: 100px;
+}
+
+/* 이전 다음 버튼 */
+.prev {
+    float: left;
+    cursor: pointer;
+}
+.next {
+    float: right;
+    cursor: pointer;
+
+}
+
+
+/*~On이 붙으면*/
+.itemOn {
+    opacity: 1;
+    transition: opacity 300ms ease;
+}
+.thOn{
+    border: 1px solid #000;
+}
