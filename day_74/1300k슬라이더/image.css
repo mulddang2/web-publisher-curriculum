@@ -1,0 +1,232 @@
+/*메인슬라이더 이미지 추가*/
+div[class^="visual"] {
+    width: 100%;
+    height: 500px;
+}
+.visual01 {
+    background: url('./images/1.jpg') no-repeat center / cover;
+}
+.visual02 {
+    background: url('./images/2.jpg') no-repeat center / cover;
+}
+.visual03 {
+    background: url('./images/3.jpg') no-repeat center / cover;
+}
+.visual04 {
+    background: url('./images/4.jpg') no-repeat center / cover;
+}
+.visual05 {
+    background: url('./images/5.jpg') no-repeat center / cover;
+}
+.visual06 {
+    background: url('./images/6.jpg') no-repeat center / cover;
+}
+.visual07 {
+    background: url('./images/7.jpg') no-repeat center / cover;
+}
+.visual08 {
+    background: url('./images/8.jpg') no-repeat center / cover;
+}
+.visual09 {
+    background: url('./images/9.jpg') no-repeat center / cover;
+}
+.visual10 {
+    background: url('./images/10.jpg') no-repeat center / cover;
+}
+
+
+
+/* 온리투데이 */
+
+ul.onlyitemwrap .thbg1 {
+    width: 270px;
+    height: 270px;
+    background: url('./images/06only/th1.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+ul.onlyitemwrap .thbg2 {
+    width: 270px;
+    height: 270px;
+    background: url('./images/06only/th2.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+ul.onlyitemwrap .thbg3 {
+    width: 270px;
+    height: 270px;
+    background: url('./images/06only/th3.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+ul.onlyitemwrap .thbg4 {
+    width: 270px;
+    height: 270px;
+    background: url('./images/06only/th4.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* 랭킹 차트 */
+ul.rankitemwrap .thbg1 {
+    width: 270px;
+    height: 270px;
+    background: url('./images/07rank/1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+ul.rankitemwrap .thbg2 {
+    width: 270px;
+    height: 270px;
+    background: url('./images/07rank/2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+ul.rankitemwrap .thbg3 {
+    width: 270px;
+    height: 270px;
+    background: url('./images/07rank/3.jpg');
+    background-size: cover;
+    background-position: center;
+}
+ul.rankitemwrap .thbg4 {
+    width: 270px;
+    height: 270px;
+    background: url('./images/07rank/4.jpg');
+    background-size: cover;
+    background-position: center;
+}
+ul.rankitemwrap .thbg5 {
+    width: 270px;
+    height: 270px;
+    background: url('./images/07rank/5.gif');
+    background-size: cover;
+    background-position: center;
+}
+ul.rankitemwrap .thbg6 {
+    width: 270px;
+    height: 270px;
+    background: url('./images/07rank/6.jpg');
+    background-size: cover;
+    background-position: center;
+}
+ul.rankitemwrap .thbg7 {
+    width: 270px;
+    height: 270px;
+    background: url('./images/07rank/7.jpg');
+    background-size: cover;
+    background-position: center;
+}
+ul.rankitemwrap .thbg8 {
+    width: 270px;
+    height: 270px;
+    background: url('./images/07rank/8.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* 쇼핑찬스 */
+.chance .thbg1 {
+    width: 300px;
+    height: 300px;
+    background: url('./images/09chance/1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.chance .thbg2 {
+    width: 300px;
+    height: 300px;
+    background: url('./images/09chance/2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.chance .thbg3 {
+    width: 300px;
+    height: 300px;
+    background: url('./images/09chance/3.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.chance .thbg4 {
+    width: 300px;
+    height: 300px;
+    background: url('./images/09chance/4.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* 쇼핑 어드바이스 */
+ul.adviceitem .thbg1 {
+    width: 380px;
+    height: 226px;
+    background: url('./images/11advice/1.jpg') no-repeat center / cover;
+    /* c i r p / s */
+}
+ul.adviceitem .thbg2 {
+    width: 380px;
+    height: 226px;
+    background: url('./images/11advice/2.jpg') no-repeat center / cover;
+    /* c i r p / s */
+}
+ul.adviceitem .thbg3 {
+    width: 380px;
+    height: 226px;
+    background: url('./images/11advice/3.jpg') no-repeat center / cover;
+    /* c i r p / s */
+}
+ul.adviceitem .thbg4 {
+    width: 380px;
+    height: 226px;
+    background: url('./images/11advice/4.jpg') no-repeat center / cover;
+    /* c i r p / s */
+}
+ul.adviceitem .thbg5 {
+    width: 380px;
+    height: 226px;
+    background: url('./images/11advice/5.jpg') no-repeat center / cover;
+    /* c i r p / s */
+}
+ul.adviceitem .thbg6 {
+    width: 380px;
+    height: 226px;
+    background: url('./images/11advice/6.jpg') no-repeat center / cover;
+    /* c i r p / s */
+}
+
+.cokth.thbg1 {
+    background: url('./images/17cok/1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.cokth.thbg2 {
+    background: url('./images/17cok/2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.cokth.thbg3 {
+    background: url('./images/17cok/3.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* section class="brandweek */
+div[class*=weekbg] {
+    width: 382px;
+    height: 226px;
+}
+.brandweek .weekbg01 {
+    background: url('./images/19week/1.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.brandweek .weekbg02 {
+    background: url('./images/19week/2.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.brandweek .weekbg03 {
+    background: url('./images/19week/3.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}

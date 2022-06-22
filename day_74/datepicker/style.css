@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+header {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 0;
+    z-index: 100;
+}
+.inner {
+    width: 1720px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid #000; */
+}
+a.logo h1 {
+    width: 142px;
+    height: 16px;
+    background: url('img/hmj_logo.png') no-repeat center / contain;
+    text-indent: -9999px;
+}
+ul.gnb {
+    display: flex;
+}
+ul.gnb li a {
+    width: 100%;
+    height: 100px;
+    display: block;
+    line-height: 100px;
+    text-transform: uppercase;
+    color: #fff;
+}
+ul.gnb li:not(:last-child) a {
+    padding-right: 70px;
+}
+
+section.visual {
+    width: 100%;
+    height: 85vh;
+    background: url('img/bg.jpg') no-repeat center / cover;
+    position: relative;
+}
+
+/* input style */
+#checkin, #checkout {
+    width: 300px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: transparent;
+    border: 1px solid #dbdbdb;
+    margin-top: 10px;
+    padding-left: 10px; /*커서가 딱 붙어 있어서 패딩 주고 너비 조절함*/
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+
+
+}
+#checkin:focus,
+#checkout:focus {
+    outline: none;
+}
+#checkin::placeholder,
+#checkout::placeholder,
+label {
+    /*인풋은 글꼴을 직접 지정해야함 */
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #dbdbdb;
+}
+#checkin::placeholder,
+#checkout::placeholder {
+    color: #a3a3a3;
+    font-size: 14px;
+    font-weight: 400;
+}
+label {
+    color: #dbdbdb;
+}
+
+section.contents {
+    text-align: center;
+}
+.reserve {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 50px 80px 70px;
+}
+.reserve h2 {
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+.reserveInput {
+    width: 658px;
+    display: flex;
+    justify-content: space-between;
+}

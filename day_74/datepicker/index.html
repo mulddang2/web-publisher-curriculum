@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>    
+    <!-- 제이쿼리 불러오기-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <link rel="stylesheet" href="datepicker-ui.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div class="inner">
+                <a href="#" class="logo">
+                    <h1>해맞이하우스</h1>
+                </a>
+                <ul class="gnb">
+                    <li><a href="#">service</a></li>
+                    <li><a href="#">cafeteria</a></li>
+                    <li><a href="#">room</a></li>
+                    <li><a href="#">direction</a></li>
+                    <li><a href="#">reservation</a></li>
+                    <li><a href="#">community</a></li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <section class="visual">
+                <div class="reserve">
+                    <h2>언제 떠날까요?</h2>
+                    <div class="reserveInput">
+                        <div>
+                            <label for="checkin">체크인<br></label>
+                            <input type="text" id="checkin" placeholder="-년 -월 -일" class="datepicker">
+                        </div>
+                        <div>
+                            <label for="checkout">체크아웃<br></label>
+                            <input type="text" id="checkout" placeholder="-년 -월 -일" class="datepicker">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="contents">
+                <h1>contents</h1>
+            </section>
+        </main>
+    </div>
+    <input class="datepicker">
+    <script src="script.js"></script>
+</body>
+</html>
