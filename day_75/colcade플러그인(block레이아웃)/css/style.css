@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+h1 {
+    margin: 130px 0 75px;
+    text-align: center;
+}
+img {
+    width: 100%;
+    padding-bottom: -4px;
+}
+
+/*디폴트(네 줄 정렬)*/
+.grid {
+    display: flex;
+}
+.grid-col {
+    flex: 1;
+    padding: 10px 3px;
+}
+
+
+
+
+
+/*디폴트(세 줄 정렬)
+.grid-col--2 {
+    display: none;
+}
+*/
+
+/*디폴트(두 줄 정렬)
+.grid-col--2, .grid-col--3 {
+    display: none;
+}
+*/
+/*디폴트(한 줄 정렬)
+.grid-col--2, .grid-col--3, grid-col--4 {
+    display: none;
+}
+*/
+
+/* 반응형 대응 
+mini PC
+tablet
+mobile
+*/
+
+/*mini PC 768~ 1024*/
+@media screen and (min-width: 768px ) and ( max-width: 1024px ){
+    .grid-col--2 {
+        display: none;
+    }
+}
+/* tablet 480~ 767*/
+@media screen and (min-width: 480px ) and ( max-width: 767px ){
+    .grid-col--2, .grid-col--3 {
+        display: none;
+    }
+}
+
+/*mobile */
+@media (max-width: 479px) {
+    .grid-col--2, .grid-col--3, .grid-col--4 {
+        display: none;
+    }
+}
