@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+div {
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    display: inline;
+}
+.grid-container {
+    display: grid;
+    grid-gap: 0px;
+    grid-template-rows: 100px 100px;
+    grid-template-columns: 100px 100px;
+}

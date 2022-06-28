@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G R I D area</title>
+    <link rel="stylesheet" href="default.css">
+    <link rel="stylesheet" href="grid.css">
+    <style>
+        #grid-container {
+            height: 100vh;
+        }
+        .fix {
+            position: fixed;
+            right: 0;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            background-color: rgba(255,255,255,.7);
+        }
+        .fix div {
+            padding: 10px;
+            text-align: center;
+            border-right: 1px solid #000;
+        }
+        .fix h1 {
+            font-size: 28px;
+        }
+        .fix h1[class^=value] {
+            color:blueviolet;
+        }
+        div[class^=item] {
+            border: 1px solid #000;
+        }
+        .item1 {
+            align-self: stretch;
+        }
+    </style>
+</head>
+<body>
+    <div class="fix">
+        <div>
+            <h1>(열)align-items</h1>
+            <button onclick="alignItems1()" >start</button>
+            <button onclick="alignItems2()" >center</button>
+            <button onclick="alignItems3()" >end</button>
+            <button onclick="alignItems4()" >stretch</button>
+            <h1 class="value1"></h1>
+        </div>
+        <div>
+            <h1>(행)justify-items</h1>
+            <button onclick="justifyItems1()">start</button>
+            <button onclick="justifyItems2()">center</button>
+            <button onclick="justifyItems3()">end</button>
+            <button onclick="justifyItems4()">stretch</button>
+            <h1 class="value3"></h1>
+        </div>
+        <div>
+            <h1>(item1) align-self</h1>
+            <button onclick="alignSelf1()" >start</button>
+            <button onclick="alignSelf2()" >center</button>
+            <button onclick="alignSelf3()" >end</button>
+            <button onclick="alignSelf4()" >stretch</button>
+            <h1 class="value2"></h1>
+        </div>
+        <div>
+            <h1>(item1) justify-self</h1>
+            <button onclick="justifySelf1()">start</button>
+            <button onclick="justifySelf2()">center</button>
+            <button onclick="justifySelf3()">end</button>
+            <button onclick="justifySelf4()">stretch</button>
+            <h1 class="value4"></h1>
+        </div>
+        <div>
+            <h1>(레이아웃) justify-content</h1>
+            <button onclick="justifyContent1()">flex-start</button>
+            <button onclick="justifyContent2()">center</button>
+            <button onclick="justifyContent3()">flex-end</button>
+            <button onclick="justifyContent4()">space-between</button>
+            <button onclick="justifyContent5()">space-around</button>
+            <button onclick="justifyContent6()">space-evenly</button>
+            <h1 class="value5"></h1>
+        </div>
+        <div>
+            <h1>(레이아웃) align-content</h1>
+            <button onclick="alignContent1()">flex-start</button>
+            <button onclick="alignContent2()">center</button>
+            <button onclick="alignContent3()">flex-end</button>
+            <button onclick="alignContent4()">space-between</button>
+            <button onclick="alignContent5()">space-around</button>
+            <button onclick="alignContent6()">space-evenly</button>
+            <h1 class="value6"></h1>
+        </div>
+    </div>
+
+    <!-- 그리드 레이아웃-->
+    <div id="grid-container" class="grid-area">
+        <div class="item1">
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+        </div>
+        <div class="item2">item-2item-2item-2item-2</div>
+        <div class="item3">item-3</div>
+        <div class="item4">item-4</div>
+        <div class="item5">item-5</div>
+        <div class="item6">item-6</div>
+        <div class="item7">item-7</div>
+        <div class="item8">item-8</div>
+        <div class="item9">item-9</div>
+    </div>
+
+    <script src="grid.js"></script>
+</body>
+</html>

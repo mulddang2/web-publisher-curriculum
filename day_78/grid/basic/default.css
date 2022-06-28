@@ -1,0 +1,68 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    line-height: 150%;
+}
+.tips {
+    width: 500px;
+    height: 90vh;
+    overflow-y: scroll;
+    padding: 20px;
+    box-sizing: border-box;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    background-color: rgba(255,255,255, .5);
+}
+.tips p {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px dotted #000;
+}
+.tips p span {
+    background-color: rebeccapurple;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 2px 10px;
+    margin-left: 10px;
+}
+
+/* 그리드 컨테이너 default */
+#grid-container {
+    display: grid;
+    /* height: 100vh; */
+    gap: 1px;
+}
+div[class^=item] {
+    display: inline;
+}
+.item1 {
+    background-color:palegoldenrod;
+}
+.item2 {
+    background-color:palegreen;
+}
+.item3 {
+    background-color:paleturquoise;
+}
+.item4 {
+    background-color:palevioletred;
+}
+.item5 {
+    background-color:papayawhip;
+}
+.item6 {
+    background-color:peachpuff;
+}
+.item7 {
+    background-color:palegoldenrod;
+}
+.item8 {
+    background-color:palegreen;
+}
+.item9 {
+    background-color:paleturquoise;
+}

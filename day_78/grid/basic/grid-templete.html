@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G R I D</title>
+    <link rel="stylesheet" href="default.css">
+    <link rel="stylesheet" href="grid.css">
+</head>
+<body>
+    <div id="grid-container">
+        <div class="item1">item-1</div>
+        <div class="item2">item-2item-2item-2item-2</div>
+        <div class="item3">item-3</div>
+        <div class="item4">item-4</div>
+        <div class="item5">item-5</div>
+        <div class="item6">item-6</div>
+        <div class="item7">item-7</div>
+        <div class="item8">item-8</div>
+        <div class="item9">item-9</div>
+    </div>
+    <!-- grid-template- -->
+    <div class="tips">
+        <h3>grid-template-</h3>
+        <p>
+            grid-template-columns: 1fr 1fr 1fr;<span>3행</span><br>
+            grid-template-rows: 1fr 1fr 1fr;<span>3열</span><br>
+            열 방향의 경우 컨테이너에 height가 지정되어 있어야 함.
+            <br>
+            <button onclick="runCode5()">반응형 단위 fr</button>
+        </p>
+        <p>
+            grid-template-columns: 2fr 1fr 1fr;<span>4행 중 2행1행1행</span><br>
+            grid-template-rows: 2fr 1fr 1fr; <span>4열 중 2열1열1열</span><br>
+            <button onclick="runCode6()">반응형 단위 fr 2</button>
+        </p>
+        <h3>grid-area</h3>
+        <p>
+                grid-template-columns: repeat(3, 130px);<span>130씩3행</span><br>
+                grid-template-rows: repeat(4, 130px);<span>130씩4열</span><br><br>
+            .item1 { grid-column: 1 / 4 } <span>①행 1번째줄부터 4번째줄까지</span><br>
+            .item2  grid-row: 2 / 4 <span>②열 2번째줄부터 4번째줄까지</span><br>
+            .item3 { grid-column : 2 / span 2 } <span>③행 2번째줄부터 2칸</span><br>
+            .item6 { grid-column : 1 / span 3 } <span>⑥행 1번째줄부터 3칸</span><br><br>
+            <button onclick="runCode7()">그리드 아리아</button>
+        </p>
+    </div>
+    <script src="grid.js"></script>
+</body>
+</html>
