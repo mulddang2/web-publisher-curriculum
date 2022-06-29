@@ -1,0 +1,50 @@
+/*행2, 열2*/
+.grid-template-2 {
+	grid-template-columns: 150px 250px;
+	grid-template-rows: 300px 100px;
+}
+
+/* repeat */
+.grid-template-repeat {
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+}
+
+/* minmax */ 
+.grid-template-minmax {
+    grid-template-columns: repeat(2, minmax(300px, 400px));
+    grid-template-rows: repeat(3, minmax(150px, 200px));
+}
+/* first, second */
+.grid-template-naming {
+    grid-template-columns: [first] 350px [second] 150px;
+    grid-template-rows: [first] 550px [second] 100px;
+}
+/* fraction */
+.grid-template-fraction {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+/* fraction2 */
+.grid-template-fraction2 {
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr;
+}
+
+/****************************** grid-area ************************/
+.grid-area {
+    grid-template-columns: repeat(3, 130px);
+	grid-template-rows: repeat(4, 130px);
+}
+.grid-area .item1 {
+	grid-column: 1 / 4;
+}
+.grid-area .item2 {
+	grid-row: 2 / 4;
+}
+.grid-area .item3 {
+	grid-column : 2 / span 2;
+}
+.grid-area .item6 {
+	grid-column : 1 / span 3;
+}
