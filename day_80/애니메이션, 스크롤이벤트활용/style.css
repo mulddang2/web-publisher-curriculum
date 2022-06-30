@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    list-style: none;
+}
+body {
+    width: 100%;
+    height: 5555px;
+}
+.startText {
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+}
+.startText.on {
+    display: block;
+}
+.ball1, .ball2 {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #000;
+    /* 애니메이션 */
+    /* 지속시간*/animation-duration: 700ms;
+    /* 지속여부 무한*/animation-iteration-count: infinite;
+    /*시작 - 끝 - 끝 - 시작 반복 */animation-direction: alternate;
+    
+    /*애니메이션동작 여부*/
+    /* animation-play-state: paused; */
+}
+.ball1 {
+    animation-name: size1;
+}
+.ball2 {
+    animation-name: size2;
+}
+.startText.on ~ div {
+    animation-play-state: running;
+}
+
+@keyframes size1 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+@keyframes size2 {
+    from {
+        width: 100%;
+    }
+}
