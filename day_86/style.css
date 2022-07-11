@@ -1,0 +1,133 @@
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    z-index: 99;
+}
+body {
+    background-color: #aaa;
+}
+header ul {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5%;
+}
+header a {
+    color: #fff;
+}
+
+/*//헤더 on클래스*/
+
+/*메인비쥬얼 */
+section.mainvisual {
+    width: 100%;
+    height: 6000px;
+    position: relative;
+}
+.sticky {
+    width: 100%;
+    height: 100vh;
+    position: sticky; /*기준이 부모기준 */
+    top: 0;
+    left: 0;
+}
+.bg {
+    width: 100%;
+    height: 100vh;
+    background: url('./images/bg.jpg') no-repeat center / cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    /* z-index가 -1이면 백그라운드 처리에 용이 */
+}
+.layer {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 1s;
+}
+.layer.dim {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+article {
+    color: #fff;
+    text-align: center;
+    letter-spacing: -1px;
+    height: 100vh;
+    position: relative;
+}
+.copies {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.copies h1 {
+    font-size: 52px;
+    margin-bottom: 50px;
+}
+.copies p {
+    font-size: 22px;
+}
+
+/*스크롤 이벤트따라 in & out */
+.motion1.in {
+    animation: notion1_in 350ms;
+}
+.motion1.out {
+    opacity: 0;
+    transition: opacity 350ms;
+}
+.maincopy {
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 1s, transform 1s;
+
+}
+.maincopy.in {
+    opacity: 1;
+    transform: translateY(0);
+}
+.body1, .body2 {
+    opacity: 0;
+    transform: translateY(-25px);
+    transition: opacity 300ms, transform 300ms;
+}
+.body1.in, .body2.in {
+    opacity: 1;
+    transform: translateY(0);
+}
+.body2 {
+    margin-top: 10px;
+}
+
+section.normal {
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+/* .motion1 의 애니메이션 */
+
+@keyframes notion1_in {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform:  translateY(0);
+    }
+}
