@@ -1,0 +1,42 @@
+body {
+  background-color: #efefef;
+}
+h1 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 5vw;
+  color: #efefef;
+  -webkit-text-stroke: 1px #000;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 클래스명 
+구조 
+splitting > span.word > span.char
+
+문장
+splitting
+단어
+span.word 
+글자
+span.char
+*/
+
+
+h1 .word .char {
+  animation: subject1 500ms;
+  animation-delay: calc(.5s + (.4s * var(--char-index)));
+
+  /*애니메이션 딜레이는 애니메이션의 실행 시작을 n초 있다가 실행하게 함. */
+}
+@keyframes subject1 {
+  from {
+    transform:scale(1);
+    color: burlywood
+  } to {
+    transform:scale(1.2);
+    color: powderblue;
+  }
+}

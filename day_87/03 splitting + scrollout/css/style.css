@@ -1,0 +1,95 @@
+body {
+  background-color: #efefef;
+}
+h1.splitting {
+  letter-spacing: -0.5px;
+  padding: 0px 3px;
+  margin-bottom: 25px;
+}
+h1.splitting .char {
+  transition: opacity 0.3s linear;
+  transition-delay: calc(20mc * var(--char-index));
+}
+.page {
+  width: 70%;
+  margin: 0 auto;
+}
+.page > div {
+  margin: 50px 0 150px;
+}
+.page img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 50px 0;
+}
+
+
+/* 클래스명 
+구조 
+subject$ words chars splitting animated > span.word > span.char
+
+문장
+subject$ words chars splitting animated
+단어
+span.word 
+글자
+span.char
+*/
+
+
+.subject1[data-scroll="in"] .word .char {
+  animation: subject1 100ms;
+  animation-delay: calc(.5s + (.1s * var(--char-index)));
+}
+@keyframes subject1 {
+  from {
+    transform:scale(1);
+  } to {
+    transform:scale(2);
+  }
+}
+
+
+.subject2[data-scroll="in"] .word .char {
+  animation: subject2 500ms;
+  animation-delay: calc(.5s + (.1s * var(--char-index)));
+}
+@keyframes subject2 {
+  from {
+    color: red;
+  } to {
+    color: blue;
+  }
+}
+.subject3[data-scroll="in"] .word .char {
+  animation: subject3 500ms;
+  animation-delay: calc(.5s + (.1s * var(--char-index)));
+}
+@keyframes subject3 {
+  from {
+    opacity: 0;
+  } to {
+    opacity: 1;
+  }
+}
+.subject4[data-scroll="in"] {
+  animation: subject4 2s infinite alternate;
+
+  /* 트렌스폼의 기준점 변경 */
+  transform-origin: left;
+}
+@keyframes subject4 {
+  /* from {
+    transform: rotate(45deg);
+  } to {
+    transform: rotate(0deg);
+
+  } */
+  
+  from {
+    transform: scale(1);
+  } to {
+    transform: scale(2);
+  }
+}
