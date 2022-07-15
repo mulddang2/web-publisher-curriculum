@@ -1,0 +1,31 @@
+/*모바일*/
+@media screen and (max-width: 767px) {
+}
+
+/*타블렛*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    ul.gnb li a {
+        font-size: 1rem;
+    }
+}
+
+/* pc */
+@media screen and (min-width: 1025px) {
+    ul.gnb li a {
+        font-size: clamp(1rem, 0.7143rem + 0.4464vw, 1.25rem);
+    }
+    
+}
+
+
+/* mini pc ( 1024~ 1300) */
+@media screen and (min-width: 1024px) and (max-width: 1300px) {
+    #header .header_inner ul.gnb {
+        width: 75%;
+        margin-left: 0;
+        background-color: red;
+    }
+    ul.gnb li {
+        width: fit-content;
+    }
+}
