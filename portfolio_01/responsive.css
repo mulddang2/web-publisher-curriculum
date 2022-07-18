@@ -1,0 +1,43 @@
+/*모바일*/
+@media screen and (max-width: 767px) {
+}
+
+/*타블렛*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    ul.gnb li a {
+        font-size: 1rem;
+    }
+}
+
+/* pc */
+@media screen and (min-width: 1501px) {
+    /* ul.gnb li a {
+        font-size: clamp(1rem, 0.7143rem + 0.4464vw, 1.25rem);
+    } */
+    
+}
+
+
+/* mini pc ( 1024~ 1300) */
+@media screen and (min-width: 1024px) and (max-width: 1324px) {
+    .header_top {
+        width: fit-content;
+        margin: 0 auto;
+    }
+    #header .header_top_inner ul.gnb {
+
+        background-color: red;
+    }
+    ul.util {
+        width: fit-content;
+    }
+    ul.util li:nth-child(2) {
+        margin: 0 0.3vw 0;
+    }
+    ul.gnb li a {
+        font-size: 1.5rem;
+    }
+    ul.util a {
+        font-size: 1.1rem;
+    }
+}

@@ -1,50 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>구조</title>
-</head>
-<body>
-    <div id="wrap">
-        <div id="header">
-            <div class="header_top"></div>
-            <ul class="header_drop">
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-            </ul>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <!-- <link rel="stylesheet" href="responsive.css"> -->
+        <title>구조</title>
+    </head>
+    <body>
+        <div id="wrap">
+            <div id="header">
+                <div class="header_top">
+                    <div class="header_top_inner">
+                        <h1>
+                            <a href="#">logo</a>
+                        </h1>
+                        <ul class="gnb">
+                            <li><a href="#">교회소개</a></li>
+                            <li><a href="#">목양과 훈련</a></li>
+                            <li><a href="#">선교와 나눔</a></li>
+                            <li><a href="#" class="on">다음세대와 청년</a></li>
+                            <li><a href="#">우리 복지재단</a></li>
+                            <li><a href="#">커뮤니티</a></li>
+                        </ul>
+                        <ul class="util">
+                            <li><a href="#">로그인</a></li>
+                            <li><a href="#">회원가입</a></li>
+                            <input class="search" type="text" />
+                            <a href="#">
+                                <img
+                                    src="./images/icon/magnifer.svg"
+                                    alt="돋보기아이콘"
+                                />
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header_drop">
+                    <ul class="header_drop_inner">
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li class="on"><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="quick_menu">
+                <div class="quick_box"></div>
+                <div class="move_top_btn">
+                    <a href="#"></a>
+                </div>
+            </div>
+
+            <div id="main">
+                <div class="mainvisual">
+                    <img src="./images/mainbg.png" alt="" />
+                    <ul>
+                        <li class="pager"><a href="#"></a></li>
+                        <li class="pager"><a href="#"></a></li>
+                        <li class="pager pager_current"><a href="#"></a></li>
+                    </ul>
+                </div>
+                <div class="content ct1">
+                    <div class="main_inner">
+                        <div class="main_inner_text">
+                            <div class="title_mini">
+                                <span>함께울고 함께웃는</span>
+                            </div>
+                            <div class="title_text first">
+                                <h2>분당우리교회</h2>
+                                <p class="title_desc">
+                                    온 땅이 하나님을 아는 기쁨으로 가득할때까지
+                                    예배의 기쁨을 향한 우리의 열정을 회복시켜
+                                    복음적인 가정 부흥과 사회 참여의 패러다임을
+                                    선도하기 원합니다.
+                                </p>
+                            </div>
+                            <ul>
+                                <li><b>예배의 감격이 있는</b>교회</li>
+                                <li><b>가정을 회복시키는</b>교회</li>
+                                <li><b>젊은이를 깨우는</b>교회</li>
+                                <li><b>세상을 변화시키는</b>교회</li>
+                            </ul>
+                        </div>
+                        <img src="./images/church.png" alt="본당사진">
+                    </div>
+                </div> <!--//ct1-->
+                <div class="content ct2"></div>
+                <div class="content ct3"></div>
+                <div class="content ct4"></div>
+                <div class="content ct5"></div>
+            </div>
+            <!--//main-->
+            <div id="footer">
+                <div class="footer_nav"></div>
+                <div class="footer_main"></div>
+            </div>
         </div>
-        <div class="quick_menu">
-            <div class="quick_box"></div>
-            <div class="move_top_btn">
-                <a href="#"></a>
-            </div>
-        </div>    
-
-        <div id="main">
-            <div class="mainvisual">
-                <img src="./images/mainbg.png" alt="">
-            </div>
-            <div class="content ct1">
-
-            </div>
-            <div class="content ct2">
-
-            </div>
-            <div class="content ct3"></div>
-            <div class="content ct4"></div>
-            <div class="content ct5"></div>
-        </div> <!--//main-->
-        <div id="footer">
-            <div class="footer_nav"></div>
-            <div class="footer_main"></div>
-        </div>
-    </div>
-</body>
+    </body>
 </html>
