@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap");
 :root {
-    --light-green: #83AE50;
-    --light-yellow: #F4EEDB;
+    --light-green: #83ae50;
+    --light-yellow: #f4eedb;
 }
 * {
     padding: 0;
@@ -10,7 +10,7 @@
     text-decoration: none;
 }
 html {
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: "Noto Sans KR", sans-serif;
     font-size: 10px;
 }
 #wrap {
@@ -24,8 +24,6 @@ html {
     /* border: 1px solid #000; */
     position: fixed;
     z-index: 99;
-
-
 }
 .header_top {
     width: 100%;
@@ -43,13 +41,14 @@ html {
     align-items: center;
 }
 .header_top_inner a {
-    color: #1E1E1E;
+    color: #1e1e1e;
 }
-h1 {
+h1 a {
     /* border: 1px solid #000; */
+    display: block;
     width: 10.94vw; /*210px*/
     height: 5.93vh; /*64px*/
-    background: url('./images/logo.png') no-repeat center /contain;
+    background: url("./images/logo.png") no-repeat center / contain;
     text-indent: -9999px;
     /* margin-right: 3.7vw;  */
 }
@@ -61,11 +60,10 @@ ul.gnb {
     text-align: center;
     position: relative;
     margin-right: 0.52vw;
-
 }
 ul.gnb li {
     width: 9.53vw;
-} 
+}
 ul.util {
     /* background-color: aqua; */
     width: fit-content;
@@ -73,7 +71,6 @@ ul.util {
     height: inherit;
     display: flex;
     align-items: center;
-
 }
 ul.util li:nth-child(2) {
     margin: 0 0.68vw;
@@ -86,12 +83,10 @@ ul.gnb a.on {
     color: #337752;
 }
 
-
-
 /*검색칸 */
 input.search {
     border: 0;
-    border-bottom: 1px solid #C2C2C2;
+    border-bottom: 1px solid #c2c2c2;
     outline: none;
     width: 4.9vw; /*94px*/
 }
@@ -108,48 +103,42 @@ input.search {
     /* position: relative; */
     padding-left: 21.3vw;
     box-sizing: border-box;
-
-} 
+}
 .header_drop_inner {
     width: 57.19vw;
     position: relative;
     box-sizing: border-box;
-    
 }
 .header_drop_inner li {
     width: 9.53vw; /*183px*/
     height: 100%;
     position: absolute;
-
 }
 .header_drop_inner li:nth-child(1) {
-    border-left: 1px solid #C0C0C0;
-    border-right: 1px solid #C0C0C0;
+    border-left: 1px solid #c0c0c0;
+    border-right: 1px solid #c0c0c0;
     left: 0;
-    
 }
 .header_drop_inner li:nth-child(2) {
-    border-right: 1px solid #C0C0C0;
+    border-right: 1px solid #c0c0c0;
     /* background-color: #337752; */
     left: 9.53vw;
-
-
 }
 .header_drop_inner li:nth-child(3) {
     /* background-color: #337752; */
-    border-right: 1px solid #C0C0C0;
-    left: 19.06vw; 
+    border-right: 1px solid #c0c0c0;
+    left: 19.06vw;
 }
 .header_drop_inner li:nth-child(4) {
-    border-right: 1px solid #C0C0C0;
+    border-right: 1px solid #c0c0c0;
     left: 28.59vw;
 }
 .header_drop_inner li:nth-child(5) {
-    border-right: 1px solid #C0C0C0;
+    border-right: 1px solid #c0c0c0;
     left: 38.13vw;
 }
 .header_drop_inner li:nth-child(6) {
-    border-right: 1px solid #C0C0C0;
+    border-right: 1px solid #c0c0c0;
     right: 0;
 }
 .header_drop_inner li.on {
@@ -173,7 +162,6 @@ input.search {
     width: 100%;
     margin-top: 7.59vh; /*82px*/
     display: inline-block;
-
 }
 .mainvisual {
     position: relative;
@@ -182,7 +170,6 @@ input.search {
 .mainvisual img {
     display: block;
     width: 100%;
-
 }
 
 /* 메인사진 페이저 */
@@ -193,16 +180,17 @@ input.search {
     transform: translateX(-50%);
     display: flex;
 }
-.mainvisual ul li.pager {
-    border: 0.05vw solid #DFDFDF;
+.mainvisual ul li.pager a {
+    display: inline-block;
+    border: 0.05vw solid #dfdfdf;
     background-color: #fff;
     border-radius: 50%;
     width: 1.04vw;
     height: 1.85vh;
-    z-index: 1;
+    z-index: 2;
     margin-right: 0.78vw; /*15px*/
 }
-.mainvisual li.pager.pager_current {
+.mainvisual li.pager.pager_current a {
     width: 3.13vw;
     height: 1.85vh;
     border: 0.05vw solid var(--light-green);
@@ -210,6 +198,21 @@ input.search {
     background-color: var(--light-green);
 }
 
+/*메인 레이아웃 */
+#main .content:nth-of-type(odd) {
+    background-color: #f6edd9;
+}
+#main .content {
+    height: 83.33vh; /*900px*/
+}
+
+/*content 공통 */
+div[class^=title] h2  {
+    font-size: 5rem;
+    font-weight: 700;
+    color: #333;
+    margin: 1.39vh 0 2.22vh;
+}
 
 
 /*  ct1 */
@@ -226,11 +229,14 @@ input.search {
 }
 .title_mini {
     width: fit-content;
-    border-bottom: 2px solid var(--light-green);
-    padding-bottom: 3px;
+    border-bottom: 0.19vh solid var(--light-green);
+    padding-bottom: 0.28vh;
 }
 .title_text.first h2 {
-    margin: 8px 0 12px;
+    margin: 0.74vh 0 1.11vh;
+}
+.ct1 .main_inner_text {
+    margin-top: 6.48vh;
 }
 .ct1 .main_inner_text ul {
     margin-left: 3.13vw;
@@ -240,54 +246,143 @@ input.search {
     color: #423737;
 }
 .ct1 .main_inner_text ul li::before {
-    content: '';
+    content: "";
     width: 0.16vw;
     height: 2.5vh;
-    background-color: var(--light-green);
     display: inline-block;
+    background-color: var(--light-green);
     margin-right: 0.47vw;
     vertical-align: bottom;
 }
-.ct1 .main_inner_text ul li {
-    /* border: 1px solid #000; */
-}
 .ct1 .main_inner_text ul li:not(:last-child) {
-    margin-bottom: 25px;
+    margin-bottom: 2.31vh;
 }
 .ct1 {
-    margin: 150px 0;
+    padding-top: 13.89vh; /*150px*/
 }
-.ct1 img {
+.ct1_img {
+    width: 36.93vw;
+    height: 55.56vh;
     margin-left: 12.6vw;
+    background: url("./images/church.png") no-repeat center / contain;
+    /* border: 1px solid #000; */
 }
 
-#main .content {
-    height: 83.33vh; /*900px*/
-}
 p.title_desc {
     width: 21.72vw;
     font-size: 1.5rem;
-    line-height: 22px;
+    line-height: 2.2rem;
     color: #000;
     font-weight: 300;
 }
 
-.title_text h2 {
-    font-size: 5rem;
-    font-weight: 700;
-    color: #333;
-}
 
-#main .content title_top{
+
+/* ct2 */
+.title_inner.ct2 {
+    padding-top: 11.02vh;
+}
+.title_inner {
+    width: 80.94vw;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid pink;
+}
+.title_center {
+    /* border: 1px solid #000; */
+    position: relative;
+    margin-bottom: 6.02vh; /*65px*/
     
 }
 
-#main .content more{
+.title_center_text span {
+    display: block;
+    border-bottom: 1px solid var(--light-green);
+    width: 90px;
+    margin: 0 auto;
+    font-size: 1.4rem;
+    color: var(--light-green)
+}
+.move_btn {
+    margin: 0 auto;
+    width: fit-content;
+
+}
+a.prev {
+    background: url('./images/icon/arrow_prev.svg') no-repeat center;
+    width: 31px;
+    height: 31px;
+    border: 1px solid #D9D9D9;
+    display: inline-block;
+    
+}
+a.next {
+    background: url('./images/icon/arrow_next.svg') no-repeat center;
+    width: 31px;
+    height: 31px;
+    border: 1px solid #D9D9D9;
+    display: inline-block;
+}
+/* 전체보기 글씨 */
+
+a.all {
+    text-decoration: underline;
+    color: #645656;
+    font-size: 2rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 81px;
+}
+
+/* ct2 설교영상 */
+.ct2 {
+    overflow: hidden;
+}
+.video_all {
+    width: 114.01vw;
+    /* height: 30.74vh; */
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
     
 }
 
-#main .content:nth-of-type(odd) {
-    background-color: #F6EDD9;
+.rectangle {
+    position: relative;
+    width: 26.56vw; /*510px*/
+    height: 17.29vw; /*332px*/
+    background: rgba(255, 255, 255, 0.29);
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.16);
+    box-sizing: border-box;
+    position: relative;
+}
+
+.video_desc {
+    display: flex;
+    height: 5.46vh;
+    color: #2E2D2D;
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin-left: 1vw;
+    align-items: center;
+}
+
+
+.video_img img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: -4px;
+}
+
+img.btn_play {
+    
+    width: 2.19vw;
+    height: 3.89vh;
+}
+#main .rectangle.active {
+    background: rgba(255, 255, 255, 0.29);
+    box-shadow: 2px 19px 25px 9px rgba(0, 0, 0, 0.16);
 }
 
 /*푸터*/
@@ -296,11 +391,10 @@ p.title_desc {
 }
 .footer_nav {
     height: 4.54vh; /*49px*/
-    border-top: 1px solid rgba(222, 222, 222, 0.83);;
-    border-bottom: 1px solid rgba(222, 222, 222, 0.83);;
+    border-top: 0.1rem solid rgba(222, 222, 222, 0.83);
+    border-bottom: 1px solid rgba(222, 222, 222, 0.83);
 }
 .footer_main {
     height: 25.46vh; /*275px*/
     background-color: var(--light-green);
 }
-
