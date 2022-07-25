@@ -1,8 +1,9 @@
 $( document ).ready( function() {
     $( '.gallery_all' ).slick( {
-      slidesToShow: 4,
+      slidesToShow: 3,
       autoplay: true,
-      autoplaySpeed: 1500
-
+      autoplaySpeed: 1500,
+      centerMode: true,
+      centerPadding: "300px",
     } );
   } );
