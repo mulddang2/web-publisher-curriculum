@@ -1,0 +1,12 @@
+* {
+    margin: 0;padding: 0;list-style: none;text-decoration: none;
+    box-sizing: border-box;
+}
+.box {
+    width: 100%;
+    aspect-ratio: 1 / 0.5625;
+    /* ratio = 비율 
+    height 값이 없어도 사용이 가능하다. */
+    border: 1px solid #000;
+    background: url('https://img.youtube.com/vi/Vtb_S-8Pjt4/maxresdefault.jpg') no-repeat center / cover;
+}

@@ -1,0 +1,25 @@
+/* ----- pc ----- */
+@media screen and (min-width: 1440px) and (max-width: 1920px){
+    /* 20에서 32사이*/
+    p {
+        font-size: clamp(1.25rem, -1rem + 2.5vw, 2rem);
+    }
+}
+
+/* ----- minipc ----- */
+@media screen and (min-width: 1024px) and (max-width: 1440px){
+    /* 24에서 28사이*/
+    p {
+        font-size: clamp(1.5rem, 0.8846rem + 0.9615vw, 1.75rem);
+    }
+}
+
+/* ----- tab ----- */
+@media screen and (min-width: 720px) and (max-width: 1024px){
+    /* 20에서 24사이*/
+}
+
+/* ----- mobile ----- */
+@media screen and (max-width: 720px){
+    /* 24에서 28사이*/
+}
