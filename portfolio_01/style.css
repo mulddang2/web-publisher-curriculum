@@ -36,7 +36,7 @@ html {
     height: 7.59vh; /*82px*/
     margin: 0 auto;
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     align-items: center;
 }
 .header_top_inner a:focus-visible {
@@ -162,7 +162,7 @@ input.search {
 
 /* 퀵메뉴 */
 .quick_menu {
-    position: fixed;
+    position: absolute;
     right: 0;
     top: 13.89vh; /*150px*/
     width: 6.46vw; /*124px*/
@@ -203,6 +203,7 @@ input.search {
     height: 60px;
     position: absolute;
     bottom: -7.3vh;
+    cursor: pointer;
     
 }
 .move_top_btn img {
@@ -256,6 +257,10 @@ input.search {
 }
 #main .content {
     height: 83.33vh; /*900px*/
+}
+.ct2, .ct4 {
+    overflow: hidden;
+    padding-bottom: 45px;
 }
 
 /*content 공통 */
@@ -354,29 +359,36 @@ p.title_desc {
     color: var(--light-green);
     text-align: center;
     white-space: nowrap;
-}
-.move_btn {
     margin: 0 auto;
     width: fit-content;
 }
-a.prev:hover,
-a.next:hover {
+
+
+
+
+/* ---- 클래스명 ct2_ 를 사용한 선택자 ----- */
+a.ct_prev.prev:hover,
+a.ct_next.next:hover {
     border: 1px solid #333;
+    width: 31px;
+    height: 31px;
 }
-a.prev {
+a.ct_prev.prev {
     background: url("./images/icon/arrow_prev.svg") no-repeat center;
     width: 31px;
     height: 31px;
     border: 1px solid #d9d9d9;
     display: inline-block;
 }
-a.next {
+a.ct_next.next {
     background: url("./images/icon/arrow_next.svg") no-repeat center;
     width: 31px;
     height: 31px;
     border: 1px solid #d9d9d9;
     display: inline-block;
 }
+
+
 
 /* 전체보기 글씨 */
 
@@ -396,11 +408,8 @@ a.all:hover {
 /* ct2 */
 
 /* ct2 설교영상 */
-.ct2 {
-    overflow: hidden;
-}
 .video_all {
-    width: 114.01vw;
+    /* width: 114.01vw; */
     /* height: 30.74vh; */
     display: flex;
     justify-content: space-between;
@@ -408,25 +417,26 @@ a.all:hover {
 }
 /*설교영상 컨텐츠 */
 .rectangle {
-    width: 26.56vw; /*510px*/
-    height: 17.29vw; /*332px*/
+    /* width: 26.56vw; 510px */
+    /* height: 17.29vw; 332px */
     background: rgba(255, 255, 255, 0.29);
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.16);
     box-sizing: border-box;
     position: relative;
+    margin: 0 10px 20px;
+
 }
 .rectangle a {
     width: 100%;
-    height: 100%;
+    border: 1px solid #000;
+    display: block;
+    height: 0;
+    padding-bottom: calc(100% * 332/510);
 }
-.rectangle .video_box {
-    width: 26.56vw;
-    height: 14.22vw;
-    position: relative;
-}
+
 .video_img {
-    width: 26.56vw;
-    height: 14.22vw;
+    width: 100%;
+    /* height: 14.22vw; */
     position: absolute;
     top: 0vh;
     left: 0vw;
@@ -435,7 +445,7 @@ a.all:hover {
     width: 2.2vw;
     height: 2.2vw;
     position: absolute;
-    bottom: -1.1vw;
+    bottom: 4.17vh;
     right: 0.99vw;
 }
 .video_playbtn img {
@@ -443,18 +453,20 @@ a.all:hover {
     height: 100%;
 }
 .video_desc {
-    display: flex;
-    height: 3.07vw; /*59px*/
     color: #2e2d2d;
     font-size: 1.6rem;
     font-weight: 300;
     margin-left: 1vw;
-    align-items: center;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 1.39vh;
 }
 
 .video_img img {
     width: 100%;
     height: 100%;
+    object-fit: contain;
+
     /* margin-bottom: -4px; */
 }
 
@@ -517,9 +529,7 @@ ul.news li:hover {
 }
 
 /* ct4 갤러리 컨텐츠 */
-.content.ct4 {
-    overflow: hidden;
-}
+
 /* .gallery_all {
     width: 137.92vw;
     display: flex;
@@ -530,26 +540,35 @@ ul.news li:hover {
     margin-right: 4.81vh;
     margin: 10px !important;
 }
-.gallery_box img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.29);
-    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.16);
-}
+
 .gallery_box.active {
     box-shadow: 2px 19px 25px 9px rgba(0, 0, 0, 0.16);
 } */
 .gallery_box {
-    margin: 10px !important;
+    margin: 0px 10px;
+    /* padding: 10px; */
+}
+.gallery_box.slick-slide a {
+    display: block;
+    width: 100%;
+    height: 0;
+    padding-bottom: calc(100% * 427/640);
+    /* border: 1px solid red; */
 }
 .gallery_box img {
-    object-fit: cover;
-    width: 100% !important;
-    height: 12.00vw !important;
+    object-fit: contain;
+    width: 100%;
     background: rgba(255, 255, 255, 0.29);
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.16);
 }
+.slick-current.gallery_box img {
+    box-shadow: 0px 11px 11px 2px rgba(23, 23, 23, 0.5);
+    /* box-shadow: 2px 19px 25px 9px rgba(0, 0, 0, 0.16); */
+}
+.gallery_all .slick-list .slick-track {
+    height: 20.00vw;
+}
+
 
 /* ct5 게시판 컨텐츠 */
 .board_box1 {
@@ -638,8 +657,8 @@ ul.news li:hover {
     color: var(--light-green);
 }
 .footer_main {
-    height: 25.46vh; /*275px*/
     background-color: var(--light-green);
+    padding-bottom: 20px;
 }
 #footer ul {
     width: 100%;
@@ -685,13 +704,13 @@ ul.news li:hover {
 .copyright {
     font-weight: 400;
     font-size: 12px;
-    line-height: 1.85vh;
+    line-height: 2.85vh;
 
     color: #ffffff;
 }
 
 .copyright {
-    margin-top: 16px;
+    margin-top: 1.48vh;
 }
 .footer_content .menu a {
     color: #ffffff;

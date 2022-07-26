@@ -18,7 +18,7 @@
         font-size: clamp(1.8rem, 1.04vw, 2rem);
     }
     ul.util a {
-        font-size: clamp(1.1rem, 0.68vw, 1.3rem);
+        font-size: clamp(1.2rem, 0.68vw, 1.3rem);
     }
     .header_drop_inner li a {
         font-size: clamp(1.6rem, 0.94vw, 1.8rem);
@@ -45,12 +45,17 @@
     ul.util li:nth-child(2) {
         margin: 0 0.3vw 0;
     }
-    ul.gnb li a, .header_drop_inner li a  {
+    .header_drop_inner li a  {
         font-size: clamp(1.4rem, 0.73vw, 1.5rem);
-        /* font-size: 1.4rem; */
+        /* font-size: clamp(1.6rem, 0.89vw, 1.7rem); */
+        
+    }
+    ul.gnb li a {
+        font-size: clamp(1.7rem, 0.89vw, 1.8rem);
     }
     ul.util a {
         font-size: 1.1rem;
+        font-size: clamp(1.15rem, 0.68vw, 1.3rem);
     }
     ul.util a img {
         width: 13px;
@@ -60,25 +65,27 @@
         font-size: 1.2rem;
     }
     .more_btn {
-        width: 11px;
+        width: 11px; 
         height: 11px;
-        top: 0.83vh;
+        top: 0.68vw;
         right: 0.52vw;
     }
     .move_top_btn {
-        width: 40px;
-        height: 40px;
+        width: 2.08vw;
+        height: 2.08vw;
         bottom: -4.7vh;
         
     }
     .move_top_btn img {
-        width: 40px;
+        width: 2.08vw;
         height: 40px;
     }
     div[class^=quick0] img {
-        width: 42px;
-        height: 44px;
-        background-size: contain;
+        /* width: 2.19vw; */
+        /* height: 2.29vw; */
+        background-size: cover;
+        width: 2.4vw;
+        height: 2.29vw;
     }
     div[class^=quick0] span {
         font-size: 1.2rem;
