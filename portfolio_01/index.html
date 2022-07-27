@@ -5,13 +5,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="style.css" />
-        <link rel="stylesheet" href="responsive.css">
-        <!--슬릭슬라이더 cdn-->
-        <link rel="stylesheet" href="slick.css">
-        <link rel="stylesheet" href="slick-theme.css">
-        <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
-        <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/> -->
-
+        <link rel="stylesheet" href="responsive.css" />
+        <!--슬릭슬라이더-->
+        <link rel="stylesheet" href="slick.css" />
+        <link rel="stylesheet" href="slick-theme.css" />
         <title>구조</title>
     </head>
     <body>
@@ -23,12 +20,12 @@
                             <a href="#">logo</a>
                         </h1>
                         <ul class="gnb">
-                            <li><a href="#">교회소개</a></li>
-                            <li><a href="#">목양과 훈련</a></li>
-                            <li><a href="#">선교와 나눔</a></li>
-                            <li><a href="#" class="on">다음세대와 청년</a></li>
-                            <li><a href="#">우리 복지재단</a></li>
-                            <li><a href="#">커뮤니티</a></li>
+                            <li><a class="menu_title_1" href="#">교회소개</a></li>
+                            <li><a class="menu_title" href="#">목양과 훈련</a></li>
+                            <li><a class="menu_title" href="#">선교와 나눔</a></li>
+                            <li><a class="menu_title" href="#">다음세대와 청년</a></li>
+                            <li><a class="menu_title" href="#">우리 복지재단</a></li>
+                            <li><a class="menu_title" href="#">커뮤니티</a></li>
                         </ul>
                         <ul class="util">
                             <li><a href="#">로그인</a></li>
@@ -82,7 +79,7 @@
                                 <li><a href="#">선교사역</a></li>
                             </div>
                         </ul>
-                        <ul class="Nextgen on">
+                        <ul class="Nextgen">
                             <div>
                                 <li><a href="#">주일학교</a></li>
                                 <li class="youth">
@@ -165,13 +162,32 @@
 
             <div id="main">
                 <div class="mainvisual">
-                    <a href="#"><img src="./images/mainbg.png" /></a>
-                    <ul>
-                        <li class="pager"><a href="#"></a></li>
-                        <li class="pager"><a href="#"></a></li>
-                        <li class="pager pager_current"><a href="#"></a></li>
-                    </ul>
+                    <div>
+                        <a href="#">
+                            <img src="./images/mainbg.png" />
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img src="./images/mainbg.png" />
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img src="./images/mainbg.png" />
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img src="./images/mainbg.png" />
+                        </a>
+                    </div>
                 </div>
+                <ul>
+                    <li class="pager"><a href="#"></a></li>
+                    <li class="pager"><a href="#"></a></li>
+                    <li class="pager pager_current"><a href="#"></a></li>
+                </ul>
                 <div class="content ct1">
                     <div class="inner">
                         <div class="inner_text">
@@ -217,88 +233,24 @@
                         </div>
                     </div>
                     <div class="video_all">
-                        <div class="rectangle">
-                            <a href="#">
-                                <div class="video_box">
-                                    <div class="video_img">
-                                        <img
-                                            src="./images/video_1.png"
-                                            alt=""
-                                        />
-                                    </div>
-                                    <div class="video_playbtn">
-                                        <img
-                                            src="./images/icon/btn_play.png"
-                                            alt=""
-                                        />
-                                    </div>
-                                </div>
-                                <div class="video_desc">
-                                    2022. 07. 06 새벽설교
-                                </div>
+                        <div class="video_th1 video_th">
+                            <a href="https://www.youtube.com/watch?v=K2NmoNYU1q4&list=PLn3gC0zxOsmyrtTEHNlYxos1Onae6DRWF&index=19" target="_blank">
+                                <img src="./images/video_1.png" alt="">
                             </a>
                         </div>
-
-                        <div class="rectangle">
-                            <a href="#">
-                                <div class="video_box">
-                                    <div class="video_img">
-                                        <img
-                                            src="./images/video_2.png"
-                                            alt=""
-                                        />
-                                    </div>
-                                    <div class="video_playbtn">
-                                        <img
-                                            src="./images/icon/btn_play.png"
-                                            alt=""
-                                        />
-                                    </div>
-                                </div>
-                                <div class="video_desc">
-                                    2022. 07. 08 수요설교
-                                </div>
+                        <div class="video_th2 video_th">
+                            <a href="https://www.youtube.com/watch?v=sVxbnb_9l4A&list=PLn3gC0zxOsmzIvC9JKPGiZKfy_V9j4X_a&index=4" target="_blank">
+                                <img src="./images/video_2.png" alt="">
                             </a>
                         </div>
-                        <div class="rectangle">
-                            <a href="#">
-                                <div class="video_box">
-                                    <!-- <div class="video_img">
-                                        <img
-                                            src="./images/video_3.png"
-                                            alt=""
-                                        />
-                                    </div> -->
-                                    <video src=""></video>
-                                    <div class="video_playbtn">
-                                        <img
-                                            src="./images/icon/btn_play.png"
-                                            alt=""
-                                        />
-                                    </div>
-                                </div>
-                                <div class="video_desc">
-                                    2022. 06. 26 주일설교
-                                </div>
+                        <div class="video_th3 video_th">
+                            <a href="https://www.youtube.com/watch?v=EtX-ZcM4h1Y&list=PLn3gC0zxOsmwrme5FuzqiY1FMpw6pGtiD&index=9" target="_blank">
+                                <img src="./images/video_3.png" alt="">
                             </a>
                         </div>
-                        <div class="rectangle">
-                            <a href="#">
-                                <div class="video_box">
-                                    <div class="video_img">
-                                        <img
-                                            src="./images/video_4.png"
-                                            alt=""
-                                        />
-                                    </div>
-                                    <div class="video_playbtn">
-                                        <img src="./images/icon/btn_play.png""
-                                        alt="" />
-                                    </div>
-                                </div>
-                                <div class="video_desc">
-                                    2022. 07. 08 금요설교
-                                </div>
+                        <div class="video_th4 video_th">
+                            <a href="https://www.youtube.com/watch?v=LB81MsKqiCw&list=PLn3gC0zxOsmzaoRGoRSSKBLoMH4n0IK-z&index=4" target="_blank">
+                                <img src="./images/video_4.png" alt="">
                             </a>
                         </div>
                     </div>
@@ -312,8 +264,9 @@
                                 <h2>우리 소식</h2>
                             </div>
                             <div class="move_btn">
-                                <a href="#" class="prev"></a>
-                                <a href="#" class="next"></a>
+                                <!-- ----- 클래스명 추가 ct2_ ----- -->
+                                <a href="#" class="news_prev ct_prev prev"></a>
+                                <a href="#" class="news_next ct_next next"></a>
                             </div>
                             <a href="#" class="all">
                                 <span>전체보기</span>
@@ -322,6 +275,37 @@
                     </div>
                     <div class="inner">
                         <ul class="news">
+                            <a href="#">
+                                <li>
+                                    <div class="new">NEW</div>
+                                    <div class="ct3_text">
+                                        <p class="news_title">
+                                            2022년 서리집사 임명
+                                        </p>
+                                        <p class="news_date">2021-12-31</p>
+                                    </div>
+                                </li>
+                            </a>
+                            <a href="#">
+                                <li>
+                                    <div class="ct3_text">
+                                        <p class="news_title">
+                                            12월 큐티공개강좌 강의안
+                                        </p>
+                                        <p class="news_date">2021-12-18</p>
+                                    </div>
+                                </li>
+                            </a>
+                            <a href="#">
+                                <li>
+                                    <div class="ct3_text">
+                                        <p class="news_title">
+                                            2022년 그리스도 중심 성경읽기 안내
+                                        </p>
+                                        <p class="news_date">2021-12-10</p>
+                                    </div>
+                                </li>
+                            </a>
                             <a href="#">
                                 <li>
                                     <div class="new">NEW</div>
@@ -364,8 +348,14 @@
                                 <h2>우리 갤러리</h2>
                             </div>
                             <div class="move_btn">
-                                <a href="#" class="gallery_prev ct_prev prev"></a>
-                                <a href="#" class="gallery_next ct_next next"></a>
+                                <a
+                                    href="#"
+                                    class="gallery_prev ct_prev prev"
+                                ></a>
+                                <a
+                                    href="#"
+                                    class="gallery_next ct_next next"
+                                ></a>
                             </div>
                             <a href="#" class="all">
                                 <span>전체보기</span>
@@ -624,7 +614,10 @@
         </div>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+        ></script>
         <script src="script.js"></script>
     </body>
 </html>

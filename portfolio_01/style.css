@@ -22,7 +22,10 @@ html {
     /* background-color: rgba(255, 255, 255, 0.93); */
     position: fixed;
     z-index: 99;
-    box-shadow: 0px 2px 5px rgb(0 0 0 / 10%)
+    box-shadow: 0px 2px 5px rgb(0 0 0 / 10%);
+    transition: height 200ms ease;
+
+
 }
 .header_top {
     width: 100%;
@@ -56,6 +59,8 @@ html {
     /* margin-right: 3.7vw;  */
 }
 ul.gnb {
+    background-color: #fff;
+    border: 0px;
     width: 57.19vw; /*1098px*/
     height: inherit;
     display: flex;
@@ -68,6 +73,10 @@ ul.gnb {
 }
 ul.gnb li {
     width: 9.53vw;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 ul.util {
     /* background-color: aqua; */
@@ -99,13 +108,19 @@ input.search {
 }
 /* 드롭 메뉴 */
 .header_drop {
-    visibility: hidden;
+    /* visibility: hidden; */
     width: 100vw;
-    height: 56.94vh; /*615px*/
+    /*height: 56.94vh; 615px*/
+    height: 0vh;
     display: flex;
     box-sizing: border-box;
     background-color: rgba(255, 255, 255, 0.93);
+    
 }
+/* .header_drop_inner.show {
+    display: flex;
+} */
+
 #header ul > div {
     padding-top: 1.85vh;
     
@@ -115,7 +130,10 @@ input.search {
     box-sizing: border-box;
     margin-left: 20.63vw; /*396px*/
     display: flex;
+    height: 100%;
+    /* display: none; */
     justify-content: space-between;
+    overflow: hidden;
 }
 .header_drop_inner ul {
     width: 9.53vw; /*183px*/
@@ -130,7 +148,7 @@ input.search {
     border-right: 1px solid #c0c0c0;
 }
 
-.header_drop_inner ul.on {
+.header_drop_inner ul:hover {
     border-top: 0.16vw solid #337752;
     background-color: #F4EEDB;
 } 
@@ -226,6 +244,38 @@ input.search {
 }
 
 /* 메인사진 페이저 */
+ul.slick-dots {
+    margin: 0 auto;
+    width: 50px;
+}
+.mainvisual .slick-dots li {
+    z-index: 99;
+    border: 1px solid red;
+    margin: 0 auto;
+    margin-right: 1.04vw;
+    border: 0.05vw solid #dfdfdf;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 0.78vw; /*15px*/
+    height: 0.78vw;
+
+
+}
+.slick-dots li button:before {
+    display: none;
+}
+#main .slick-dots li button {
+    width: 26.04vw;
+}
+.slick-dots li.slick-active {
+    width: 3vw;
+    height: 0.78vw; /*15px*/
+    border: 0.05vw solid var(--light-green);
+    border-radius: 11px;
+    background-color: var(--light-green);
+}
+
+
 .mainvisual ul {
     position: absolute;
     bottom: 1.15vw;
@@ -366,7 +416,7 @@ p.title_desc {
 
 
 
-/* ---- 클래스명 ct2_ 를 사용한 선택자 ----- */
+/* ---- 클래스명 ct_ 를 사용한 선택자 ----- */
 a.ct_prev.prev:hover,
 a.ct_next.next:hover {
     border: 1px solid #333;
@@ -406,77 +456,23 @@ a.all:hover {
 }
 
 /* ct2 */
+.video_th {
+    /* width: 26.56vw;
+    height: 14.22vw; */
+    width: 100%;
+    height: 100%;
+    margin: 0 0.52vw;
+}
+.video_all img {
+    width: 100%;
+} 
 
 /* ct2 설교영상 */
-.video_all {
-    /* width: 114.01vw; */
-    /* height: 30.74vh; */
-    display: flex;
-    justify-content: space-between;
-    box-sizing: border-box;
-}
-/*설교영상 컨텐츠 */
-.rectangle {
-    /* width: 26.56vw; 510px */
-    /* height: 17.29vw; 332px */
-    background: rgba(255, 255, 255, 0.29);
-    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.16);
-    box-sizing: border-box;
-    position: relative;
-    margin: 0 10px 20px;
 
-}
-.rectangle a {
-    width: 100%;
-    border: 1px solid #000;
-    display: block;
-    height: 0;
-    padding-bottom: calc(100% * 332/510);
-}
 
-.video_img {
-    width: 100%;
-    /* height: 14.22vw; */
-    position: absolute;
-    top: 0vh;
-    left: 0vw;
-}
-.video_playbtn {
-    width: 2.2vw;
-    height: 2.2vw;
-    position: absolute;
-    bottom: 4.17vh;
-    right: 0.99vw;
-}
-.video_playbtn img {
-    width: 100%;
-    height: 100%;
-}
-.video_desc {
-    color: #2e2d2d;
-    font-size: 1.6rem;
-    font-weight: 300;
-    margin-left: 1vw;
-    position: absolute;
-    bottom: 0;
-    margin-bottom: 1.39vh;
-}
-
-.video_img img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-
-    /* margin-bottom: -4px; */
-}
-
-#main .rectangle.active {
-    background: rgba(255, 255, 255, 0.29);
-    box-shadow: 2px 19px 25px 9px rgba(0, 0, 0, 0.16);
-}
 
 /* ct3 우리소식 컨텐츠 */
-.ct3 li {
+.news li {
     width: 25.68vw;
     height: 26.57vh;
     text-align: center;
@@ -523,7 +519,7 @@ li.ct3_active {
     border: 2px solid #83ae50;
     border-bottom: 4px solid #83ae50;
 }
-ul.news li:hover {
+.news li:hover {
     border: 1px solid #83ae50;
     border-bottom: 4px solid #83ae50
 }

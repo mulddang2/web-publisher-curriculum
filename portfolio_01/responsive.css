@@ -73,12 +73,12 @@
     .move_top_btn {
         width: 2.08vw;
         height: 2.08vw;
-        bottom: -4.7vh;
+        bottom: -5.7vh;
         
     }
     .move_top_btn img {
-        width: 2.08vw;
-        height: 40px;
+        width: 3.08vw;
+        height: 3.13vw;
     }
     div[class^=quick0] img {
         /* width: 2.19vw; */
