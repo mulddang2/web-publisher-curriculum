@@ -79,22 +79,8 @@ $(document).ready(function () {
         header = document.getElementById("header");
 
     var headerDrop = $(".header_drop");
-    var dropInner = $(".header_drop_inner");
     gnb.addEventListener("mouseenter", function () {
-        console.log("mouseenter");
-
-            headerDrop.stop().animate(
-                {
-                    height: vh(56.94),
-                },
-                300
-            );
-            // dropInner.stop().animate(
-            //     {
-            //         height: vh(56.94),
-            //     },
-            //     300
-            // );
+            headerDrop.stop().animate({height: vh(56.94)}, 300);
     });
     header.addEventListener("mouseleave", function () {
         headerDrop.stop().animate(
@@ -103,27 +89,6 @@ $(document).ready(function () {
             },
             300
         );
-        // dropInner.stop().animate(
-        //     {
-        //         height: vh(0),
-        //     },
-        //     300
-        // );
-        // dropInner.classList.remove("show"),
-            // drop.style.height = 0;
-            //list.style.display = 'none'
-            console.log("mouseleave");
-    });
-
-    var menuTitles = document.querySelectorAll(".menu_title");
-
-
-
-    menuTitles.forEach(function(menuTitle) {
-        menuTitle.addEventListener("mouseover", function(evt) {
-            console.log("evt" + evt);
-            //evt.currentTarget.
-        });
     });
 });
 
@@ -134,3 +99,6 @@ function vh(v) {
     );
     return (v * h) / 100;
 }
+
+// $(document).ready 가 3개가 불필요하게 중복되어 있음
+// 하나의 $(document).ready 에 모든 함수를 넣고 각각의 코드 위에 주석을 추가한다.

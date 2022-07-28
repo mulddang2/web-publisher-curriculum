@@ -3,9 +3,61 @@
 }
 
 /*타블렛*/
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    ul.gnb li a {
-        font-size: 1rem;
+@media screen and (min-width: 768px) and (max-width: 1269px) {
+    
+    .quick_menu {
+        display: none;
+    }
+    #main, #footer, .util {
+        visibility: hidden;
+    }
+    #header {
+        max-width: 1269px;
+        width: 100%;
+        height: 230px;
+
+        background-color: aqua;
+        box-shadow: none;
+    }
+    .header_top {
+        width: 96%;
+        height: 100%;
+        margin: 0 auto;
+        border: 1px solid aqua;
+        position: relative;
+    }
+    .header_top_inner {
+        width: 100%;
+        height: 100%;
+        border: 1px solid #000;
+    }
+    h1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 999;
+    }
+    #header h1 a {
+        width: 200px;
+        height: 60px;
+    }
+    ul.gnb {
+            position: absolute;
+            bottom: 0px;
+            background-color: red;
+            width: 96%;
+            height: 58px;
+            left: 0;
+            justify-content: space-between;
+    }
+    ul.gnb li {
+        width: calc(96% / 6);
+    }
+    .burger {
+        position: absolute;
+        right: 0;
+        bottom: 16px;
     }
 }
 
@@ -15,10 +67,10 @@
     /* 헤더 */
     ul.gnb li a {
         /* font-size: clamp(1.125rem, 0.3511rem + 0.7491vw, 1.25rem); */
-        font-size: clamp(1.8rem, 1.04vw, 2rem);
+        font-size: clamp(1.9rem, 0.94vw, 2rem);
     }
     ul.util a {
-        font-size: clamp(1.2rem, 0.68vw, 1.3rem);
+        font-size: clamp(1.5rem, 0.68vw, 1.6rem);
     }
     .header_drop_inner li a {
         font-size: clamp(1.6rem, 0.94vw, 1.8rem);
@@ -28,41 +80,47 @@
         margin-right: 1vw;
     } 
     .header_drop_inner li.morebg a {
-        font-size: clamp(1.4rem ,0.78vw,1.5rem);
+        font-size: clamp(1.4rem, 0.78vw, 1.5rem);
+    }
+    .board_left {
+        margin-left: 1.04vw;
+    }
+    .burger {
+        display: none;
     }
 }
 
 
-/* mini pc ( 1300 ~ 1629) */
-@media screen and (min-width: 1300px) and (max-width: 1629px) {
+/* mini pc ( 1165 ~ 1629) */
+@media screen and (min-width: 1270px) and (max-width: 1629px) {
     .header_top {
         width: fit-content;
         margin: 0 auto;
     }
-    ul.util {
-        width: fit-content;
+    .burger {
+        display: none;
     }
-    ul.util li:nth-child(2) {
-        margin: 0 0.3vw 0;
+    ul.util {
+        width: 12vw;
     }
     .header_drop_inner li a  {
         font-size: clamp(1.4rem, 0.73vw, 1.5rem);
+        letter-spacing: -1.4px;
+        padding: 0.18vw 0px 0.3vw 0.52vw;
         /* font-size: clamp(1.6rem, 0.89vw, 1.7rem); */
         
     }
     ul.gnb li a {
-        font-size: clamp(1.7rem, 0.89vw, 1.8rem);
+        font-size: clamp(1.7rem, 0.94vw, 1.8rem);
     }
     ul.util a {
-        font-size: 1.1rem;
-        font-size: clamp(1.15rem, 0.68vw, 1.3rem);
+        font-size: clamp(1.4rem, 0.73vw, 1.5rem);
+        
     }
     ul.util a img {
-        width: 13px;
-        height: 13px;
-    }
-    .header_drop_inner li.morebg a {
-        font-size: 1.2rem;
+        width: 15px;
+        height: 15px;
+}
     }
     .more_btn {
         width: 11px; 
@@ -73,7 +131,7 @@
     .move_top_btn {
         width: 2.08vw;
         height: 2.08vw;
-        bottom: -5.7vh;
+        bottom: -18.7vh;
         
     }
     .move_top_btn img {
@@ -81,31 +139,45 @@
         height: 3.13vw;
     }
     div[class^=quick0] img {
-        /* width: 2.19vw; */
-        /* height: 2.29vw; */
-        background-size: cover;
-        width: 2.4vw;
-        height: 2.29vw;
+        /* width: 1.9vw;
+        height: 2vw; */
+        width: 2.86vw;
+        height: 2.14vw;
+        
     }
+        
     div[class^=quick0] span {
-        font-size: 1.2rem;
+        /* font-size: 1.2rem; */
+        font-size: 1.4rem;
     }
     .quick_menu {
-        width: 7vw;
+        /* width: 6.5vw; */
+        width: 6.3vw;
     }
     .news_title {
-        font-size: clamp(2rem, 1.2vw, 2.2rem);
+        font-size: clamp(1.8rem, 1.2vw, 2.2rem);
     }
     div[class^="title"] h2 {
-        font-size: clamp(3.7rem, 2.08vw, 4.2rem);
+        font-size: clamp(2.9rem, 2.08vw, 4.2rem);
     }
     a.all {
-        font-size: clamp(1.6rem, 0.94vw, 1.9rem);
+        font-size: clamp(1.5rem, 0.94vw, 1.9rem);
     }
     .board_index {
-        margin-right: 2.5vw;
+        margin-right: 2.9vw;
     }
     .board_right, .board_title, .board_index, #footer ul li a {
-        font-size: clamp(1.4rem, 0.78vw, 1.5rem);
+        font-size: clamp(1.4rem, 0.89vw, 1.7rem);
     }
-}
+    .ct1 .inner_text ul {
+        font-size: clamp(1.9rem, 0.99vw, 2rem);
+    }
+    .title_mini span {
+        font-size: clamp(1.2rem, 0.68vw, 1.4rem);
+    }
+    .board_left {
+        margin-left: 0.7vw;
+    }
+    .header_drop_inner li.morebg a {
+        font-size: 1.4rem;
+    }
