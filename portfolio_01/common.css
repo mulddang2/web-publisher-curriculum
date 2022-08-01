@@ -118,9 +118,12 @@ a.all {
 }
 /* ct3 우리소식 컨텐츠  */
 .news li {
-    border: 1px solid rgba(137, 126, 126, 0.83);
     background-color: #fff;
+    border: 1px solid rgba(137, 126, 126, 0.83);
 }
+
+
+
 .news_title {
     color: #423737;
     font-weight: 700;
@@ -169,6 +172,9 @@ a.all {
 }
 .board_title {
     font-weight: 300;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 
 }
 .board_right {

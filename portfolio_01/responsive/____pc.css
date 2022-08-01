@@ -1,86 +1,76 @@
 /* pc  */
 @media screen and (min-width: 1630px) {
-    
-    
     #header {
-        width: 100%; 
-        height: 7.59vh; 
+        width: 100%;
+        height: 7.59vh;
     }
     .header_top {
-        width: 100%; 
-        height: 7.59vh;  
+        width: 100%;
+        height: 7.59vh;
     }
     .header_top_inner {
         width: 80.94vw;
-        height: 7.59vh; 
+        height: 7.59vh;
         margin: 0 auto;
-        display: flex; 
-        align-items: center; 
+        display: flex;
+        align-items: center;
     }
 
     .header_top_inner a:focus-visible {
         outline: none;
     }
-    
+
     #header h1 a {
-        display: block; 
-        width: 11.46vw; 
-        height: 5.93vh; 
-        text-indent: -9999px; 
+        display: block;
+        width: 11.46vw;
+        height: 5.93vh;
+        text-indent: -9999px;
     }
     ul.gnb li a {
         font-size: 2rem;
     }
     ul.gnb {
-        border: 0px; 
-        width: 57.19vw;  
-        height: inherit; 
-        display: flex; 
-        align-items: center; 
-        font-size: 1.8rem; 
-        text-align: center; 
-        position: relative; 
+        border: 0px;
+        width: 57.19vw;
+        height: inherit;
+        display: flex;
+        align-items: center;
+        font-size: 1.8rem;
+        text-align: center;
+        position: relative;
     }
     ul.gnb li {
-        width: 9.53vw; 
-        height: 100%; 
-        align-items: center; 
-        justify-content: center; 
-        display: flex; 
+        width: 9.53vw;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
     }
     ul.util {
-        width: 12.29vw; 
-        height: inherit; 
-        display: flex; 
-        align-items: center; 
-        justify-content: space-evenly; 
+        width: 12.29vw;
+        height: inherit;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
     }
     ul.util li:nth-child(2) {
         margin: 0 0.68vw;
-    } 
+    }
     ul.util a img {
         margin-bottom: -0.28vh;
-    } 
-    
+    }
+
     #header a:hover {
         color: var(--light-green);
-    } 
-    .burger_m, .magnifer_m {
+    }
+    .burger_m,
+    .magnifer_m {
         display: none;
-    } 
+    }
     ul.util a {
         font-size: clamp(1.5rem, 0.68vw, 1.6rem);
     }
-    
-    /* 검색칸  */
-    input.search {
-        border: 0; 
-        border-bottom: 1px solid #c2c2c2; 
-        outline: none; 
-        width: 4.9vw; 
-    }
-    
-    
+
     /* 드롭 메뉴  */
     .header_drop {
         width: 100vw;
@@ -89,8 +79,7 @@
         box-sizing: border-box;
         background-color: rgba(255, 255, 255, 0.93);
     }
-    
-    
+
     #header ul > div {
         padding-top: 1.85vh;
     }
@@ -104,11 +93,10 @@
         overflow: hidden;
     }
     .header_drop_inner ul {
-        width: 9.53vw; 
+        width: 9.53vw;
         height: 100%;
         box-sizing: border-box;
         border-top: 0.16vw solid transparent;
-    
     }
     .header_drop_inner ul:not(:last-child) {
         border-left: 1px solid #c0c0c0;
@@ -117,7 +105,7 @@
         border-left: 1px solid #c0c0c0;
         border-right: 1px solid #c0c0c0;
     }
-    
+
     .header_drop_inner ul:hover {
         border-top: 0.16vw solid #337752;
         background-color: #f4eedb;
@@ -125,7 +113,7 @@
     }
     .header_drop_inner li a {
         color: #505050;
-        font-size:1.8rem;
+        font-size: 1.8rem;
         padding: 0.18vw 0px 0.18vw 10px;
         display: block;
     }
@@ -146,14 +134,14 @@
         position: absolute;
         top: 11px;
         right: 10px;
-    } 
-    
+    }
+
     /* 퀵메뉴  */
     .quick_menu {
         position: absolute;
         right: 0;
-        top: 13.89vh; 
-        width: 6.46vw; 
+        top: 13.89vh;
+        width: 6.46vw;
         height: 63vh;
         background: rgba(244, 244, 244, 0.8);
         border-radius: 1rem 0px 0px 1rem;
@@ -195,60 +183,58 @@
     .move_top_btn img {
         width: 50px;
         height: 50px;
-    } 
-    
-    
-    
-    
+    }
+
     /* 메인 사진  */
     #main {
-        width: 100%; 
-        margin-top: 7.59vh;  
-        display: inline-block; 
+        width: 100%;
+        margin-top: 7.59vh;
+        display: inline-block;
     }
     .mainvisual {
-        position: relative; 
-        z-index: -1px; 
+        position: relative;
+        z-index: -1px;
     }
     .mainvisual img {
-        display: block; 
-        width: 100%; 
+        display: block;
+        width: 100%;
+        
     }
-    
+
     /* 메인사진 페이저  */
     ul.slick-dots {
-        margin: 0 auto; 
-        width: 50px; 
+        margin: 0 auto;
+        width: 50px;
     }
     #main .mainvisual .slick-dots li {
         z-index: 99;
-        border: 1px solid red; 
-        margin: 0 auto; 
-        margin-right: 1.04vw; 
+        border: 1px solid red;
+        margin: 0 auto;
+        margin-right: 0.8vw;
         border: 0.05vw solid #dfdfdf;
-        width: 0.78vw; 
-        height: 0.78vw; 
+        width: 0.78vw;
+        height: 0.78vw;
     }
     .slick-dots li button:before {
         display: none;
-    } 
+    }
     #main .slick-dots li button {
         width: 26.04vw;
-    } 
+    }
     #main .slick-dots li.slick-active {
-        width: 3vw; 
-        height: 0.78vw;  
-        border: 0.05vw solid var(--light-green); 
-        border-radius: 11px; 
+        width: 3vw;
+        height: 0.78vw;
+        border: 0.05vw solid var(--light-green);
+        border-radius: 11px;
         background-color: var(--light-green);
     }
-    
+
     .mainvisual ul {
-        position: absolute; 
-        bottom: 1.15vw; 
-        left: 50%; 
-        transform: translateX(-50%); 
-        display: flex; 
+        position: absolute;
+        bottom: 1.15vw;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
     }
     #main .mainvisual ul li.pager a {
         display: inline-block;
@@ -259,32 +245,33 @@
         margin-right: 0.78vw;
     }
     .mainvisual li.pager.pager_current a {
-        width: 2.34vw; 
+        width: 2.34vw;
         height: 0.78vw;
         border: 0.05vw solid var(--light-green);
         border-radius: 11px;
     }
 
-    
-    
-    .ct1, .ct2,
-    .ct3, .ct4, .ct5 {
+    .ct1,
+    .ct2,
+    .ct3,
+    .ct4,
+    .ct5 {
         overflow: hidden;
         padding-bottom: 13.89vh;
     }
-    
+
     /* content 공통  */
     div[class^="title"] h2 {
         font-size: 5rem;
         margin: 1.39vh 0 2.31vh;
     }
-    
+
     .inner {
         width: 80.94vw;
         margin: 0 auto;
         display: flex;
     }
-    
+
     /* ct1  */
     .title_mini span {
         font-size: 1.4rem;
@@ -323,27 +310,26 @@
         width: 36.93vw;
         height: 55.56vh;
         margin-left: 12.6vw;
-        
     }
-    
+
     .title_desc {
         width: 21.72vw;
         font-size: 1.5rem;
         line-height: 2.2rem;
     }
-    
+
     /* 센터 타이틀  */
     .title_inner {
-        width: 80.94vw; 
+        width: 80.94vw;
         margin: 0 auto;
         text-align: center;
-        padding-top: 6.25vw; 
+        padding-top: 6.25vw;
     }
     .title_center {
         position: relative;
-        margin-bottom: 6.02vh;  
+        margin-bottom: 6.02vh;
     }
-    
+
     .title_center_text span {
         width: fit-content;
         margin: 0 auto;
@@ -352,7 +338,7 @@
         white-space: nowrap;
         margin: 0 auto;
     }
-    
+
     /* ---- 클래스명 ct_ 를 사용한 선택자 -----  */
     a.ct_prev.prev:hover,
     a.ct_next.next:hover {
@@ -365,11 +351,10 @@
         height: 31px;
         display: inline-block;
         border: 1px solid #d9d9d9;
-
     }
-    
+
     /* 전체보기 글씨  */
-    
+
     a.all {
         font-size: 2rem;
         position: absolute;
@@ -380,7 +365,7 @@
     a.all:hover {
         color: var(--light-green);
     }
-    
+
     /* ct2  */
     .video_th {
         width: 100%;
@@ -390,8 +375,7 @@
     .video_all img {
         width: 100%;
     }
-    
-    
+
     /* ct3 우리소식 컨텐츠  */
     .news li {
         width: 25.68vw;
@@ -426,18 +410,14 @@
         font-size: 1.6rem;
         line-height: 6.02vh;
     }
-    /* li.ct3_active {
-        border: 2px solid #83ae50;
-        border-bottom: 4px solid #83ae50;
-    } */
+
     .news li:hover {
         border: 1px solid #83ae50;
         border-bottom: 4px solid #83ae50;
     }
-    
+
     /* ct4 갤러리 컨텐츠  */
-    
-    
+
     .gallery_box {
         margin: 0px 10px;
     }
@@ -456,7 +436,7 @@
     .gallery_all .slick-list .slick-track {
         height: 20vw;
     }
-    
+
     /* ct5 게시판 컨텐츠  */
     .board_box1 {
         width: 80.94vw;
@@ -470,13 +450,12 @@
         display: flex;
         align-items: center;
     }
-    
+
     .board_left {
         display: flex;
         height: 100%;
         align-items: center;
-        margin-left: 1.04vw; 
-
+        margin-left: 1.04vw;
     }
     .board_left:hover {
         color: #070707;
@@ -484,16 +463,18 @@
     .board_title:hover {
         font-weight: 500;
     }
-    
+
     .board_index {
         width: 6.25vw;
-        margin-right: 1.78vw; 
+        margin-right: 1.78vw;
         font-size: 1.6rem;
         white-space: nowrap;
     }
     .board_title {
         font-size: 1.6rem;
-        width: 57.25vw; 
+        width: 57.25vw;
+        
+
     }
     .board_right {
         display: flex;
@@ -514,10 +495,10 @@
         width: 46px;
         text-align: center;
     }
-    
+
     /*푸터*/
     #footer {
-        height: 30vh; 
+        height: 30vh;
         /* margin-top: 11.57vh; */
     }
     .footer_inner {
@@ -526,7 +507,7 @@
         margin: 0 auto;
     }
     .footer_nav {
-        height: 4.54vh; 
+        height: 4.54vh;
     }
     #footer .footer_nav a:hover {
         color: var(--light-green);
@@ -536,7 +517,7 @@
     }
     #footer ul {
         width: 100%;
-        height: 4.54vh; 
+        height: 4.54vh;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -564,13 +545,13 @@
         height: 1.2vh;
         vertical-align: middle;
     }
-    
+
     .footer_address,
     .copyright {
         font-size: 12px;
         line-height: 2.85vh;
     }
-    
+
     .copyright {
         margin-top: 1.48vh;
     }
