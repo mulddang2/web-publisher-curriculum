@@ -1,0 +1,118 @@
+/* PC 목업*/
+.mockUpPc {
+    width: 1150px;
+    height: 640px;
+    border: 1px solid red;
+    position: relative;
+}
+.screenPc {
+    width: 753px;
+    height: 510px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+    overflow: hidden;
+}
+.screenPc ul {
+    width: calc(753px * 3);
+    height: 510px;
+    display: flex;
+}
+.screenPc ul li {
+    width: 753px;
+    height: 510px;
+}
+.screenPc ul li:nth-of-type(1) {
+    background: url('images/1.jpg') no-repeat center / cover;
+}
+.screenPc ul li:nth-of-type(2) {
+    background: url('images/2.jpg') no-repeat center / cover;
+}
+.screenPc ul li:nth-of-type(3) {
+    background: url('images/3.jpg') no-repeat center / cover;
+}
+
+
+/* 태블릿 목업*/
+.mockUpTab {
+    width: 561px;
+    height: 371px;
+    border: 1px solid dodgerblue;
+    position: absolute;
+    bottom: 30px;
+    left: 650px;
+    z-index: 3;
+}
+.screenTab {
+    width: 248px;
+    height: 329px;
+    position: absolute;
+    top: 3px;
+    left: 50px;
+    z-index: 3;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.screenTab ul {
+    width: calc(243px * 3);
+    height: 329px;
+    display: flex;
+}
+.screenTab ul li {
+    width: 248px;
+    height: 329px;
+}
+.screenTab ul li:nth-of-type(1) {
+    background: url('images/1.jpg') no-repeat center / cover;
+}
+.screenTab ul li:nth-of-type(2) {
+    background: url('images/2.jpg') no-repeat center / cover;
+}
+.screenTab ul li:nth-of-type(3) {
+    background: url('images/3.jpg') no-repeat center / cover;
+}
+
+/* 모바일 */
+.mockUpM {
+    width: 250px;
+    height: 277px;
+    border: 1px solid #000;
+    position: absolute;
+    bottom: 20px;
+    left: 900px;
+    z-index: 5;
+}
+.screenM {
+    width: 116px;
+    height: 246px;
+    position: absolute;
+    top: 10px;
+    left: 34px;
+    border-radius: 7px;
+    overflow: hidden;
+}
+.screenM ul {
+    width: calc(116px * 3);
+    height: 246px;
+    display: flex;
+}
+.screenM ul li {
+    width: 116px;
+    height: 246px;
+}
+.screenM ul li:nth-of-type(1) {
+    background: url('images/1.jpg') no-repeat center / cover;
+}
+.screenM ul li:nth-of-type(2) {
+    background: url('images/2.jpg') no-repeat center / cover;
+}
+.screenM ul li:nth-of-type(3) {
+    background: url('images/3.jpg') no-repeat center / cover;
+}
+
+.btns {
+    position: fixed;
+    top: 50%;
+    right: 5%;
+}
