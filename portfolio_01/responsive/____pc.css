@@ -141,8 +141,8 @@
         position: absolute;
         right: 0;
         top: 13.89vh;
-        width: 6.46vw;
-        height: 63vh;
+        width: 5vw;
+        height: 54vh;
         background: rgba(244, 244, 244, 0.8);
         border-radius: 1rem 0px 0px 1rem;
         z-index: 99;
@@ -160,8 +160,8 @@
     }
     .quick_box img {
         text-align: center;
-        width: 2.1vw;
-        height: 2.1vw;
+        width: 1.6vw;
+        height: 1.6vw;
     }
     .quick_box span {
         display: block;
@@ -177,7 +177,7 @@
     }
     .move_top_btn {
         position: absolute;
-        bottom: -15.3vh;
+        bottom: -28.3vh;
         cursor: pointer;
     }
     .move_top_btn img {
@@ -229,7 +229,7 @@
         background-color: var(--light-green);
     }
 
-    .mainvisual ul {
+    #main .mainvisual ul {
         position: absolute;
         bottom: 1.15vw;
         left: 50%;

@@ -152,11 +152,12 @@
 
     /* 퀵메뉴  */
     .quick_menu {
-        width: 6.5vw;
+        /* width:5vw; */
+        width: 5.6vw;
         position: absolute;
         right: 0;
         top: 13.89vh;
-        height: 63vh;
+        height: 54vh;
         background: rgba(244, 244, 244, 0.8);
         border-radius: 1rem 0px 0px 1rem;
         z-index: 99;
