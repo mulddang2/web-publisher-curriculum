@@ -6,6 +6,15 @@ $(".mainvisual").slick({
     dotsClass: "slick-dots",
     arrows: false,
 });
+$(".mainvisual_tab").slick({
+    slidesToShow: 1,
+    infinite: true,
+    //autoplay: true,
+    dots: true,
+    dotsClass: "slick-dots",
+    arrows: false,
+});
+
 $(document).ready(function () {
     //갤러리
     $(".gallery_all").slick({

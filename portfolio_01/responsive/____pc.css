@@ -26,6 +26,14 @@
         height: 5.93vh;
         text-indent: -9999px;
     }
+    /* pc에서 안보여야할 것 */
+    .burger_tab, .magnifer_tab {
+        display: none;
+    }
+    #main .mainvisual_tab {
+        display: none;
+    }
+
     ul.gnb li a {
         font-size: 2rem;
     }
@@ -200,6 +208,12 @@
         width: 100%;
         
     }
+    #main .mainvisual_tab {
+        display: none;
+    }
+    #main .slick-dotted.slick-slider {
+        margin-bottom: 0;    
+    }
 
     /* 메인사진 페이저  */
     ul.slick-dots {
@@ -271,6 +285,7 @@
         margin: 0 auto;
         display: flex;
     }
+    
 
     /* ct1  */
     .title_mini span {
@@ -305,6 +320,7 @@
     }
     .ct1 {
         padding-top: 6.25vw;
+        background-color: #fff;
     }
     .ct1_img {
         width: 36.93vw;
@@ -387,7 +403,7 @@
     .ct3 ul {
         display: flex;
         justify-content: space-between;
-        width: 80.94vw;
+        width: 79.94vw;
     }
     .ct3_text {
         position: absolute;

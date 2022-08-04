@@ -1,6 +1,5 @@
 /* 테블릿 */
-@media screen and (min-width: 768px) and (max-width: 1269px) {
-    
+@media screen and (min-width: 768px) and (max-width: 1270px) {
     #main, #footer, .util {
         visibility: hidden;
     }
@@ -8,78 +7,186 @@
         display: none;
         
     }
-    {여기까지함
-    
-    
+    #main .content {
+        visibility: hidden;
     }
-    #header_m {
-        background-color: aqua;
-    }
-    #header_m h1 {
+
+
+
+    #header_tab h1 {
         background: url('../images/logo.png') no-repeat center / contain;
         width: 210px;
         height: 42px;
         border: 1px solid #000;
         margin: 0 auto;
     }
-    .menu_wrap_m {
+    .menu_wrap_tab {
         display: flex;
         justify-content: space-between;
-        height: 110px;
+        width: 100%;
+        height: 82px;
         align-items: center;
+        padding: 0 3%;
+        box-sizing: border-box;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 99;
+        background-color: #fff;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     }
 
 
-
-    .magnifer_m {
-        position: absolute;
-        right: 0;
-    }
-    .burger_m, .magnifer_m {
+    
+    
+    .burger_tab, .magnifer_tab {
         display: block;
         
     }
-    .burger_m img, .magnifer_m img {
+    .burger_tab img, .magnifer_tab img {
         width: 42px;
         height: 42px;
     }
-    #main .mainvisual {
-        visibility: visible;
-        width: 100%;
-        margin-top: 15.7vh;
-    }
-    #main .mainvisual img {
-        object-fit: cover;
-        object-position: center;
-    }
-    ul.slick-dots {
-        width: 10.02vw;
-    }
-    #main .slick-dots li button {
-        width: 2.73vw;
-    }
-    #main .slick-dots li.slick-active {
-        width: 5vw;
-    }
-        
 
-    .mainvisual .slick-dots li {
-        width: 1.5vw;
-        height: 1.5vw;
+    /* 메인사진 */
+    #main .mainvisual {
+        display: none;
     }
+    #main .mainvisual_tab {
+        visibility: visible;
+        border: 1px solid red;
+        margin-top: 82x;
+        position: relative;
+    }
+    .mainvisual_tab img {
+        width: 100%;
+        /* height:  calc(100vh - 480px); */
+        height: 60vh;
+        object-fit: cover;
+        object-position: left center;
+        
+    
+    }
+    
+    /*메인사진 페이저 */
+    ul.slick-dots {
+        position: absolute;
+        bottom: 1.15vw;
+        z-index: 1;
+        width: fit-content;
+        display: flex;
+        left: 50%;
+        transform: translateX(-50%);
+        
+        
+    }
+    .mainvisual_tab .slick-dots li {
+        background-color: #fff;
+        border-radius: 50%;
+        margin: 0 auto;
+        border: 0.05vw solid #dfdfdf;
+        width: 1vw;
+        height: 1vw;
+    }
+    .mainvisual_tab .slick-dots li:not(:last-child) {
+        margin-right: 1vw;
+
+    }
+    .slick-dots li button:before {
+        display: none;
+    }
+    .mainvisual_tab .slick-dots li button {
+        width: 26.04vw;
+    }
+    .mainvisual_tab > .slick-dots li.slick-active {
+        width: 4.96vw;
+        height: 1vw;
+        border: 0.05vw solid var(--light-green);
+        border-radius: 11px;
+        background-color: var(--light-green);
+
+    }
+    .mainvisual_tab ul li.pager a {
+        display: inline-block;
+        border: 0.05vw solid #dfdfdf;
+        width: 0.78vw;
+        height: 0.78vw;
+        z-index: 2;
+        margin-right: 0.78vw;
+    }
+    #main .slick-dotted.slick-slider {
+        margin-bottom: 0;    
+    }
+    
+
+    
+    /* 메인 컨텐츠 1번 */
     .content {
         visibility: visible;
-        
     }
-    .inner {
-        /* display: block; */
+    #main .ct1, .ct1_img {
+        visibility: visible;
     }
-    .inner_text {
-        margin-left: 43px;
-        
+    .ct1 {
+        padding-top: 6.25vw;
     }
-    #main .content {
-        padding: 0;
-        margin-top: 13px;
+    {컨텐츠 1번 윗패딩까지 함}
+    .ct1_img {
+        border: 1px solid blue;
+        width: 36.93vw;
+        height: 35.56vh;
     }
+    .ct1 > .inner {
+        width: 94%;
+        justify-content: space-around;
+        display: flex;
+        margin: 0 auto;
+        /* padding: 0 3%; */
+        /* border: 1px solid #000; */
+
+    }
+    .ct1 .inner_text ul li::before {
+        content: "";
+        width: 0.16vw;
+        height: 2.5vh;
+        display: inline-block;
+        margin-right: 0.47vw;
+        vertical-align: bottom;
+    }
+    .ct1 .inner_text ul li:not(:last-child) {
+        margin-bottom: 2.31vh;
+    }
+    .title_mini span {
+        font-size: var(--minimum-t);
+    }
+    .title_text h2 {
+        font-size: var(--h2-t);
+    }
+    .title_desc {
+        font-size: var(--enhance-t);
+        width: 244px;
+    }
+    .ct1 .inner_text ul li::before {
+        content: "";
+        width: 0.24vw;
+        height: 1.37vh;
+        vertical-align: bottom;
+    }
+    .ct1 .inner_text ul li:not(:last-child) {
+        margin-bottom: 1.27vh;
+    }
+    .title_text.first h2 {
+        margin: 0.74vh 0 1.11vh;
+
+    }
+    .ct1 .inner_text ul {
+        margin-left: 3.13vw;
+        margin-top: 3.85vh;
+        font-size: var(--basic-t);
+
+    }
+    
+    
+    
+    
 }

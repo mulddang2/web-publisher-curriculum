@@ -28,6 +28,15 @@
         height: 5.93vh;
         text-indent: -9999px;
     }
+    .burger_tab, .magnifer_tab {
+        display: none;
+    }
+    #main .slick-dotted.slick-slider {
+        margin-bottom: 0;    
+    }
+    #main .mainvisual_tab {
+        display: none;
+    }
 
     ul.gnb {
         border: 0px;
@@ -221,10 +230,14 @@
     ul.slick-dots {
         margin: 0 auto;
         width: 50px;
+        position: absolute;
+        bottom: 1.15vw;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
     }
     #main .mainvisual .slick-dots li {
         z-index: 99;
-        border: 1px solid red;
         margin: 0 auto;
         margin-right: 0.8vw;
         border: 0.05vw solid #dfdfdf;
@@ -245,13 +258,6 @@
         background-color: var(--light-green);
     }
 
-    .mainvisual ul {
-        position: absolute;
-        bottom: 1.15vw;
-        left: 50%;
-        transform: translateX(-50%);
-        display: flex;
-    }
     #main .mainvisual ul li.pager a {
         display: inline-block;
         border: 0.05vw solid #dfdfdf;
@@ -311,7 +317,7 @@
     .ct1 .inner_text ul li::before {
         content: "";
         width: 0.16vw;
-        height: 2.5vh;
+        height: 2.5vh; 
         display: inline-block;
         margin-right: 0.47vw;
         vertical-align: bottom;
