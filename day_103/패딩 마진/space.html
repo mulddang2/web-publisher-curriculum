@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>패딩과 마진</title>
+    <link rel="stylesheet" href="default.css">
+    <link rel="stylesheet" href="space.css">
+</head>
+
+<body>
+    <div>
+        <h1 class="firstTitle">안녕하세요</h1>
+        <p>이 박스에<strong><u>윗</u></strong>쪽으로 바깥여백(top)을 주려면 margin-top</p>
+    </div>
+    <section class="A">
+        <h1>안녕하세요</h1>
+        <p>제목에 border나 background-color가 없는 경우 <strong><u>밑</u></strong> 여백은 margin-bottom이나 padding-bottom 어느 쪽이든 상관없다.</p>
+    </section>
+    <section class="B">
+        <h1 class="ex1">마진</h1>
+        <p>마진을 사용해야 border바깥으로 여백생성</p>
+        <h1 class="ex2">패딩</h1>
+        <p>패딩을 사용하면 border를 밀어내므로 밑으로 떨어진 느낌</p>
+    </section>
+    <section class="C">
+        <p>버튼을 디자인할때는 padding을 쓴다<br><br></p>
+        <button class="btn1">확인</button><span>padding: 10px 100px; 패딩입은거처럼 빵빵해짐</span><br>
+        <button class="btn2">확인</button><span>margin: 10px 100px; 크기는 변하지 않고 바깥으로 여백생성 </span>
+    </section>
+    <section class="D">
+        <h3>모든 span에 { padding: 15px; margin: 15px; }</h3>
+        <h3>inline - 인라인요소에 마진,패딩은 적용되긴 하나 영역을 침범하는 느낌이 되니 조심</h3>
+        <div class="inline">
+            <span>요소</span>
+            <span>요소</span>
+            <span>요소</span>
+            <span>요소</span>
+            <span>요소</span>
+            <span>요소</span>
+        </div>
+        <h3>inline-block - 마진15 패딩15 모두 잘 적용되며</h3>
+        <div class="inlineBlock">
+            <span>요소</span>
+            <span>요소</span>
+            <span>요소</span>
+            <span>요소</span>
+            <span>요소</span>
+            <span>요소</span>
+        </div>
+        <h3>block은 세로레이아웃에 추천</h3>
+        <div class="block">
+            <span>요소</span>
+            <span>요소</span>
+            <span>요소</span>
+            <span>요소</span>
+            <span>요소</span>
+            <span>요소</span>
+        </div>
+    </section>
+</body>
+
+</html>

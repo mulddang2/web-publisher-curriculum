@@ -1,0 +1,56 @@
+/*pc*/
+@media screen and (min-width: 1400px) {
+    header {
+        display: block;
+    }
+    .fixedMmenu {
+        display: none;
+    }
+    .title {
+        min-width: 500px;
+    }
+    .introimg img {
+        min-width: 400px;
+    }
+}
+/*mobile*/
+@media screen and (max-width: 1400px) {
+    header {
+        display: none;
+    }
+    .fixedMmenu {
+        display: block;
+    }
+    .mainv {
+        height: auto;
+        aspect-ratio: 1 / 0.6906;
+        background: url('img/m/mainv.jpg') no-repeat center / cover;
+        margin-top: 82px;
+    }
+    .introwrap {
+        flex-direction: column;
+        width: 90%;
+        margin: 200px auto;
+
+
+    }
+    .title {
+        width: 100%;
+        text-align: center;
+    
+
+    }
+    .title h1 {
+        font-size: var(--50);
+        margin-top: 10px;
+    }
+    .title p {
+        width: 80%;
+        margin: 0 auto 50px;
+    }
+    .title span {
+        color: var(--main);
+    }
+    
+    
+}

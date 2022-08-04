@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+#wrap  {
+    width: fit-content;
+    border: 3px solid red;
+}
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: grey;
+    margin: 50px;
+}

@@ -1,0 +1,72 @@
+
+body {
+    background-color: #efefef;
+    font-size: 1.5rem;
+    height: 5000px;
+}
+
+/* 첫번째 박스*/
+body > div {
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid red;
+    margin-top: 50px;
+}
+
+section {
+    width: 90%;
+    background-color: #fff;
+    margin: 0 auto 50px;
+    padding: 50px;
+    box-sizing: border-box;
+}
+h1 {
+    width: fit-content;
+}
+
+/* 두번째 박스 */ 
+h1.ex1 {
+    border-bottom: 1px solid #000;
+    margin-bottom: 50px;
+}
+h1.ex2 {
+    border-bottom: 1px solid #000;
+    padding-bottom: 50px;
+}
+
+
+/* 세번째 박스 */
+button {
+    font-family: inherit;
+    font-size: 1rem;
+    background-color: dodgerblue;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+}
+.btn1 {
+    padding: 10px 100px;
+}
+.btn2 {
+    margin: 10px 100px;
+}
+
+
+
+section.D > div {
+    border: 1px solid red;
+}
+section.D span {
+    background-color: tan;
+    padding: 15px;
+    margin: 15px;
+}
+.inline span {
+    display: inline;
+}
+.inlineBlock span {
+    display: inline-block;
+}
+.block span {
+    display: block;
+}

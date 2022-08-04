@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+        body {
+            padding: 20px;
+        }
+        div {
+            border: 1px solid #000;
+
+            font-family: Pretendard, sans-serif;
+            font-size: 32px;
+            color: dodgerblue;
+            font-weight: normal;
+            line-height: 175%;
+            letter-spacing: -1px;
+            text-align: center;
+            /*
+            opacity: .5;
+            visibility: hidden;
+            */
+        }
+    </style>
+</head>
+<body>
+    <h3>
+        div에 글꼴, 글자색, 글자크기, 글자두께, 자간, 행간, 텍스트정렬, 투명도, 보이기 속성을 주었더니<br>
+        div의 자식으로 있는 span, p, a에도 같은 속성이 적용되었습니다.<br>
+        이렇게 부모가 가진 속성을 자식,자손이 물려받는 것을 상속이라고 합니다. <br><br><br><br>
+    </h3>
+    <div>
+        <span>상속되는 span요소입니다</span>
+        <p>상속되는 p요소입니다</p>
+        <a href="#">color빼고 상속되는 a요소입니다</a><br>
+        <button>상속이 안되는 button요소입니다</button>
+    </div>
+</body>
+</html>

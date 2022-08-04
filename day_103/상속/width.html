@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="default.css">
+    <style>
+        /* 리스트들은 1/4씩 */
+        li {width: 25%;}
+
+        /* 부모의 너비가 100%일 때*/
+        ul.order1 {width: 100%; display: flex;}
+
+        /* 부모의 너비가 1024일 때*/
+        ul.order2 {width: 1024px; display: flex;}
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <h1>자식요소의 상대값</h1>
+        <h3>자식요소들에게 상대 단위(%)를 사용하면 부모 요소에 상대적인 크기를 가지게 된다.<br>
+            부모요소가 가진 너비를 기준으로 자식요소들의 너비가 정해지는 것이다.</h3>
+        <p></p>
+        <ul class="order1">
+            <li style="background: red">리스트</li>
+            <li style="background: orange">리스트</li>
+            <li style="background: yellow">리스트</li>
+            <li style="background: green">리스트</li>
+        </ul>
+        <ul class="order2">
+            <li style="background: red">리스트</li>
+            <li style="background: orange">리스트</li>
+            <li style="background: yellow">리스트</li>
+            <li style="background: green">리스트</li>
+        </ul>
+
+    </div>
+</body>
+</html>
