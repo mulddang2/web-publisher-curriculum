@@ -365,7 +365,7 @@
     a.ct_next.next {
         width: 31px;
         height: 31px;
-        display: inline-block;
+        display: inline-block !important;
         border: 1px solid #d9d9d9;
     }
 
@@ -380,6 +380,9 @@
     }
     a.all:hover {
         color: var(--light-green);
+    }
+    a.all_tab_m {
+        display: none;
     }
 
     /* ct2  */
@@ -472,25 +475,21 @@
         height: 100%;
         align-items: center;
         margin-left: 1.04vw;
+        font-size: 1.6rem;
+
     }
-    .board_left:hover {
-        color: #070707;
-    }
-    .board_title:hover {
-        font-weight: 500;
-    }
+    
 
     .board_index {
-        width: 6.25vw;
+        /* width: 6.25vw; */
+        /*수정*/
+        width: fit-content;
         margin-right: 1.78vw;
-        font-size: 1.6rem;
         white-space: nowrap;
     }
     .board_title {
-        font-size: 1.6rem;
         width: 57.25vw;
-        
-
+        margin-left: 10px;
     }
     .board_right {
         display: flex;
@@ -524,9 +523,6 @@
     }
     .footer_nav {
         height: 4.54vh;
-    }
-    #footer .footer_nav a:hover {
-        color: var(--light-green);
     }
     .footer_main {
         padding-bottom: 20px;

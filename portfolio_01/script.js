@@ -19,19 +19,35 @@ $(document).ready(function () {
     //갤러리
     $(".gallery_all").slick({
         slidesToShow: 3,
-        autoplay: true,
+        //autoplay: true,
         autoplaySpeed: 1500,
         centerMode: true,
         centerPadding: "100px",
         infinite: true,
         prevArrow: $(".gallery_prev"),
         nextArrow: $(".gallery_next"),
+        responsive: [
+
+            {
+                breakpoint: 1269,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            { 
+                breakpoint: 768, //화면 너비가 768이상일 때
+                settings: {
+                    slidesToShow: 1,
+                    centerMode: false
+                }
+            }
+        ] 
     });
 
     // 설교영상
     $(".video_all").slick({
         slidesToShow: 3,
-        autoplay: true,
+        //autoplay: true,
         autoplaySpeed: 1500,
         centerMode: true,
         centerPadding: "100px",
@@ -40,18 +56,49 @@ $(document).ready(function () {
         // 클래스명 ct2_인 요소를 버튼으로 사용함
         prevArrow: $(".video_prev"),
         nextArrow: $(".video_next"),
-    });
+        responsive: [
 
+            {
+                breakpoint: 1269,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            { 
+                breakpoint: 768, //화면 너비가 768이상일 때
+                settings: {
+                    slidesToShow: 1,
+                    centerMode: false
+                }
+            }
+        ] 
+            
+    });
     //우리소식
     $("ul.news").slick({
         slidesToShow: 3,
-        autoplay: true,
+        //autoplay: true,
         loop: true,
-        autoplay: true,
 
         // 클래스명 ct2_인 요소를 버튼으로 사용함
         prevArrow: $(".news_prev"),
         nextArrow: $(".news_next"),
+        responsive: [
+
+            {
+                breakpoint: 1269,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            { 
+                breakpoint: 768, //화면 너비가 768이상일 때
+                settings: {
+                    slidesToShow: 1,
+                    centerMode: false
+                }
+            }
+        ] 
     });
 });
 

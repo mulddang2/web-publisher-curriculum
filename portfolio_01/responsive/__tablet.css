@@ -1,14 +1,18 @@
 /* 테블릿 */
 @media screen and (min-width: 768px) and (max-width: 1270px) {
-    #main, #footer, .util {
+    #footer, .util {
         visibility: hidden;
     }
     #header, .quick_menu {
         display: none;
         
     }
-    #main .content {
+    .content {
         visibility: hidden;
+    }
+    .inner {
+        width: 94%;
+        margin: 0 auto;
     }
 
 
@@ -17,7 +21,6 @@
         background: url('../images/logo.png') no-repeat center / contain;
         width: 210px;
         height: 42px;
-        border: 1px solid #000;
         margin: 0 auto;
     }
     .menu_wrap_tab {
@@ -54,7 +57,6 @@
     }
     #main .mainvisual_tab {
         visibility: visible;
-        border: 1px solid red;
         margin-top: 82x;
         position: relative;
     }
@@ -121,18 +123,15 @@
 
     
     /* 메인 컨텐츠 1번 */
-    .content {
-        visibility: visible;
-    }
+    
     #main .ct1, .ct1_img {
         visibility: visible;
     }
+    
     .ct1 {
         padding-top: 6.25vw;
     }
-    {컨텐츠 1번 윗패딩까지 함}
     .ct1_img {
-        border: 1px solid blue;
         width: 36.93vw;
         height: 35.56vh;
     }
@@ -185,8 +184,257 @@
         font-size: var(--basic-t);
 
     }
+
+    /* content 공통  */
     
+    .ct1,
+    .ct2,
+    .ct3,
+    .ct4,
+    .ct5 {
+        overflow: hidden;
+        padding-bottom: 11.52vh;
+    }
+    .title_inner {
+        border: 1px solid #000;
+        width: 94%;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 6.93vw;
+    }
+    .title_center_text span {
+        width: fit-content;
+        margin: 0 auto;
+        font-size: var(--minimum-t);
+        
+    }
+    .title_center {
+        position: relative;   
+        margin-bottom: 6.02vh;
+
+    }
+    div[class^="title"] h2 {
+        font-size: var(--h2-t);
+        width: 144px;
+        /* border: 1px solid #000; */
+        margin: 0 auto;
+    }
+    /* 전체보기 글씨  */
+    a.all {
+        display: none;
+    }
+    a.all_tab_m {
+        display: block;
+        width: 144px;
+        height: 3.31vw;
+        border: 1px solid #ADA197;
+        color: #645656;
+        margin: 6.15vh auto 0;
+        text-align: center;
+        line-height: 3.31vw;
+        font-size: var(--basic-t);
+    }
+
+    /* 컨텐츠 prev, next 버튼 */
+    /* ---- 클래스명 ct_ 를 사용한 선택자 -----  */ 
     
+    a.ct_prev.prev:hover,
+    a.ct_next.next:hover {
+        width: 42px;
+        height: 42px;
+        display: inline-block;
+    }
+    a.ct_prev.prev,
+    a.ct_next.next {
+        width: 42px;
+        height: 42px;
+        display: inline-block;
+        border: 1px solid #d9d9d9;
+        position: absolute;
+        top: 4px;
+    }
+    a.ct_prev {
+        left: 0;
+    }
+    a.ct_next {
+        right: 0;
+    }
+
+
+    /*컨텐츠 2번*/
+    .video_all {
+        visibility: visible;
+
+    }
+    .content.ct2 {
+        visibility: visible;
+    } 
+    /* .video_all > div > div > div> a {
+        display: block;
+        width: 100%;
+        aspect-ratio: 1 / 0.5352;
+        margin: 0 auto;
+        
+    } */
+    .video_all a > img {
+        display: block;
+        width: 100%;
+    }
+    
+    .video_th {
+        margin: 0 0.52vw;
+
+    }
+    
+
+    /*컨텐츠 3번*/
+    .ct3 {
+        visibility: visible;
+    }
+    
+    .ct3_text {
+        text-align: center;
+        box-sizing: border-box;
+    }
+    .ct3 .slick-slide {
+        margin: 0 15px;
+    }
+    .ct3 .slick-list {
+        margin: 0 -15px;
+    }
+    .new {
+        position: absolute;
+        width: 5vw;
+        height: 5vh;
+        font-size: 1.6rem;
+        line-height: 5vh;
+    }
+    .news li {
+        position: relative;
+        /* margin: 0 0.52vw; */
+        box-sizing: border-box;
+
+    }
+    .news_title {
+        font-size: var(--h3-t);
+        margin-top: 8.51vw;
+        margin-bottom: 8.75vw;
+    }
+    .news_date {
+        font-size: var(--enhance-t);
+        margin-bottom: 8.51vw;
+    }
+    
+
+
+    /* 컨텐츠 4번 */
+    .ct4 {
+        visibility: visible;
+    }
+    
+    .gallery_box a > img {
+        display: block;
+        width: 100%;
+    }
+    .gallery_box {
+        margin: 0px 0.79vw;
+    }
+
+    /* 컨텐츠 5번 */
+    /* .board_box1 {
+        height: 8.27vw;
+        
+    }
+    .board_boxs {
+        height: 8.27vw;
+
+    } */
+    .ct5 {
+        visibility: visible;
+    }
+
+    .board_left {
+        display: flex;
+        /* margin-left: 32px; */
+        margin: 15px auto 5px 0;
+        font-size: var(--basic-t);
+    }
+    .board_right {
+        display: flex;
+        /* margin-left: 0.63vw; */
+        margin-bottom: 0.95vw;
+        font-size: var(--basic-t);
+        /* margin-right: 0.63vw; */
+
+    }
+    .board_index {
+        width: 11.25vw;
+        /* text-align: center; */
+    }
+    .board_title {
+        width: 57.25vw;
+    }
+    .middle_line {
+        display: block;
+        width: 1px;
+        height: 12px;
+        margin: auto 0.5vw;
+    }
+
+    /*푸터*/
+    #footer {
+        visibility: visible;
+    }
+    .footer_inner {
+        width: 94%;
+        margin: 0 auto;
+        border: 1px solid #000;
+    }
+    #footer ul {
+        display: flex;
+        flex-wrap: wrap;
+        /* justify-content: space-between; */
+    }
+    .footer_nav {
+        padding: 36px 0;
+        border: 1px solid #000;
+    }
+    #footer ul li {
+        width: 33.3%;
+        /* border: 1px solid red; */
+        box-sizing: border-box;
+    }
+    #footer ul li a {
+        font-size: var(--basic-t);
+        border: 1px solid blue;
+        padding: 0.79vw;
+        display: block;
+    }
+    .footer_content {
+        height: 5.83vh;
+        margin-bottom: 1.85vh;
+        display: flex;
+        align-items: flex-end;
+        padding-top: 20px;
+    }
+    #footer h1.logo_w {
+        width: 169px;
+        height: 42px;
+    }
+    .footer_content .menu span {
+        display: inline-block;
+        margin: 0vh 0.63vw;
+        height: 1.2vh;
+        vertical-align: middle;
+    }
+    .footer_address,
+    .copyright {
+        font-size: var(--minimum-t);
+        line-height: 2.85vh;
+    }
+    .copyright {
+        margin-top: 1.48vh;
+    }
     
     
 }

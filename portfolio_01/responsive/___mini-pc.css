@@ -207,8 +207,8 @@
         cursor: pointer;
     }
     .move_top_btn img {
-        width: 50px;
-        height: 50px;
+        width: 45px;
+        height: 45px;
     }
 
     /* 메인 사진  */
@@ -340,7 +340,7 @@
         line-height: 2.2rem;
     }
 
-    /* 센터 타이틀  */
+    /* 공통 컨텐츠 타이틀 */
     .title_inner {
         width: 80.94vw;
         margin: 0 auto;
@@ -361,7 +361,7 @@
         margin: 0 auto;
     }
 
-    /* ---- 클래스명 ct_ 를 사용한 선택자 -----  */
+    /* ---- 클래스명 ct_ 를 사용한 선택자 -----  */ 
     a.ct_prev.prev:hover,
     a.ct_next.next:hover {
         width: 31px;
@@ -372,7 +372,7 @@
     a.ct_next.next {
         width: 31px;
         height: 31px;
-        display: inline-block;
+        display: inline-block !important;
         border: 1px solid #d9d9d9;
     }
 
@@ -385,9 +385,10 @@
         top: 0;
         margin-top: 52px;
     }
-    a.all:hover {
-        color: var(--light-green);
+    a.all_tab_m {
+        display: none;
     }
+    
 
     /* ct2  */
     .video_th {
@@ -502,14 +503,6 @@
         margin-left: 0.7vw;
 
     }
-
-    .board_left:hover {
-        color: #070707;
-    }
-    .board_title:hover {
-        font-weight: 500;
-    }
-
     .board_index {
         width: 6.25vw;
         margin-right: 2.9vw;
@@ -569,9 +562,7 @@
     .footer_nav {
         height: 4.54vh;
     }
-    #footer .footer_nav a:hover {
-        color: var(--light-green);
-    }
+    
     .footer_main {
         padding-bottom: 20px;
     }

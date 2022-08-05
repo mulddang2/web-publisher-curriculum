@@ -109,6 +109,7 @@ div[class^="title"] h2 {
 
 a.ct_prev.prev:hover,
 a.ct_next.next:hover {
+    display: inline-block;
     border: 1px solid #333;
 
 }
@@ -126,6 +127,9 @@ a.all {
     text-decoration: underline;
     color: #645656;
 
+}
+a.all:hover, a.all_tab_m:hover {
+    color: var(--light-green);
 }
 /* ct3 우리소식 컨텐츠  */
 .news li {
@@ -177,6 +181,12 @@ a.all {
     color: #333333;
 
 }
+.board_left:hover {
+    color: #070707;
+}
+.board_title:hover {
+    font-weight: 500;
+}
 .board_index {
     font-weight: 700;
 
@@ -202,6 +212,9 @@ a.all {
 .footer_nav {
     border-top: 0.1rem solid rgba(222, 222, 222, 0.83);
     border-bottom: 1px solid rgba(222, 222, 222, 0.83);
+}
+#footer .footer_nav a:hover {
+    color: var(--light-green);
 }
 .footer_main {
     background-color: var(--light-green);
