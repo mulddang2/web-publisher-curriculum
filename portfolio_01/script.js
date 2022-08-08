@@ -85,12 +85,12 @@ $(document).ready(function () {
         nextArrow: $(".news_next"),
         responsive: [
 
-            {
-                breakpoint: 1269,
-                settings: {
-                    slidesToShow: 2,
-                }
-            },
+            // {
+            //     breakpoint: 1269,
+            //     settings: {
+            //         slidesToShow: 2,
+            //     }
+            // },
             { 
                 breakpoint: 768, //화면 너비가 768이상일 때
                 settings: {
